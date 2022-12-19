@@ -8,6 +8,11 @@ namespace GlutensizYasam.Model.Entities
 {
     public class Besin : BaseEntity
     {
+        public Besin()
+        {
+            Tarifler = new HashSet<Tarif>();
+            GunlukPlanlar = new HashSet<GunlukPlan>();
+        }
         public string BesinAdi { get; set; }
 
         public int Kalori 
@@ -21,6 +26,12 @@ namespace GlutensizYasam.Model.Entities
         public int Protein { get; set; }
         public int Karbonhidrat { get; set; }
         public int Yag { get; set; }
+
+        public virtual ICollection<Tarif>Tarifler { get; set; }
+        public virtual ICollection<GunlukPlan>GunlukPlanlar { get; set; }
+
+
+
 
     }
 }
