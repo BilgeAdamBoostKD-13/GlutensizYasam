@@ -117,41 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="kisspng-logo-font-brand-clip-art-united-kingdom-5cbd4af80bec99.4733100815559093680489" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-logo-font-brand-clip-art-united-kingdom-5cbd4af80bec99.4733100815559093680489.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kisspng-water-services-symbol-clip-art-5ae4e7244897161" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-water-services-symbol-clip-art-5ae4e724489716.26356285152495082029731.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home-logo-icon-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home-logo-icon-24.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="png-clipart-united-states-drinking-water-dentist-water-scarcity-glass-of-milk-glass-dentistry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png-clipart-united-states-drinking-water-dentist-water-scarcity-glass-of-milk-glass-dentistry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="png-transparent-water-logo-national-interest-market-montpellier-m-i-n-coriovallum-college-agua-television-blue-angle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png-transparent-water-logo-national-interest-market-montpellier-m-i-n-coriovallum-college-agua-television-blue-angle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wheat-allergy-amber-icon_15413" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wheat-allergy-amber-icon_15413.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3f2ae8fc132bafca49a23144a28dbfcb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3f2ae8fc132bafca49a23144a28dbfcb.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kisspng-water-services-symbol-clip-art-5ae4e724489716.2635628515249508202973" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-water-services-symbol-clip-art-5ae4e724489716.2635628515249508202973.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="screen-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\screen-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kisspng-gluten-free-diet-celiac-disease-essential-gluten-f-blog-functional-medicine-supplements-5c51e63cf2cfb3.5941625015488712289946" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-gluten-free-diet-celiac-disease-essential-gluten-f-blog-functional-medicine-supplements-5c51e63cf2cfb3.5941625015488712289946.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="165-1650983_housing-financial-options-level-green-icon-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\165-1650983_housing-financial-options-level-green-icon-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="su" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\su.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

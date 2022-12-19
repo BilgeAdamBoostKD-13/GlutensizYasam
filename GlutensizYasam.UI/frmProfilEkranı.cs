@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace GlutensizYasam.UI
 {
-    public partial class frmAcilisEkrani : Form
+    public partial class frmProfilEkranı : Form
     {
-        public frmAcilisEkrani()
+        public frmProfilEkranı()
         {
             InitializeComponent();
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

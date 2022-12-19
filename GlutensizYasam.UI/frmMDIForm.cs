@@ -60,5 +60,14 @@ namespace GlutensizYasam.UI
             }
                        
         }
+
+        private void ürünlerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iletişimToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
     }
 }
