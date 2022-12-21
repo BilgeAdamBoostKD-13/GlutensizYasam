@@ -10,6 +10,13 @@ namespace GlutensizYasam.Model.Entities
 {
     public class Kullanici : BaseEntity
     {
+        public Kullanici()
+        {
+            Parolalar = new HashSet<Parola>();
+            HaftalikKiloKontrolleri = new HashSet<HaftalikKiloKontrolu>();
+            GunlukPlanlar = new HashSet<GunlukPlan>();
+
+        }
         public string EMail { get; set; }
         public string Isim { get; set; }
         public string SoyIsim { get; set; }
@@ -21,5 +28,8 @@ namespace GlutensizYasam.Model.Entities
         public KullaniciTipi KullaniciTipi { get; set; }
         public SporTipi SporBilgisi { get; set; }
 
+        public virtual ICollection<Parola>Parolalar { get; set; }
+        public virtual ICollection<HaftalikKiloKontrolu>HaftalikKiloKontrolleri { get; set; }
+        public virtual ICollection<GunlukPlan>GunlukPlanlar { get; set; }
     }
 }
