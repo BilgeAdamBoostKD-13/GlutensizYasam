@@ -10,5 +10,7 @@ namespace GlutensizYasam.Model.Entities
     {
         public DateTime KontrolTarihi { get; set; }
         public int AnlikKilo { get; set; }
+        public int KullaniciId { get; set; }
+        public virtual Kullanici Kullanici { get; set; }
     }
 }
