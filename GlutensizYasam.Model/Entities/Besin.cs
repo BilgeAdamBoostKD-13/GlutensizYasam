@@ -26,7 +26,7 @@ namespace GlutensizYasam.Model.Entities
         public int Protein { get; set; } //formda sadece sayı girişi olacak
         public int Karbonhidrat { get; set; } //formda sadece sayı girişi olacak
         public int Yag { get; set; } //formda sadece sayı girişi olacak
-
+        public bool AktifMi { get; set; }
         public virtual ICollection<Tarif>Tarifler { get; set; }
         public virtual ICollection<GunlukPlan>GunlukPlanlar { get; set; }
 

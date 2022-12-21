@@ -14,6 +14,7 @@ namespace GlutensizYasam.Model.Entities
             Tarifler = new HashSet<Tarif>();
             GunlukBesinKontrolleri = new HashSet<GunlukBesinKontrolu>();
         }
+        public DateTime Tarih { get; set; }
         public string Kahvalti { get; set; }
         public string OgleYemegi { get; set; }
         public string AraOgun { get; set; }
