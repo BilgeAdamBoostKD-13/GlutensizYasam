@@ -12,7 +12,7 @@ namespace GlutensizYasam.DAL
     public class GlutensizYasamDbContext : DbContext
     {
 
-        public GlutensizYasamDbContext():base("Data Source=.;Initial Catalog=NoteDB;Integrated Security=true;")
+        public GlutensizYasamDbContext():base("Data Source=.;Initial Catalog=GlutensizYasamDB;Integrated Security=true;")
         {
             Database.SetInitializer(new GlutensizYasamStrategy());
         }

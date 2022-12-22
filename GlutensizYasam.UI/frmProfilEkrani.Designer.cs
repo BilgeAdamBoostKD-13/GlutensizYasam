@@ -1,6 +1,6 @@
 ﻿namespace GlutensizYasam.UI
 {
-    partial class frmProfilEkranı
+    partial class frmProfilEkrani
     {
         /// <summary>
         /// Required designer variable.

@@ -100,6 +100,7 @@
             this.linkHesapOlustur.TabIndex = 2;
             this.linkHesapOlustur.TabStop = true;
             this.linkHesapOlustur.Text = "Hesap Oluştur";
+            this.linkHesapOlustur.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkHesapOlustur_LinkClicked);
             // 
             // label3
             // 
@@ -110,7 +111,6 @@
             this.label3.Size = new System.Drawing.Size(324, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "Glutensiz Yaşam Uygulamasına Hoşgeldiniz.";
-
             // 
             // btnGiris
             // 
@@ -124,6 +124,7 @@
             this.btnGiris.TabIndex = 7;
             this.btnGiris.Text = "GİRİŞ";
             this.btnGiris.UseVisualStyleBackColor = false;
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
             // label7
             // 
@@ -248,7 +249,6 @@
             this.label9.Size = new System.Drawing.Size(265, 29);
             this.label9.TabIndex = 14;
             this.label9.Text = "Çölyak Hastalığı Tedavisi ";
-
             // 
             // label10
             // 
@@ -272,7 +272,6 @@
             this.label11.Size = new System.Drawing.Size(242, 29);
             this.label11.TabIndex = 16;
             this.label11.Text = "Çölyak Hastalığı Nedir?";
-
             // 
             // pictureBox1
             // 

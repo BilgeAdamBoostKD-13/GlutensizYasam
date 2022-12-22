@@ -30,8 +30,8 @@ namespace GlutensizYasam.BLL.Services
                 throw new Exception("Parola giriniz");
             }
 
-            kullanici.OlusturulmaTarihi = DateTime.Now;
-            kullanici.Parolalar.FirstOrDefault().OlusturulmaTarihi = DateTime.Now;
+            //kullanici.OlusturulmaTarihi = DateTime.Now;
+            //kullanici.Parolalar.FirstOrDefault().OlusturulmaTarihi = DateTime.Now;
             kullanici.KullaniciTipi = Model.Enums.KullaniciTipi.Standart; //kullanıcı tipi verme
             return kullaniciRepository.Insert(kullanici); //repoya kullanıcıyı atıp oradaki insert metodunu kullanarak kullanıcıyı db ye ekleme.
         }

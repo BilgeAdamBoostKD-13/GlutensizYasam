@@ -18,7 +18,7 @@ namespace GlutensizYasam.BLL.Services
 
         public bool Insert(Parola parola)
         {
-            parola.OlusturulmaTarihi = DateTime.Now;
+            //parola.OlusturulmaTarihi = DateTime.Now;
             return parolaRepository.Insert(parola);
         }
     }

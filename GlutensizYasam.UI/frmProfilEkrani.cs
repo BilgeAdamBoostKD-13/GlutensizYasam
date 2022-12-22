@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GlutensizYasam.UI
 {
-    public partial class frmProfilEkranı : Form
+    public partial class frmProfilEkrani : Form
     {
-        public frmProfilEkranı()
+        public frmProfilEkrani()
         {
             InitializeComponent();
         }
