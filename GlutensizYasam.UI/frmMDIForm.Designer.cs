@@ -41,6 +41,7 @@
             this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iletişimToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.diyetListemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +53,7 @@
             this.profilToolStripMenuItem1,
             this.tariflerToolStripMenuItem,
             this.ekleToolStripMenuItem,
+            this.diyetListemToolStripMenuItem,
             this.yardımToolStripMenuItem,
             this.çıkışToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -73,19 +75,19 @@
             // profiliGörüntüleToolStripMenuItem
             // 
             this.profiliGörüntüleToolStripMenuItem.Name = "profiliGörüntüleToolStripMenuItem";
-            this.profiliGörüntüleToolStripMenuItem.Size = new System.Drawing.Size(242, 34);
+            this.profiliGörüntüleToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.profiliGörüntüleToolStripMenuItem.Text = "Profili Görüntüle";
             // 
             // suToolStripMenuItem
             // 
             this.suToolStripMenuItem.Name = "suToolStripMenuItem";
-            this.suToolStripMenuItem.Size = new System.Drawing.Size(242, 34);
+            this.suToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.suToolStripMenuItem.Text = "Su ";
             // 
             // oturumuKapatToolStripMenuItem
             // 
             this.oturumuKapatToolStripMenuItem.Name = "oturumuKapatToolStripMenuItem";
-            this.oturumuKapatToolStripMenuItem.Size = new System.Drawing.Size(242, 34);
+            this.oturumuKapatToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.oturumuKapatToolStripMenuItem.Text = "Oturumu Kapat";
             // 
             // tariflerToolStripMenuItem
@@ -115,13 +117,13 @@
             // haftalıkProgramToolStripMenuItem
             // 
             this.haftalıkProgramToolStripMenuItem.Name = "haftalıkProgramToolStripMenuItem";
-            this.haftalıkProgramToolStripMenuItem.Size = new System.Drawing.Size(248, 34);
+            this.haftalıkProgramToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.haftalıkProgramToolStripMenuItem.Text = "Haftalık Program";
             // 
             // yemekTarifiToolStripMenuItem
             // 
             this.yemekTarifiToolStripMenuItem.Name = "yemekTarifiToolStripMenuItem";
-            this.yemekTarifiToolStripMenuItem.Size = new System.Drawing.Size(248, 34);
+            this.yemekTarifiToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.yemekTarifiToolStripMenuItem.Text = "Yemek Tarifi";
             // 
             // yardımToolStripMenuItem
@@ -135,7 +137,7 @@
             // iletişimToolStripMenuItem
             // 
             this.iletişimToolStripMenuItem.Name = "iletişimToolStripMenuItem";
-            this.iletişimToolStripMenuItem.Size = new System.Drawing.Size(170, 34);
+            this.iletişimToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.iletişimToolStripMenuItem.Text = "İletişim";
             this.iletişimToolStripMenuItem.Click += new System.EventHandler(this.iletişimToolStripMenuItem_Click);
             // 
@@ -145,6 +147,12 @@
             this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(179, 29);
             this.çıkışToolStripMenuItem.Text = "Uygulamadan Çıkış";
             this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
+            // 
+            // diyetListemToolStripMenuItem
+            // 
+            this.diyetListemToolStripMenuItem.Name = "diyetListemToolStripMenuItem";
+            this.diyetListemToolStripMenuItem.Size = new System.Drawing.Size(125, 29);
+            this.diyetListemToolStripMenuItem.Text = "Diyet Listem";
             // 
             // frmMDIForm
             // 
@@ -181,5 +189,6 @@
         private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iletişimToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem suToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem diyetListemToolStripMenuItem;
     }
 }

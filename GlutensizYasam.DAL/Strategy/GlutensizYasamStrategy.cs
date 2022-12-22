@@ -21,13 +21,14 @@ namespace GlutensizYasam.DAL.Strategy
                 KullaniciTipi = KullaniciTipi.Admin
 
             };
-
+           
             kullanici.Parolalar.Add(new Parola()
             {
                 UserPassword = "adminadmin"
             });
             context.Kullanicilar.Add(kullanici);
             context.SaveChanges();
+           
         }
         
     }

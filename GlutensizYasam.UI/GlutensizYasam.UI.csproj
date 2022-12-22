@@ -64,11 +64,35 @@
     <Compile Include="frmAcilisEkrani.Designer.cs">
       <DependentUpon>frmAcilisEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAdminEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminEkrani.Designer.cs">
+      <DependentUpon>frmAdminEkrani.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBesinlerEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmBesinlerEkrani.Designer.cs">
       <DependentUpon>frmBesinlerEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBesinOgesiEklemeEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBesinOgesiEklemeEkrani.Designer.cs">
+      <DependentUpon>frmBesinOgesiEklemeEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiyetListemPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiyetListemPaneli.Designer.cs">
+      <DependentUpon>frmDiyetListemPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHaftalikProgramOluşturmaEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHaftalikProgramOluşturmaEkrani.Designer.cs">
+      <DependentUpon>frmHaftalikProgramOluşturmaEkrani.cs</DependentUpon>
     </Compile>
     <Compile Include="frmIletisimEkrani.cs">
       <SubType>Form</SubType>
@@ -111,8 +135,20 @@
     <EmbeddedResource Include="frmAcilisEkrani.resx">
       <DependentUpon>frmAcilisEkrani.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminEkrani.resx">
+      <DependentUpon>frmAdminEkrani.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBesinlerEkrani.resx">
       <DependentUpon>frmBesinlerEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBesinOgesiEklemeEkrani.resx">
+      <DependentUpon>frmBesinOgesiEklemeEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDiyetListemPaneli.resx">
+      <DependentUpon>frmDiyetListemPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHaftalikProgramOluşturmaEkrani.resx">
+      <DependentUpon>frmHaftalikProgramOluşturmaEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmIletisimEkrani.resx">
       <DependentUpon>frmIletisimEkrani.cs</DependentUpon>
