@@ -25,6 +25,12 @@ namespace GlutensizYasam.DAL.Repositories
         {
             return context.Parolalar.Where(a => a.KullaniciId == kullaniciID).FirstOrDefault();
         }
+
+        public Parola AktifParolayiVer(int kullaniciID)
+        {
+            return context.Parolalar.Where(a => a.KullaniciId == kullaniciID ).FirstOrDefault();
+        }
+
         
     }
 }

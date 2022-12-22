@@ -20,6 +20,14 @@ namespace GlutensizYasam.UI
         private void frmMDIForm_Load(object sender, EventArgs e)
         {
             ChildForm(new frmAcilisEkrani());
+            //diyetListemToolStripMenuItem.Enabled = false;
+            //ürünlerToolStripMenuItem.Enabled = false;
+            //profiliGörüntüleToolStripMenuItem.Enabled = false;
+            //suToolStripMenuItem.Enabled = false;
+            //haftalıkProgramToolStripMenuItem.Enabled = false;
+            //yemekTarifiToolStripMenuItem.Enabled = false;
+            //diyetListemToolStripMenuItem.Enabled = false;
+           
         }
 
         void ChildForm(Form childForm)//form tipinde bir child form alacak,herhangi bir formu alabalir
@@ -63,11 +71,37 @@ namespace GlutensizYasam.UI
 
         private void ürünlerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ChildForm(new frmBesinlerEkrani());
         }
 
         private void iletişimToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ChildForm(new frmIletisimEkrani());
+        }
+
+        private void profiliGörüntüleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChildForm(new frmProfilEkrani());
+        }
+
+        private void suToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChildForm(new frmSuEkrani());
+        }
+
+        private void haftalıkProgramToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChildForm(new frmHaftalikProgramOluşturmaEkrani());
+        }
+
+        private void yemekTarifiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChildForm(new frmYemekTarifiOlusturmaEkrani());
+        }
+
+        private void diyetListemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChildForm(new frmDiyetListemPaneli());
         }
     }
 }

@@ -13,7 +13,7 @@ using System.Windows.Forms;
 namespace GlutensizYasam.UI
 {
     public partial class frmAcilisEkrani : Form
-    {
+    {        
         KullaniciService kullaniciService;
 
         public frmAcilisEkrani()
@@ -34,9 +34,10 @@ namespace GlutensizYasam.UI
                 Kullanici kullanici = kullaniciService.GirisKontrolu(userName, password);
                 if (kullanici != null)
                 {
-                    frmProfilEkrani profilEkrani = new frmProfilEkrani();
-                    this.Hide();
-                    profilEkrani.ShowDialog();
+                    frmProfilEkrani profilEkrani = new frmProfilEkrani();                                     
+                    profilEkrani.Show();
+                    this.Close();                 
+
                 }
             }
             catch (Exception ex)
@@ -49,10 +50,11 @@ namespace GlutensizYasam.UI
 
         private void linkHesapOlustur_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmYeniKayitEkrani yeniKayitEkrani = new frmYeniKayitEkrani();
+            frmYeniKayitEkrani yeniKayitEkrani = new frmYeniKayitEkrani();            
             this.Hide();
-            yeniKayitEkrani.ShowDialog();
+            yeniKayitEkrani.Show();
             this.Show();
         }
+        
     }
 }

@@ -29,8 +29,8 @@ namespace GlutensizYasam.DAL.Repositories
             Kullanici kullanici = context.Kullanicilar.Where(a => a.EMail == email).SingleOrDefault();
             if (kullanici != null)
             {
-                Parola kullaniciParolasi = parolaRepository.GetParolaID(kullanici.ID);
-                if (kullaniciParolasi != null && kullaniciParolasi.ToString() == parola)
+                Parola kullaniciParolasi = parolaRepository.AktifParolayiVer(kullanici.ID);
+                if (kullaniciParolasi != null && kullaniciParolasi.UserPassword == parola)
                 {
                     return kullanici;
                 }
