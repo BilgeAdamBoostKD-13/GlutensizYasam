@@ -110,7 +110,7 @@
             this.label3.Size = new System.Drawing.Size(324, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "Glutensiz Yaşam Uygulamasına Hoşgeldiniz.";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+
             // 
             // btnGiris
             // 
@@ -248,7 +248,7 @@
             this.label9.Size = new System.Drawing.Size(265, 29);
             this.label9.TabIndex = 14;
             this.label9.Text = "Çölyak Hastalığı Tedavisi ";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+
             // 
             // label10
             // 
@@ -272,7 +272,7 @@
             this.label11.Size = new System.Drawing.Size(242, 29);
             this.label11.TabIndex = 16;
             this.label11.Text = "Çölyak Hastalığı Nedir?";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+
             // 
             // pictureBox1
             // 

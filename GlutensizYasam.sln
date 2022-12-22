@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlutensizYasam.UI", "Gluten
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlutensizYasam.DAL", "GlutensizYasam.DAL\GlutensizYasam.DAL.csproj", "{B65ECF55-5F5C-4A5D-AE0A-4BD1D03BE068}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlutensizYasam.BLL", "GlutensizYasam.BLL\GlutensizYasam.BLL.csproj", "{842FC8F0-6027-431A-BE12-F844063B10A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B65ECF55-5F5C-4A5D-AE0A-4BD1D03BE068}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B65ECF55-5F5C-4A5D-AE0A-4BD1D03BE068}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B65ECF55-5F5C-4A5D-AE0A-4BD1D03BE068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{842FC8F0-6027-431A-BE12-F844063B10A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{842FC8F0-6027-431A-BE12-F844063B10A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{842FC8F0-6027-431A-BE12-F844063B10A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{842FC8F0-6027-431A-BE12-F844063B10A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
