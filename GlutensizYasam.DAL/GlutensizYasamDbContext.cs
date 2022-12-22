@@ -1,4 +1,5 @@
-﻿using GlutensizYasam.DAL.Strategy;
+﻿using GlutensizYasam.DAL.Entity_Configurations;
+using GlutensizYasam.DAL.Strategy;
 using GlutensizYasam.Model.Entities;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,15 @@ namespace GlutensizYasam.DAL
         public DbSet<Parola> Parolalar { get; set; }
         public DbSet<Tarif> Tarifler { get; set; }
 
-
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new BesinConfiguration());
+            modelBuilder.Configurations.Add(new GunlukBesinKontroluConfiguration());
+            modelBuilder.Configurations.Add(new GunlukPlanConfiguration());
+            modelBuilder.Configurations.Add(new HaftalıkKiloKontroluConfiguration());
+            modelBuilder.Configurations.Add(new KullaniciConfiguration());
+            modelBuilder.Configurations.Add(new ParolaConfiguration());
+            modelBuilder.Configurations.Add(new TarifConfiguration());
+        }
     }
 }

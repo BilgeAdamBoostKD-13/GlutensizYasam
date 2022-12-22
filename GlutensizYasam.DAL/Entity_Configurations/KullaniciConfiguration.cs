@@ -15,6 +15,7 @@ namespace GlutensizYasam.DAL.Entity_Configurations
         {
             Property(a => a.ID).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(a => a.EMail).IsRequired();
+            Property(a => a.DogumTarihi).HasColumnType("datetime2");
 
             HasMany(a => a.Parolalar).WithRequired(b => b.Kullanici).HasForeignKey(c => c.KullaniciId);
             HasMany(a => a.HaftalikKiloKontrolleri).WithRequired(b => b.Kullanici).HasForeignKey(c => c.KullaniciId);

@@ -69,7 +69,7 @@ namespace GlutensizYasam.Model.Entities
             }
             set
             {                
-                if (value <= 0) throw new Exception("Lütfen 0 dan küçük bir sayı girmeyiniz.!");
+                if (value < 0) throw new Exception("Lütfen 0 dan küçük bir sayı girmeyiniz.!");
                 else if (value >= 600) throw new Exception("Çok büyük bir sayı girdiniz.!");
                 else kilo = value;
             }
