@@ -8,5 +8,6 @@ namespace GlutensizYasam.BLL.Services
 {
     internal class MErtClass
     {
+        BusraClass Gordun mu
     }
 }
