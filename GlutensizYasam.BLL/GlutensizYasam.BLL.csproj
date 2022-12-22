@@ -41,10 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusraClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\BesinService.cs" />
-    <Compile Include="Services\MErtClass.cs" />
     <Compile Include="Services\TarifService.cs" />
     <Compile Include="Services\ParolaService.cs" />
     <Compile Include="Services\GunlukBesinKontroluService.cs" />

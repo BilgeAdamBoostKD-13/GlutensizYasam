@@ -31,17 +31,16 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.profilToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.profiliGörüntüleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.suToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oturumuKapatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tariflerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ürünlerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yemekTarifleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ekleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.haftalıkProgramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yemekTarifiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iletişimToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.suToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,20 +73,25 @@
             // profiliGörüntüleToolStripMenuItem
             // 
             this.profiliGörüntüleToolStripMenuItem.Name = "profiliGörüntüleToolStripMenuItem";
-            this.profiliGörüntüleToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.profiliGörüntüleToolStripMenuItem.Size = new System.Drawing.Size(242, 34);
             this.profiliGörüntüleToolStripMenuItem.Text = "Profili Görüntüle";
+            // 
+            // suToolStripMenuItem
+            // 
+            this.suToolStripMenuItem.Name = "suToolStripMenuItem";
+            this.suToolStripMenuItem.Size = new System.Drawing.Size(242, 34);
+            this.suToolStripMenuItem.Text = "Su ";
             // 
             // oturumuKapatToolStripMenuItem
             // 
             this.oturumuKapatToolStripMenuItem.Name = "oturumuKapatToolStripMenuItem";
-            this.oturumuKapatToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.oturumuKapatToolStripMenuItem.Size = new System.Drawing.Size(242, 34);
             this.oturumuKapatToolStripMenuItem.Text = "Oturumu Kapat";
             // 
             // tariflerToolStripMenuItem
             // 
             this.tariflerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ürünlerToolStripMenuItem,
-            this.yemekTarifleriToolStripMenuItem});
+            this.ürünlerToolStripMenuItem});
             this.tariflerToolStripMenuItem.Name = "tariflerToolStripMenuItem";
             this.tariflerToolStripMenuItem.Size = new System.Drawing.Size(88, 29);
             this.tariflerToolStripMenuItem.Text = "Besinler";
@@ -96,14 +100,8 @@
             // 
             this.ürünlerToolStripMenuItem.Name = "ürünlerToolStripMenuItem";
             this.ürünlerToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.ürünlerToolStripMenuItem.Text = "Kaç Kalori";
+            this.ürünlerToolStripMenuItem.Text = "Kaç Kalori?";
             this.ürünlerToolStripMenuItem.Click += new System.EventHandler(this.ürünlerToolStripMenuItem_Click);
-            // 
-            // yemekTarifleriToolStripMenuItem
-            // 
-            this.yemekTarifleriToolStripMenuItem.Name = "yemekTarifleriToolStripMenuItem";
-            this.yemekTarifleriToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.yemekTarifleriToolStripMenuItem.Text = "Yemek Tarifleri";
             // 
             // ekleToolStripMenuItem
             // 
@@ -117,13 +115,13 @@
             // haftalıkProgramToolStripMenuItem
             // 
             this.haftalıkProgramToolStripMenuItem.Name = "haftalıkProgramToolStripMenuItem";
-            this.haftalıkProgramToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.haftalıkProgramToolStripMenuItem.Size = new System.Drawing.Size(248, 34);
             this.haftalıkProgramToolStripMenuItem.Text = "Haftalık Program";
             // 
             // yemekTarifiToolStripMenuItem
             // 
             this.yemekTarifiToolStripMenuItem.Name = "yemekTarifiToolStripMenuItem";
-            this.yemekTarifiToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.yemekTarifiToolStripMenuItem.Size = new System.Drawing.Size(248, 34);
             this.yemekTarifiToolStripMenuItem.Text = "Yemek Tarifi";
             // 
             // yardımToolStripMenuItem
@@ -137,7 +135,7 @@
             // iletişimToolStripMenuItem
             // 
             this.iletişimToolStripMenuItem.Name = "iletişimToolStripMenuItem";
-            this.iletişimToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.iletişimToolStripMenuItem.Size = new System.Drawing.Size(170, 34);
             this.iletişimToolStripMenuItem.Text = "İletişim";
             this.iletişimToolStripMenuItem.Click += new System.EventHandler(this.iletişimToolStripMenuItem_Click);
             // 
@@ -147,12 +145,6 @@
             this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(179, 29);
             this.çıkışToolStripMenuItem.Text = "Uygulamadan Çıkış";
             this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
-            // 
-            // suToolStripMenuItem
-            // 
-            this.suToolStripMenuItem.Name = "suToolStripMenuItem";
-            this.suToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.suToolStripMenuItem.Text = "Su ";
             // 
             // frmMDIForm
             // 
@@ -182,7 +174,6 @@
         private System.Windows.Forms.ToolStripMenuItem haftalıkProgramToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem yemekTarifiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tariflerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem yemekTarifleriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oturumuKapatToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ürünlerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
