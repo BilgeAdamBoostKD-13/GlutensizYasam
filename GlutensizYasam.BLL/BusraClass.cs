@@ -8,5 +8,6 @@ namespace GlutensizYasam.BLL
 {
     internal class BusraClass
     {
+        mbocx
     }
 }
