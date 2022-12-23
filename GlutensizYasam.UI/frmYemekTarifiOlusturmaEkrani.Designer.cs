@@ -60,9 +60,10 @@
             this.label3.BackColor = System.Drawing.Color.LimeGreen;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(-6, 9);
+            this.label3.Location = new System.Drawing.Point(-4, 6);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1443, 70);
+            this.label3.Size = new System.Drawing.Size(962, 46);
             this.label3.TabIndex = 16;
             this.label3.Text = "YEMEK TARİFİ OLUŞTUR";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -71,9 +72,10 @@
             // 
             this.label12.Font = new System.Drawing.Font("MV Boli", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Orange;
-            this.label12.Location = new System.Drawing.Point(128, 119);
+            this.label12.Location = new System.Drawing.Point(85, 77);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(212, 57);
+            this.label12.Size = new System.Drawing.Size(141, 37);
             this.label12.TabIndex = 23;
             this.label12.Text = "Glutensiz";
             // 
@@ -81,18 +83,20 @@
             // 
             this.label5.Font = new System.Drawing.Font("MV Boli", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.LimeGreen;
-            this.label5.Location = new System.Drawing.Point(325, 119);
+            this.label5.Location = new System.Drawing.Point(217, 77);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(144, 57);
+            this.label5.Size = new System.Drawing.Size(135, 37);
             this.label5.TabIndex = 22;
             this.label5.Text = "Yasam";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GlutensizYasam.UI.Properties.Resources.wheat_allergy_amber_icon_15413;
-            this.pictureBox1.Location = new System.Drawing.Point(45, 97);
+            this.pictureBox1.Location = new System.Drawing.Point(30, 63);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(95, 89);
+            this.pictureBox1.Size = new System.Drawing.Size(63, 58);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
@@ -102,9 +106,10 @@
             this.btnAra.BackColor = System.Drawing.Color.Orange;
             this.btnAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAra.ForeColor = System.Drawing.Color.White;
-            this.btnAra.Location = new System.Drawing.Point(644, 434);
+            this.btnAra.Location = new System.Drawing.Point(429, 282);
+            this.btnAra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAra.Name = "btnAra";
-            this.btnAra.Size = new System.Drawing.Size(87, 54);
+            this.btnAra.Size = new System.Drawing.Size(58, 35);
             this.btnAra.TabIndex = 42;
             this.btnAra.Text = "ARA";
             this.btnAra.UseVisualStyleBackColor = false;
@@ -112,20 +117,18 @@
             // txtTarifAd
             // 
             this.txtTarifAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTarifAd.Location = new System.Drawing.Point(47, 322);
-            this.txtTarifAd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTarifAd.Location = new System.Drawing.Point(31, 209);
             this.txtTarifAd.Name = "txtTarifAd";
-            this.txtTarifAd.Size = new System.Drawing.Size(684, 39);
+            this.txtTarifAd.Size = new System.Drawing.Size(457, 29);
             this.txtTarifAd.TabIndex = 41;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(41, 269);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(27, 175);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(273, 36);
+            this.label1.Size = new System.Drawing.Size(181, 25);
             this.label1.TabIndex = 40;
             this.label1.Text = "Yemek Tarifinin Adı";
             // 
@@ -133,30 +136,27 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(39, 212);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(26, 138);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(680, 29);
+            this.label4.Size = new System.Drawing.Size(442, 20);
             this.label4.TabIndex = 43;
             this.label4.Text = "Yemek Tarifi Oluşturmak İçin İstenilen Bilgilerin Hepsini Giriniz";
             // 
             // txtArananBesinOgesi
             // 
             this.txtArananBesinOgesi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtArananBesinOgesi.Location = new System.Drawing.Point(47, 442);
-            this.txtArananBesinOgesi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtArananBesinOgesi.Location = new System.Drawing.Point(31, 287);
             this.txtArananBesinOgesi.Name = "txtArananBesinOgesi";
-            this.txtArananBesinOgesi.Size = new System.Drawing.Size(590, 39);
+            this.txtArananBesinOgesi.Size = new System.Drawing.Size(395, 29);
             this.txtArananBesinOgesi.TabIndex = 45;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(41, 389);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(27, 253);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(437, 36);
+            this.label2.Size = new System.Drawing.Size(289, 25);
             this.label2.TabIndex = 44;
             this.label2.Text = "Eklemek İstediğiniz Besin Öğesi";
             // 
@@ -164,29 +164,28 @@
             // 
             this.listBoxBesinler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listBoxBesinler.FormattingEnabled = true;
-            this.listBoxBesinler.ItemHeight = 29;
-            this.listBoxBesinler.Location = new System.Drawing.Point(47, 494);
+            this.listBoxBesinler.ItemHeight = 20;
+            this.listBoxBesinler.Location = new System.Drawing.Point(31, 321);
+            this.listBoxBesinler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBoxBesinler.Name = "listBoxBesinler";
-            this.listBoxBesinler.Size = new System.Drawing.Size(684, 207);
+            this.listBoxBesinler.Size = new System.Drawing.Size(457, 124);
             this.listBoxBesinler.TabIndex = 46;
             // 
             // txtMalzemeAdedi
             // 
             this.txtMalzemeAdedi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtMalzemeAdedi.Location = new System.Drawing.Point(47, 777);
-            this.txtMalzemeAdedi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtMalzemeAdedi.Location = new System.Drawing.Point(31, 505);
             this.txtMalzemeAdedi.Name = "txtMalzemeAdedi";
-            this.txtMalzemeAdedi.Size = new System.Drawing.Size(684, 39);
+            this.txtMalzemeAdedi.Size = new System.Drawing.Size(457, 29);
             this.txtMalzemeAdedi.TabIndex = 49;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(41, 724);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(27, 471);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(219, 36);
+            this.label6.Size = new System.Drawing.Size(148, 25);
             this.label6.TabIndex = 48;
             this.label6.Text = "Malzeme Adedi";
             // 
@@ -195,9 +194,10 @@
             this.btnEkle.BackColor = System.Drawing.Color.Orange;
             this.btnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEkle.ForeColor = System.Drawing.Color.White;
-            this.btnEkle.Location = new System.Drawing.Point(47, 844);
+            this.btnEkle.Location = new System.Drawing.Point(31, 549);
+            this.btnEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(293, 54);
+            this.btnEkle.Size = new System.Drawing.Size(195, 35);
             this.btnEkle.TabIndex = 47;
             this.btnEkle.Text = "EKLE";
             this.btnEkle.UseVisualStyleBackColor = false;
@@ -207,9 +207,10 @@
             this.btnGuncelle.BackColor = System.Drawing.Color.Orange;
             this.btnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnGuncelle.ForeColor = System.Drawing.Color.White;
-            this.btnGuncelle.Location = new System.Drawing.Point(438, 844);
+            this.btnGuncelle.Location = new System.Drawing.Point(292, 549);
+            this.btnGuncelle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(293, 54);
+            this.btnGuncelle.Size = new System.Drawing.Size(195, 35);
             this.btnGuncelle.TabIndex = 50;
             this.btnGuncelle.Text = "GÜNCELLE";
             this.btnGuncelle.UseVisualStyleBackColor = false;
@@ -223,9 +224,10 @@
             this.listViewTarif.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listViewTarif.GridLines = true;
             this.listViewTarif.HideSelection = false;
-            this.listViewTarif.Location = new System.Drawing.Point(777, 153);
+            this.listViewTarif.Location = new System.Drawing.Point(518, 99);
+            this.listViewTarif.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listViewTarif.Name = "listViewTarif";
-            this.listViewTarif.Size = new System.Drawing.Size(612, 397);
+            this.listViewTarif.Size = new System.Drawing.Size(409, 259);
             this.listViewTarif.TabIndex = 51;
             this.listViewTarif.UseCompatibleStateImageBehavior = false;
             this.listViewTarif.View = System.Windows.Forms.View.Details;
@@ -250,9 +252,10 @@
             this.btnOnayla.BackColor = System.Drawing.Color.Orange;
             this.btnOnayla.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnOnayla.ForeColor = System.Drawing.Color.White;
-            this.btnOnayla.Location = new System.Drawing.Point(777, 556);
+            this.btnOnayla.Location = new System.Drawing.Point(518, 361);
+            this.btnOnayla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOnayla.Name = "btnOnayla";
-            this.btnOnayla.Size = new System.Drawing.Size(293, 54);
+            this.btnOnayla.Size = new System.Drawing.Size(195, 35);
             this.btnOnayla.TabIndex = 52;
             this.btnOnayla.Text = "ONAYLA";
             this.btnOnayla.UseVisualStyleBackColor = false;
@@ -262,9 +265,10 @@
             this.btnSil.BackColor = System.Drawing.Color.Orange;
             this.btnSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSil.ForeColor = System.Drawing.Color.White;
-            this.btnSil.Location = new System.Drawing.Point(1096, 556);
+            this.btnSil.Location = new System.Drawing.Point(731, 361);
+            this.btnSil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(293, 54);
+            this.btnSil.Size = new System.Drawing.Size(195, 35);
             this.btnSil.TabIndex = 53;
             this.btnSil.Text = "BESİN SİL";
             this.btnSil.UseVisualStyleBackColor = false;
@@ -272,11 +276,10 @@
             // txtAcıklama
             // 
             this.txtAcıklama.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtAcıklama.Location = new System.Drawing.Point(777, 627);
-            this.txtAcıklama.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAcıklama.Location = new System.Drawing.Point(518, 408);
             this.txtAcıklama.Multiline = true;
             this.txtAcıklama.Name = "txtAcıklama";
-            this.txtAcıklama.Size = new System.Drawing.Size(612, 200);
+            this.txtAcıklama.Size = new System.Drawing.Size(409, 131);
             this.txtAcıklama.TabIndex = 55;
             // 
             // btnTarifEkle
@@ -284,9 +287,10 @@
             this.btnTarifEkle.BackColor = System.Drawing.Color.LimeGreen;
             this.btnTarifEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnTarifEkle.ForeColor = System.Drawing.Color.White;
-            this.btnTarifEkle.Location = new System.Drawing.Point(777, 835);
+            this.btnTarifEkle.Location = new System.Drawing.Point(518, 543);
+            this.btnTarifEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTarifEkle.Name = "btnTarifEkle";
-            this.btnTarifEkle.Size = new System.Drawing.Size(612, 54);
+            this.btnTarifEkle.Size = new System.Drawing.Size(408, 35);
             this.btnTarifEkle.TabIndex = 54;
             this.btnTarifEkle.Text = "TARİFİ EKLE";
             this.btnTarifEkle.UseVisualStyleBackColor = false;
@@ -296,19 +300,18 @@
             this.lblTarifAd.AutoSize = true;
             this.lblTarifAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTarifAd.ForeColor = System.Drawing.Color.LimeGreen;
-            this.lblTarifAd.Location = new System.Drawing.Point(769, 104);
-            this.lblTarifAd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTarifAd.Location = new System.Drawing.Point(513, 68);
             this.lblTarifAd.Name = "lblTarifAd";
-            this.lblTarifAd.Size = new System.Drawing.Size(196, 46);
+            this.lblTarifAd.Size = new System.Drawing.Size(137, 31);
             this.lblTarifAd.TabIndex = 56;
             this.lblTarifAd.Text = "@TarifAd";
             // 
             // frmYemekTarifiOlusturmaEkrani
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1434, 910);
+            this.ClientSize = new System.Drawing.Size(956, 592);
             this.Controls.Add(this.lblTarifAd);
             this.Controls.Add(this.txtAcıklama);
             this.Controls.Add(this.btnTarifEkle);
@@ -331,6 +334,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmYemekTarifiOlusturmaEkrani";
             this.Text = "frmYemekTarifiOlusturmaEkrani";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

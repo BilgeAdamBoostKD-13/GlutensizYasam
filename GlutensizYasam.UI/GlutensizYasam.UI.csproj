@@ -242,6 +242,10 @@
       <Project>{842FC8F0-6027-431A-BE12-F844063B10A9}</Project>
       <Name>GlutensizYasam.BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GlutensizYasam.DAL\GlutensizYasam.DAL.csproj">
+      <Project>{B65ECF55-5F5C-4A5D-AE0A-4BD1D03BE068}</Project>
+      <Name>GlutensizYasam.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GlutensizYasam.Model\GlutensizYasam.Model.csproj">
       <Project>{7BD9D4AB-9CB2-40BF-8508-60EFEAD41365}</Project>
       <Name>GlutensizYasam.Model</Name>

@@ -32,9 +32,18 @@ namespace GlutensizYasam.UI
 
                 kullaniciService = new KullaniciService();
                 Kullanici kullanici = kullaniciService.GirisKontrolu(userName, password);
-                if (kullanici != null)
+                if (kullanici != null && kullanici.KullaniciTipi == Model.Enums.KullaniciTipi.Admin)
                 {
-                    
+                    frmAdminEkrani frm = new frmAdminEkrani();
+                    this.Hide();
+                    frm.ShowDialog();                   
+                        
+                }
+                else if (kullanici != null && kullanici.KullaniciTipi == Model.Enums.KullaniciTipi.Standart)
+                {
+                    frmAnaEkran frm = new frmAnaEkran(kullanici);
+                    this.Hide();
+                    frm.ShowDialog();
 
                 }
             }
@@ -50,8 +59,8 @@ namespace GlutensizYasam.UI
         {
             frmYeniKayitEkrani yeniKayitEkrani = new frmYeniKayitEkrani();            
             this.Hide();
-            yeniKayitEkrani.Show();
-            this.Show();
+            yeniKayitEkrani.ShowDialog();
+            
         }
         
     }
