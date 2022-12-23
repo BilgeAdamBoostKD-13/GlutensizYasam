@@ -50,42 +50,18 @@ namespace GlutensizYasam.UI
         private void btnUyeOl_Click(object sender, EventArgs e)
         {
             Kullanici kullanici = new Kullanici();
-            if (txtIsim.Text != null)
+            try
             {
-                kullanici.Isim = txtIsim.Text; 
-            }
-            else
-            {
-                hata += "Lütfen isim giriniz \n";
-                //MessageBox.Show("Lütfen isim giriniz");
-            }
-            if (txtSoyisim.Text != null)
-            {
-                kullanici.SoyIsim = txtSoyisim.Text; 
-            }
-            else
-            {
-                //MessageBox.Show("Lütfen soyisim giriniz");
-                hata += "Lütfen soyisim giriniz \n";
-            }
-            if (txtEmail.Text != null)
-            {
-                if (txtEmail.Text.Contains("@") && txtEmail.Text.EndsWith(".com"))
-                {
-                    kullanici.EMail = txtEmail.Text;
-                }
-                else
-                {
-                    hata += "e-mail geçerli formatta değil \n";
-                    //MessageBox.Show("e-mail geçerli formatta değil");
-                }
-            }
-            else
-            {
-                //MessageBox.Show("Lütfen email giriniz");
-                hata += "Lütfen email giriniz \n";
-            }
+                kullanici.Isim = txtIsim.Text;
+                kullanici.SoyIsim = txtSoyisim.Text;
+                kullanici.EMail = txtEmail.Text;             
 
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
             kullanici.Cinsiyet = rbErkek.Checked ? Model.Enums.Cinsiyet.Erkek : Model.Enums.Cinsiyet.Kadin;
             kullanici.DogumTarihi = dateTimePickerDogumTarihi.Value;
             kullanici.Kilo = Convert.ToInt32(nudKilo.Text);

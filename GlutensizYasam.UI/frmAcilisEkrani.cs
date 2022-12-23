@@ -15,6 +15,7 @@ namespace GlutensizYasam.UI
     public partial class frmAcilisEkrani : Form
     {        
         KullaniciService kullaniciService;
+        
 
         public frmAcilisEkrani()
         {
@@ -46,6 +47,10 @@ namespace GlutensizYasam.UI
                     frm.ShowDialog();
 
                 }
+                else
+                {
+                    MessageBox.Show("Şifre ya da Email Hatalı");
+                }
             }
             catch (Exception ex)
             {
@@ -66,6 +71,13 @@ namespace GlutensizYasam.UI
         private void frmAcilisEkrani_Load(object sender, EventArgs e)
         {
             txtSifre.PasswordChar = '*';
+        }
+
+        private void linkSifremiUnuttum_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmSifremiUnuttumEkrani frm = new frmSifremiUnuttumEkrani();
+            this.Hide();
+            frm.ShowDialog();
         }
     }
 }

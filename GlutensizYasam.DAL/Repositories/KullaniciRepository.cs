@@ -20,8 +20,11 @@ namespace GlutensizYasam.DAL.Repositories
 
         public bool Insert(Kullanici kullanici)
         {
+            
+            
             context.Kullanicilar.Add(kullanici);
             return context.SaveChanges() > 0;
+           
         }
 
         public Kullanici CheckLogin(string email, string parola)

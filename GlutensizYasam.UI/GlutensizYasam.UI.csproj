@@ -112,6 +112,12 @@
     <Compile Include="frmProfilEkrani.Designer.cs">
       <DependentUpon>frmProfilEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSifremiUnuttumEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSifremiUnuttumEkrani.Designer.cs">
+      <DependentUpon>frmSifremiUnuttumEkrani.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSuEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmProfilEkrani.resx">
       <DependentUpon>frmProfilEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSifremiUnuttumEkrani.resx">
+      <DependentUpon>frmSifremiUnuttumEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSuEkrani.resx">
       <DependentUpon>frmSuEkrani.cs</DependentUpon>

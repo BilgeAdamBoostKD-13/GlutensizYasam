@@ -1,4 +1,5 @@
-﻿using GlutensizYasam.DAL.Repositories;
+﻿using GlutensizYasam.DAL;
+using GlutensizYasam.DAL.Repositories;
 using GlutensizYasam.Model.Entities;
 using Microsoft.Win32;
 using System;
@@ -11,10 +12,13 @@ namespace GlutensizYasam.BLL.Services
 {
     public class KullaniciService
     {
+       // GlutensizYasamDbContext db;
         KullaniciRepository kullaniciRepository;
+
         public KullaniciService()
         {
             kullaniciRepository = new KullaniciRepository();
+           // db = new GlutensizYasamDbContext();
         }
 
         public bool Insert (Kullanici kullanici) // kullanıcı kaydetme 
@@ -52,7 +56,12 @@ namespace GlutensizYasam.BLL.Services
             }
         }
 
-
+        
+        //public bool EmailKontrolu(Kullanici kullanici)
+        //{
+        //    List<Kullanici> kullanilanEmail = db.k
+           
+        //}
 
 
     }
