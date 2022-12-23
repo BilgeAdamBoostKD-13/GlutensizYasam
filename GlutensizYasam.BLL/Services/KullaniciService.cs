@@ -57,11 +57,12 @@ namespace GlutensizYasam.BLL.Services
         }
 
         
-        //public bool EmailKontrolu(Kullanici kullanici)
-        //{
-        //    List<Kullanici> kullanilanEmail = db.k
+        public bool EmailKontrolu(string kullaniciEmail)
+        {
+            bool check = kullaniciRepository.EmailKontrolEt(kullaniciEmail);
+            return check;
            
-        //}
+        }
 
 
     }

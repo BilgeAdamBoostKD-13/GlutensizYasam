@@ -45,6 +45,21 @@ namespace GlutensizYasam.DAL.Repositories
         {
             return context.Kullanicilar.Find(kullaniciID);
         }
+
+        public bool EmailKontrolEt(string email)
+        {
+            Kullanici kullanici = new Kullanici();
+            List<Kullanici> kullaniciList = context.Kullanicilar.ToList();
+
+            foreach (var item in kullaniciList)
+            {
+                if (item.EMail == email)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 
     

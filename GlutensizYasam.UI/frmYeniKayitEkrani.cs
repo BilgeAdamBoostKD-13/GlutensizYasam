@@ -79,6 +79,13 @@ namespace GlutensizYasam.UI
 
             }
 
+            bool checkEmail = kullaniciService.EmailKontrolu(txtEmail.Text);
+
+            if (checkEmail)
+            {
+                MessageBox.Show("Bu mail adresi kullanılıyor");
+            }
+
             if (rbYok.Checked)
             {
                 kullanici.SporBilgisi = Model.Enums.SporTipi.SporYok;
@@ -97,7 +104,9 @@ namespace GlutensizYasam.UI
                 txtParola.Text.Length>5
                 && txtParola.Text.Any(char.IsLower)
                 && txtParola.Text.Any(char.IsUpper)
-                && txtParola.Text.Any(char.IsNumber) && txtParola.Text ==txtParolaTekrar.Text))
+                && txtParola.Text.Any(char.IsNumber) 
+                && txtParola.Text ==txtParolaTekrar.Text)
+                && !checkEmail)
             {
                 bool check = kullaniciService.Insert(kullanici);
                 MessageBox.Show(check ? "Kullanıcı eklendi" : "Kullanıcı eklenemedi");
