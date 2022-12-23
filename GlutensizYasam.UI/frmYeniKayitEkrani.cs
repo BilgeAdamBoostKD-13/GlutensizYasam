@@ -35,6 +35,8 @@ namespace GlutensizYasam.UI
             rbYok.Checked = true;
             rbKadin.Checked = true;
             txtKullaniciAd.Enabled = false;
+            txtParola.PasswordChar = '*';
+            txtParolaTekrar.PasswordChar = '*';
         }
 
         private void linkGirisYap_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

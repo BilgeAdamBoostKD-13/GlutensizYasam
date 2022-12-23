@@ -62,6 +62,10 @@ namespace GlutensizYasam.UI
             yeniKayitEkrani.ShowDialog();
             
         }
-        
+
+        private void frmAcilisEkrani_Load(object sender, EventArgs e)
+        {
+            txtSifre.PasswordChar = '*';
+        }
     }
 }
