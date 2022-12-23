@@ -11,17 +11,23 @@ using System.Windows.Forms;
 
 namespace GlutensizYasam.UI
 {
-    public partial class frmHaftalikProgramOluşturmaEkrani : Form
+    public partial class frmGunlukProgramOluşturmaEkrani : Form
     {
         Kullanici kullanici;
-        public frmHaftalikProgramOluşturmaEkrani()
+        public frmGunlukProgramOluşturmaEkrani()
         {
             InitializeComponent();
         }
-        public frmHaftalikProgramOluşturmaEkrani(Kullanici kullanici)
+        public frmGunlukProgramOluşturmaEkrani(Kullanici kullanici)
         {
             InitializeComponent();
             this.kullanici = kullanici;
+        }
+
+        public frmGunlukProgramOluşturmaEkrani(Besin besin)
+        {
+            InitializeComponent();
+
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -32,6 +38,14 @@ namespace GlutensizYasam.UI
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             frmAnaEkran frm = new frmAnaEkran(kullanici);
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
+
+        private void btnEkleKahvalti_Click(object sender, EventArgs e)
+        {
+            frmBesinOgesiEklemeEkrani frm = new frmBesinOgesiEklemeEkrani();
             this.Hide();
             frm.ShowDialog();
             this.Show();

@@ -61,7 +61,7 @@ namespace GlutensizYasam.UI
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            frmHaftalikProgramOluşturmaEkrani frm = new frmHaftalikProgramOluşturmaEkrani(this.kullanici);
+            frmGunlukProgramOluşturmaEkrani frm = new frmGunlukProgramOluşturmaEkrani(this.kullanici);
             this.Hide();
             frm.ShowDialog();
             this.Show();

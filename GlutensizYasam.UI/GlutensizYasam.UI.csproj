@@ -94,11 +94,11 @@
     <Compile Include="frmDiyetListemPaneli.Designer.cs">
       <DependentUpon>frmDiyetListemPaneli.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmHaftalikProgramOluşturmaEkrani.cs">
+    <Compile Include="frmGunlukProgramOluşturmaEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmHaftalikProgramOluşturmaEkrani.Designer.cs">
-      <DependentUpon>frmHaftalikProgramOluşturmaEkrani.cs</DependentUpon>
+    <Compile Include="frmGunlukProgramOluşturmaEkrani.Designer.cs">
+      <DependentUpon>frmGunlukProgramOluşturmaEkrani.cs</DependentUpon>
     </Compile>
     <Compile Include="frmIletisimEkrani.cs">
       <SubType>Form</SubType>
@@ -156,8 +156,8 @@
     <EmbeddedResource Include="frmDiyetListemPaneli.resx">
       <DependentUpon>frmDiyetListemPaneli.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmHaftalikProgramOluşturmaEkrani.resx">
-      <DependentUpon>frmHaftalikProgramOluşturmaEkrani.cs</DependentUpon>
+    <EmbeddedResource Include="frmGunlukProgramOluşturmaEkrani.resx">
+      <DependentUpon>frmGunlukProgramOluşturmaEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmIletisimEkrani.resx">
       <DependentUpon>frmIletisimEkrani.cs</DependentUpon>

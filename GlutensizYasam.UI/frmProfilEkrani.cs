@@ -35,6 +35,8 @@ namespace GlutensizYasam.UI
             double kilo = this.kullanici.Kilo;
             double bki = kilo / boykare;
             lblBKI.Text = bki.ToString();
+            string isimsoyisim = $"{this.kullanici.Isim} {this.kullanici.SoyIsim} ";
+            lblKullanıcıIsimSoyisim.Text = isimsoyisim;
 
             if (this.kullanici.Cinsiyet == Model.Enums.Cinsiyet.Erkek)
             {
