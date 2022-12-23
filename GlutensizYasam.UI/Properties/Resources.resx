@@ -181,9 +181,6 @@
   <data name="png-clipart-computer-icons-lunch-meal-breakfast-dinner-breakfast-food-text" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-clipart-computer-icons-lunch-meal-breakfast-dinner-breakfast-food-text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="home-logo-icon-241" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home-logo-icon-241.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="png-clipart-dieting-healthy-diet-food-obesity-health-angle-food" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-clipart-dieting-healthy-diet-food-obesity-health-angle-food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -195,9 +192,6 @@
   </data>
   <data name="png-transparent-water-logo-national-interest-market-montpellier-m-i-n-coriovallum-college-agua-television-blue-angle4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-transparent-water-logo-national-interest-market-montpellier-m-i-n-coriovallum-college-agua-television-blue-angle3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unnamed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="png-clipart-united-states-drinking-water-dentist-water-scarcity-glass-of-milk-glass-dentistry" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-clipart-united-states-drinking-water-dentist-water-scarcity-glass-of-milk-glass-dentistry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -219,24 +213,12 @@
   </data>
   <data name="png-clipart-computer-icons-shopping-list-others-angle-text" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-clipart-computer-icons-shopping-list-others-angle-text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="519-5197932_call-icon-png-white-clipart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\519-5197932_call-icon-png-white-clipart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="png-transparent-drinking-water-computer-icons-water-treatment-water-supply-network-peggy-s-blue-angle-service1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png-transparent-drinking-water-computer-icons-water-treatment-water-supply-network-peggy-s-blue-angle-service1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+ </data>
   <data name="png-transparent-water-logo-national-interest-market-montpellier-m-i-n-coriovallum-college-agua-television-blue-angle2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-transparent-water-logo-national-interest-market-montpellier-m-i-n-coriovallum-college-agua-television-blue-angle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="334-3340569_check-list-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\334-3340569_check-list-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="kisspng-nutrition-health-dietitian-food-manzana-png-5b4b58c33017f9.750271291531664579197" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kisspng-nutrition-health-dietitian-food-manzana-png-5b4b58c33017f9.750271291531664579197.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kisspng-calorie-computer-icons-food-symbol-5b33bccbadaf82.5309439015301173237114" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-calorie-computer-icons-food-symbol-5b33bccbadaf82.5309439015301173237114.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kisspng-logo-font-brand-clip-art-united-kingdom-5cbd4af80bec99.4733100815559093680489" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kisspng-logo-font-brand-clip-art-united-kingdom-5cbd4af80bec99.4733100815559093680489.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
