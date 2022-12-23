@@ -73,6 +73,16 @@ namespace GlutensizYasam.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1613681330_59_p_fon_dlya_prezentatsii_pravilnoe_pitanie_691 {
+            get {
+                object obj = ResourceManager.GetObject("1613681330_59-p-fon-dlya-prezentatsii-pravilnoe-pitanie-691", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _165_1650983_housing_financial_options_level_green_icon_png {
             get {
                 object obj = ResourceManager.GetObject("165-1650983_housing-financial-options-level-green-icon-png", resourceCulture);

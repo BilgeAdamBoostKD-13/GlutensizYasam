@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GlutensizYasam.Model.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,25 @@ namespace GlutensizYasam.UI
 {
     public partial class frmBesinlerEkrani : Form
     {
+        Kullanici kullanici;
         public frmBesinlerEkrani()
         {
             InitializeComponent();
         }
+        public frmBesinlerEkrani(Kullanici kullanici)
+        {
+            InitializeComponent();
+            this.kullanici = kullanici;
+        }
 
         private void label4_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

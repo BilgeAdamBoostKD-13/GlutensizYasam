@@ -30,6 +30,60 @@ namespace GlutensizYasam.UI
             frmProfilEkrani frm = new frmProfilEkrani(this.kullanici);
             this.Hide();
             frm.ShowDialog();
+            this.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            frmDiyetListemPaneli frm = new frmDiyetListemPaneli(this.kullanici);
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            frmSuEkrani frm = new frmSuEkrani(this.kullanici);
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            frmBesinlerEkrani frm = new frmBesinlerEkrani(this.kullanici);
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            frmHaftalikProgramOluşturmaEkrani frm = new frmHaftalikProgramOluşturmaEkrani(this.kullanici);
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            frmYemekTarifiOlusturmaEkrani frm = new frmYemekTarifiOlusturmaEkrani(this.kullanici);
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            frmIletisimEkrani frm = new frmIletisimEkrani(this.kullanici);
+            this.Close();
+            frm.ShowDialog();
+            this.Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -32,5 +32,15 @@ namespace GlutensizYasam.UI
             txtHedefKilo.Text = this.kullanici.HedefKilo.ToString();
 
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
