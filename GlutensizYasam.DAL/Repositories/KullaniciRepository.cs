@@ -60,6 +60,13 @@ namespace GlutensizYasam.DAL.Repositories
             }
             return false;
         }
+
+        public int KullaniciIdGetir(string mail)
+        {
+            var index = context.Kullanicilar.Where(x => x.EMail == mail).Select(a => a.ID).ToList();
+            int id = index.First();
+            return id;
+        }
     }
 
     

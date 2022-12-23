@@ -64,6 +64,12 @@ namespace GlutensizYasam.BLL.Services
            
         }
 
+        public int KullaniciIdGetir(string email)
+        {
+            int Id = kullaniciRepository.KullaniciIdGetir(email);
+            return Id;
+        }
+
 
     }
 }

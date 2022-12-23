@@ -112,6 +112,7 @@
             this.Controls.Add(this.txtMailGiris);
             this.Name = "frmSifremiUnuttumEkrani";
             this.Text = "frmSifremiUnuttumEkrani";
+            this.Load += new System.EventHandler(this.frmSifremiUnuttumEkrani_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

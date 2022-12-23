@@ -31,6 +31,11 @@ namespace GlutensizYasam.DAL.Repositories
             return context.Parolalar.Where(a => a.KullaniciId == kullaniciID ).FirstOrDefault();
         }
 
-        
+        public bool Update(Parola parola)
+        {
+            Parola updateParola = GetParolaID(parola.ID);
+            updateParola.UserPassword = parola.UserPassword;
+            return context.SaveChanges() > 0;
+        }
     }
 }
