@@ -19,6 +19,7 @@ namespace GlutensizYasam.UI
     public partial class frmYeniKayitEkrani : Form
     {
         int sayac;
+        string hata;
         KullaniciService kullaniciService;
         ParolaService parolaService;
         public frmYeniKayitEkrani()
@@ -53,7 +54,8 @@ namespace GlutensizYasam.UI
             }
             else
             {
-                MessageBox.Show("Lütfen isim giriniz");
+                hata += "Lütfen isim giriniz \n";
+                //MessageBox.Show("Lütfen isim giriniz");
             }
             if (txtSoyisim.Text != null)
             {
@@ -61,7 +63,8 @@ namespace GlutensizYasam.UI
             }
             else
             {
-                MessageBox.Show("Lütfen soyisim giriniz");
+                //MessageBox.Show("Lütfen soyisim giriniz");
+                hata += "Lütfen soyisim giriniz \n";
             }
             if (txtEmail.Text != null)
             {
@@ -71,12 +74,14 @@ namespace GlutensizYasam.UI
                 }
                 else
                 {
-                    MessageBox.Show("e-mail geçerli formatta değil");
+                    hata += "e-mail geçerli formatta değil \n";
+                    //MessageBox.Show("e-mail geçerli formatta değil");
                 }
             }
             else
             {
-                MessageBox.Show("Lütfen email giriniz");
+                //MessageBox.Show("Lütfen email giriniz");
+                hata += "Lütfen email giriniz \n";
             }
 
             kullanici.Cinsiyet = rbErkek.Checked ? Model.Enums.Cinsiyet.Erkek : Model.Enums.Cinsiyet.Kadin;
@@ -110,7 +115,7 @@ namespace GlutensizYasam.UI
                 kullanici.SporBilgisi = Model.Enums.SporTipi.YuksekSeviyeli;
             }
 
-            if (txtIsim.Text != null && txtSoyisim.Text != null && txtEmail.Text !=null && (
+            if (txtIsim.Text != null && txtSoyisim.Text != null && txtEmail.Text !=null && sayac ==3 && (
                 txtParola.Text.Length>5
                 && txtParola.Text.Any(char.IsLower)
                 && txtParola.Text.Any(char.IsUpper)
@@ -120,10 +125,34 @@ namespace GlutensizYasam.UI
                 MessageBox.Show(check ? "Kullanıcı eklendi" : "Kullanıcı eklenemedi");
             }
             
-            
-            
+            if (sayac == 2)
+            {
+                //MessageBox.Show("Üye olmak için gizlilik politikasını onaylamanız gerekmektedir.");
+                hata += "Üye olmak için gizlilik politikasını onaylamanız gerekmektedir. \n";
+            }
+            else if (sayac == 1)
+            {
+                //MessageBox.Show("Üye olmak üyelik sözleşmesini onaylanamnız gerekmektedir.");
+                hata += "Üye olmak üyelik sözleşmesini onaylanamnız gerekmektedir. \n";
+            }
+            else if (sayac == 0)
+            {
+                //MessageBox.Show("Gizlilik politikası ve üyelik sözleşmesi onaylanması gerekmektedir.");
+                hata += "Gizlilik politikası ve üyelik sözleşmesi onaylanması gerekmektedir. \n";
+            }
 
+            if (txtParola.Text.Length < 6) /*MessageBox.Show("Parolanız 6 karakterden az olamaz");*/ hata += "Parolanız 6 karakterden az olamaz \n";
+            if (!txtParola.Text.Any(char.IsLower)) /*MessageBox.Show("Parolanızda en az 1 küçük harf olmalı");*/ hata += "Parolanızda en az 1 küçük harf olmalı \n";
+            if (!txtParola.Text.Any(char.IsUpper)) /*MessageBox.Show("Parolanızda en az 1 büyük harf olmalı");*/ hata += "Parolanızda en az 1 büyük harf olmalı \n";
+            if (!txtParola.Text.Any(char.IsNumber)) /*MessageBox.Show("Parolanızda en az 1 sayı olmalı");*/ hata += "Parolanızda en az 1 sayı olmalı \n";
+
+            if (hata != null)
+            {
+                MessageBox.Show(hata);
+                hata = null;
+            }
         }
+
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
@@ -197,11 +226,11 @@ namespace GlutensizYasam.UI
         {
             if (cbUyelikSoz.Checked == true)
             {
-                sayac += 1;
+                sayac += 2;
             }
             else
             {
-                sayac -= 1;
+                sayac -= 2;
             }
         }
     }
