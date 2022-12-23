@@ -30,21 +30,55 @@ namespace GlutensizYasam.UI
             txtKilo.Text = this.kullanici.Kilo.ToString();
             txtBoy.Text = this.kullanici.Boy.ToString();
             txtHedefKilo.Text = this.kullanici.HedefKilo.ToString();
-            //if (this.kullanici.Cinsiyet == Model.Enums.Cinsiyet.Erkek)
-            //{
-            //    lblBKI.Text = ((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) + 5).ToString();
-            //}
-            //else if (this.kullanici.Cinsiyet == Model.Enums.Cinsiyet.Kadin)
-            //{
-            //    lblBKI.Text = ((10 * this.kullanici.Kilo) + (6.25) * this.kullanici.Boy - 5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year) - 161).ToString();
-            //}
-            lblBKI.Text = ((this.kullanici.Kilo) / ((this.kullanici.Boy) * (this.kullanici.Boy))).ToString();
+            double boymetre = (this.kullanici.Boy / 100);
+            double boykare = boymetre * boymetre;
+            double kilo = this.kullanici.Kilo;
+            double bki = kilo / boykare;
+            lblBKI.Text = bki.ToString();
 
-            /*
-             * Erkekler için: BMR = 10 × ağırlık (kg) + 6,25 × yükseklik (cm) - 5 × yaş (y) + 5
+            if (this.kullanici.Cinsiyet == Model.Enums.Cinsiyet.Erkek)
+            {
+                if (this.kullanici.SporBilgisi == Model.Enums.SporTipi.SporYok)
+                {
+                    lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) + 5)*1.2).ToString();
+                }
+                else if (this.kullanici.SporBilgisi == Model.Enums.SporTipi.OrtaSeviyeli)
+                {
+                    lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) + 5) * 1.55).ToString();
+                }
+                else
+                {
+                    lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) + 5) * 1.72).ToString();
+                }
+                
+            }
+            else if (this.kullanici.Cinsiyet == Model.Enums.Cinsiyet.Kadin)
+            {
+                if (this.kullanici.SporBilgisi == Model.Enums.SporTipi.SporYok)
+                {
+                    lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) -161) * 1.2).ToString();
+                }
+                else if (this.kullanici.SporBilgisi == Model.Enums.SporTipi.OrtaSeviyeli)
+                {
+                    lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) - 161) * 1.55).ToString();
+                }
+                else
+                {
+                    lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) - 161) * 1.72).ToString();
+                }
+                
+            }
 
-Kadınlar için: BMR = 10 × ağırlık (kg) + 6,25 × yükseklik (cm) - 5 × yaş (y) - 161
-             * */
+            if (this.kullanici.Cinsiyet == Model.Enums.Cinsiyet.Erkek)
+            {
+                lblIdealKilo.Text = ((this.kullanici.Boy - 100) * 0.90).ToString();
+            }
+
+            if (this.kullanici.Cinsiyet == Model.Enums.Cinsiyet.Kadin)
+            {
+                lblIdealKilo.Text = ((this.kullanici.Boy - 100) * 0.85).ToString();
+            }
+                      
 
         }
 

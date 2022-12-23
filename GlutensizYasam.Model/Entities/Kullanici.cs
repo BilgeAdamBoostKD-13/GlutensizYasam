@@ -64,8 +64,8 @@ namespace GlutensizYasam.Model.Entities
         }
         public Cinsiyet Cinsiyet { get; set; }
         public DateTime DogumTarihi { get; set; }
-        private int kilo;
-        public int Kilo // giriş ekranında sadece sayı girişi yaptırmamız gerekiyor. 
+        private double kilo;
+        public double Kilo // giriş ekranında sadece sayı girişi yaptırmamız gerekiyor. 
         {
             get
             {
@@ -78,7 +78,7 @@ namespace GlutensizYasam.Model.Entities
                 else kilo = value;
             }
         }
-        public int Boy { get; set; }  // giriş ekranında sadece sayı girişi yaptırmamız gerekiyor. 
+        public double Boy { get; set; }  // giriş ekranında sadece sayı girişi yaptırmamız gerekiyor. 
         public int HedefKilo { get; set; }  // giriş ekranında sadece sayı girişi yaptırmamız gerekiyor. 
         public KullaniciTipi KullaniciTipi { get; set; }
         public SporTipi SporBilgisi { get; set; }
