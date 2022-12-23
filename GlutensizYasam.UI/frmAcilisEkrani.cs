@@ -34,9 +34,7 @@ namespace GlutensizYasam.UI
                 Kullanici kullanici = kullaniciService.GirisKontrolu(userName, password);
                 if (kullanici != null)
                 {
-                    frmProfilEkrani profilEkrani = new frmProfilEkrani();                                     
-                    profilEkrani.Show();
-                    this.Close();                 
+                    
 
                 }
             }

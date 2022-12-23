@@ -19,6 +19,7 @@ namespace GlutensizYasam.UI
 
         private void frmMDIForm_Load(object sender, EventArgs e)
         {
+           
             ChildForm(new frmAcilisEkrani());
             //diyetListemToolStripMenuItem.Enabled = false;
             //ürünlerToolStripMenuItem.Enabled = false;
@@ -27,7 +28,7 @@ namespace GlutensizYasam.UI
             //haftalıkProgramToolStripMenuItem.Enabled = false;
             //yemekTarifiToolStripMenuItem.Enabled = false;
             //diyetListemToolStripMenuItem.Enabled = false;
-           
+
         }
 
         void ChildForm(Form childForm)//form tipinde bir child form alacak,herhangi bir formu alabalir
