@@ -42,9 +42,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtKilo = new System.Windows.Forms.TextBox();
-            this.txtBoy = new System.Windows.Forms.TextBox();
-            this.txtHedefKilo = new System.Windows.Forms.TextBox();
             this.rbKadin = new System.Windows.Forms.RadioButton();
             this.rbErkek = new System.Windows.Forms.RadioButton();
             this.dateTimePickerDogumTarihi = new System.Windows.Forms.DateTimePicker();
@@ -57,7 +54,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.txtKullaniciAd = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.cbGizlilikPol = new System.Windows.Forms.CheckBox();
             this.cbUyelikSoz = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -65,9 +61,19 @@
             this.linkGirisYap = new System.Windows.Forms.LinkLabel();
             this.grpCinsiyet = new System.Windows.Forms.GroupBox();
             this.grpAktivite = new System.Windows.Forms.GroupBox();
+            this.nudKilo = new System.Windows.Forms.NumericUpDown();
+            this.nudBoy = new System.Windows.Forms.NumericUpDown();
+            this.nudHedefKilo = new System.Windows.Forms.NumericUpDown();
+            this.lblkarakter = new System.Windows.Forms.Label();
+            this.lblkucuk = new System.Windows.Forms.Label();
+            this.lblbuyuk = new System.Windows.Forms.Label();
+            this.lblsayi = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grpCinsiyet.SuspendLayout();
             this.grpAktivite.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudKilo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudBoy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudHedefKilo)).BeginInit();
             this.SuspendLayout();
             // 
             // btnUyeOl
@@ -214,30 +220,6 @@
             this.txtEmail.TabIndex = 24;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
-            // txtKilo
-            // 
-            this.txtKilo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKilo.Location = new System.Drawing.Point(211, 359);
-            this.txtKilo.Name = "txtKilo";
-            this.txtKilo.Size = new System.Drawing.Size(288, 24);
-            this.txtKilo.TabIndex = 25;
-            // 
-            // txtBoy
-            // 
-            this.txtBoy.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoy.Location = new System.Drawing.Point(211, 405);
-            this.txtBoy.Name = "txtBoy";
-            this.txtBoy.Size = new System.Drawing.Size(288, 24);
-            this.txtBoy.TabIndex = 26;
-            // 
-            // txtHedefKilo
-            // 
-            this.txtHedefKilo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHedefKilo.Location = new System.Drawing.Point(211, 452);
-            this.txtHedefKilo.Name = "txtHedefKilo";
-            this.txtHedefKilo.Size = new System.Drawing.Size(288, 24);
-            this.txtHedefKilo.TabIndex = 27;
-            // 
             // rbKadin
             // 
             this.rbKadin.AutoSize = true;
@@ -327,6 +309,7 @@
             this.txtParola.Name = "txtParola";
             this.txtParola.Size = new System.Drawing.Size(381, 26);
             this.txtParola.TabIndex = 36;
+            this.txtParola.TextChanged += new System.EventHandler(this.txtParola_TextChanged);
             // 
             // label9
             // 
@@ -366,17 +349,6 @@
             this.label15.TabIndex = 38;
             this.label15.Text = "Kullanıcı Adı";
             // 
-            // label16
-            // 
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label16.ForeColor = System.Drawing.Color.Red;
-            this.label16.Location = new System.Drawing.Point(525, 272);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(380, 147);
-            this.label16.TabIndex = 40;
-            this.label16.Text = "X En az 1 Küçük harf içermeli.\r\n\r\nX En az 1 Büyük harf içermeli.\r\n\r\nX En az 1 Say" +
-    "ı içermeli.\r\n\r\nX En az 6 karakter uzunluğunda olmalı.";
-            // 
             // cbGizlilikPol
             // 
             this.cbGizlilikPol.AutoSize = true;
@@ -388,6 +360,7 @@
             this.cbGizlilikPol.TabIndex = 41;
             this.cbGizlilikPol.Text = "Gizlilik Politikası metnini okudum ve kabul ediyorum";
             this.cbGizlilikPol.UseVisualStyleBackColor = true;
+            this.cbGizlilikPol.CheckedChanged += new System.EventHandler(this.cbGizlilikPol_CheckedChanged);
             // 
             // cbUyelikSoz
             // 
@@ -400,6 +373,7 @@
             this.cbUyelikSoz.TabIndex = 42;
             this.cbUyelikSoz.Text = "Üyelik Sözleşmesi\'ni okudum, kabul ediyorum";
             this.cbUyelikSoz.UseVisualStyleBackColor = true;
+            this.cbUyelikSoz.CheckedChanged += new System.EventHandler(this.cbUyelikSoz_CheckedChanged);
             // 
             // pictureBox1
             // 
@@ -459,19 +433,120 @@
             this.grpAktivite.TabStop = false;
             this.grpAktivite.Text = "Fiziksel Aktivite";
             // 
+            // nudKilo
+            // 
+            this.nudKilo.Location = new System.Drawing.Point(211, 366);
+            this.nudKilo.Maximum = new decimal(new int[] {
+            600,
+            0,
+            0,
+            0});
+            this.nudKilo.Name = "nudKilo";
+            this.nudKilo.Size = new System.Drawing.Size(288, 20);
+            this.nudKilo.TabIndex = 47;
+            this.nudKilo.Value = new decimal(new int[] {
+            75,
+            0,
+            0,
+            0});
+            // 
+            // nudBoy
+            // 
+            this.nudBoy.Location = new System.Drawing.Point(211, 409);
+            this.nudBoy.Maximum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+            this.nudBoy.Name = "nudBoy";
+            this.nudBoy.Size = new System.Drawing.Size(288, 20);
+            this.nudBoy.TabIndex = 47;
+            this.nudBoy.Value = new decimal(new int[] {
+            170,
+            0,
+            0,
+            0});
+            // 
+            // nudHedefKilo
+            // 
+            this.nudHedefKilo.Location = new System.Drawing.Point(211, 455);
+            this.nudHedefKilo.Maximum = new decimal(new int[] {
+            600,
+            0,
+            0,
+            0});
+            this.nudHedefKilo.Name = "nudHedefKilo";
+            this.nudHedefKilo.Size = new System.Drawing.Size(288, 20);
+            this.nudHedefKilo.TabIndex = 47;
+            this.nudHedefKilo.Value = new decimal(new int[] {
+            75,
+            0,
+            0,
+            0});
+            // 
+            // lblkarakter
+            // 
+            this.lblkarakter.AutoSize = true;
+            this.lblkarakter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblkarakter.ForeColor = System.Drawing.Color.Red;
+            this.lblkarakter.Location = new System.Drawing.Point(526, 254);
+            this.lblkarakter.Name = "lblkarakter";
+            this.lblkarakter.Size = new System.Drawing.Size(297, 18);
+            this.lblkarakter.TabIndex = 48;
+            this.lblkarakter.Text = "X En az 6 karakter uzunluğunda olmalı";
+            // 
+            // lblkucuk
+            // 
+            this.lblkucuk.AutoSize = true;
+            this.lblkucuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblkucuk.ForeColor = System.Drawing.Color.Red;
+            this.lblkucuk.Location = new System.Drawing.Point(526, 286);
+            this.lblkucuk.Name = "lblkucuk";
+            this.lblkucuk.Size = new System.Drawing.Size(229, 18);
+            this.lblkucuk.TabIndex = 48;
+            this.lblkucuk.Text = "X En az 1 küçük harf içermeli";
+            // 
+            // lblbuyuk
+            // 
+            this.lblbuyuk.AutoSize = true;
+            this.lblbuyuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblbuyuk.ForeColor = System.Drawing.Color.Red;
+            this.lblbuyuk.Location = new System.Drawing.Point(526, 318);
+            this.lblbuyuk.Name = "lblbuyuk";
+            this.lblbuyuk.Size = new System.Drawing.Size(228, 18);
+            this.lblbuyuk.TabIndex = 48;
+            this.lblbuyuk.Text = "X En az 1 büyük harf içermeli";
+            // 
+            // lblsayi
+            // 
+            this.lblsayi.AutoSize = true;
+            this.lblsayi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblsayi.ForeColor = System.Drawing.Color.Red;
+            this.lblsayi.Location = new System.Drawing.Point(526, 350);
+            this.lblsayi.Name = "lblsayi";
+            this.lblsayi.Size = new System.Drawing.Size(182, 18);
+            this.lblsayi.TabIndex = 48;
+            this.lblsayi.Text = "X En az 1 Sayı içermeli";
+            // 
             // frmYeniKayitEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(970, 699);
+            this.Controls.Add(this.lblsayi);
+            this.Controls.Add(this.lblbuyuk);
+            this.Controls.Add(this.lblkucuk);
+            this.Controls.Add(this.lblkarakter);
+            this.Controls.Add(this.nudHedefKilo);
+            this.Controls.Add(this.nudBoy);
+            this.Controls.Add(this.nudKilo);
             this.Controls.Add(this.grpAktivite);
             this.Controls.Add(this.grpCinsiyet);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.linkGirisYap);
             this.Controls.Add(this.cbUyelikSoz);
             this.Controls.Add(this.cbGizlilikPol);
-            this.Controls.Add(this.label16);
             this.Controls.Add(this.txtKullaniciAd);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.txtParolaTekrar);
@@ -479,10 +554,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.dateTimePickerDogumTarihi);
-            this.Controls.Add(this.txtBoy);
-            this.Controls.Add(this.txtHedefKilo);
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtKilo);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
@@ -497,16 +569,19 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtSoyisim);
             this.Controls.Add(this.label3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmYeniKayitEkrani";
-            this.Text = "frmYeniKayitEkrani";
+            this.Text = "Kayıt Ekranı";
             this.Load += new System.EventHandler(this.frmYeniKayitEkrani_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.grpCinsiyet.ResumeLayout(false);
             this.grpCinsiyet.PerformLayout();
             this.grpAktivite.ResumeLayout(false);
             this.grpAktivite.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudKilo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudBoy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudHedefKilo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -528,9 +603,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtKilo;
-        private System.Windows.Forms.TextBox txtBoy;
-        private System.Windows.Forms.TextBox txtHedefKilo;
         private System.Windows.Forms.RadioButton rbKadin;
         private System.Windows.Forms.RadioButton rbErkek;
         private System.Windows.Forms.DateTimePicker dateTimePickerDogumTarihi;
@@ -543,12 +615,18 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtKullaniciAd;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.CheckBox cbGizlilikPol;
         private System.Windows.Forms.CheckBox cbUyelikSoz;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.LinkLabel linkGirisYap;
         private System.Windows.Forms.GroupBox grpCinsiyet;
         private System.Windows.Forms.GroupBox grpAktivite;
+        private System.Windows.Forms.NumericUpDown nudKilo;
+        private System.Windows.Forms.NumericUpDown nudBoy;
+        private System.Windows.Forms.NumericUpDown nudHedefKilo;
+        private System.Windows.Forms.Label lblkarakter;
+        private System.Windows.Forms.Label lblkucuk;
+        private System.Windows.Forms.Label lblbuyuk;
+        private System.Windows.Forms.Label lblsayi;
     }
 }

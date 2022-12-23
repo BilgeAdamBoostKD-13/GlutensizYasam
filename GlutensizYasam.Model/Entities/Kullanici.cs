@@ -55,7 +55,11 @@ namespace GlutensizYasam.Model.Entities
             set
             {
                 if (value.Length >= 2) soyisim = value;
-                else throw new Exception("Soyad en az 2 karakterli olmalıdır.");
+                else
+                {
+                    throw new Exception("Soyad en az 2 karakterli olmalıdır.");
+                }
+
             }
         }
         public Cinsiyet Cinsiyet { get; set; }
