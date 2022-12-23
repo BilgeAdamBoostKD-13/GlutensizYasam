@@ -30,6 +30,6 @@ namespace GlutensizYasam.UI
             }
         }
 
-        public List<Kullanici> kullanilanEmail = db.Kullanicilar.ToList();
+        
     }
 }
