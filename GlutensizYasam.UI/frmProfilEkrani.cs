@@ -18,7 +18,7 @@ namespace GlutensizYasam.UI
         {
             InitializeComponent();
         }
-
+        
         public frmProfilEkrani(Kullanici kullanici)
         {
             InitializeComponent();
@@ -35,7 +35,10 @@ namespace GlutensizYasam.UI
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frmAnaEkran frm=new frmAnaEkran(kullanici);
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)

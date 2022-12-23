@@ -26,7 +26,10 @@ namespace GlutensizYasam.UI
 
         private void label4_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frmAnaEkran frm = new frmAnaEkran(kullanici);
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

@@ -31,6 +31,8 @@ namespace GlutensizYasam.UI
             this.Hide();
             frm.ShowDialog();
             this.Show();
+
+
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -76,7 +78,7 @@ namespace GlutensizYasam.UI
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             frmIletisimEkrani frm = new frmIletisimEkrani(this.kullanici);
-            this.Close();
+            this.Hide();
             frm.ShowDialog();
             this.Show();
         }
