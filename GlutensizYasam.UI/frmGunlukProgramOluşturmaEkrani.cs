@@ -47,5 +47,10 @@ namespace GlutensizYasam.UI
         {
             
         }
+
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
