@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace GlutensizYasam.UI
 {
-    public partial class frmIletisimEkranı : Form
+    public partial class frmAdminEkrani : Form
     {
-        public frmIletisimEkranı()
+        public frmAdminEkrani()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

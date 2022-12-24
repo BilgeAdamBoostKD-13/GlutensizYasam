@@ -1,6 +1,6 @@
 ﻿namespace GlutensizYasam.UI
 {
-    partial class frmIletisimEkranı
+    partial class frmIletisimEkrani
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIletisimEkrani));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,7 +43,11 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -50,9 +55,9 @@
             this.label1.BackColor = System.Drawing.Color.LimeGreen;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(-1, 9);
+            this.label1.Location = new System.Drawing.Point(-2, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1483, 70);
+            this.label1.Size = new System.Drawing.Size(1484, 71);
             this.label1.TabIndex = 0;
             this.label1.Text = "İLETİŞİM";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -62,7 +67,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Orange;
-            this.label2.Location = new System.Drawing.Point(1026, 921);
+            this.label2.Location = new System.Drawing.Point(1026, 922);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(431, 46);
             this.label2.TabIndex = 1;
@@ -110,15 +115,15 @@
             // 
             // richTextBoxMesaj
             // 
-            this.richTextBoxMesaj.Location = new System.Drawing.Point(455, 511);
+            this.richTextBoxMesaj.Location = new System.Drawing.Point(454, 511);
             this.richTextBoxMesaj.Name = "richTextBoxMesaj";
-            this.richTextBoxMesaj.Size = new System.Drawing.Size(954, 300);
+            this.richTextBoxMesaj.Size = new System.Drawing.Size(954, 299);
             this.richTextBoxMesaj.TabIndex = 6;
             this.richTextBoxMesaj.Text = "";
             // 
             // txtTelefonNumarası
             // 
-            this.txtTelefonNumarası.Location = new System.Drawing.Point(455, 385);
+            this.txtTelefonNumarası.Location = new System.Drawing.Point(454, 385);
             this.txtTelefonNumarası.Multiline = true;
             this.txtTelefonNumarası.Name = "txtTelefonNumarası";
             this.txtTelefonNumarası.Size = new System.Drawing.Size(954, 53);
@@ -126,7 +131,7 @@
             // 
             // txtIsım
             // 
-            this.txtIsım.Location = new System.Drawing.Point(455, 198);
+            this.txtIsım.Location = new System.Drawing.Point(454, 198);
             this.txtIsım.Multiline = true;
             this.txtIsım.Name = "txtIsım";
             this.txtIsım.Size = new System.Drawing.Size(954, 53);
@@ -134,7 +139,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(455, 292);
+            this.txtEmail.Location = new System.Drawing.Point(454, 292);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(954, 53);
@@ -147,7 +152,7 @@
             this.btnGonder.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnGonder.Location = new System.Drawing.Point(1086, 817);
             this.btnGonder.Name = "btnGonder";
-            this.btnGonder.Size = new System.Drawing.Size(323, 69);
+            this.btnGonder.Size = new System.Drawing.Size(322, 69);
             this.btnGonder.TabIndex = 10;
             this.btnGonder.Text = "GÖNDER";
             this.btnGonder.UseVisualStyleBackColor = false;
@@ -156,7 +161,7 @@
             // 
             this.label12.Font = new System.Drawing.Font("MV Boli", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Orange;
-            this.label12.Location = new System.Drawing.Point(121, 115);
+            this.label12.Location = new System.Drawing.Point(122, 115);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(212, 57);
             this.label12.TabIndex = 17;
@@ -168,26 +173,52 @@
             this.label7.ForeColor = System.Drawing.Color.LimeGreen;
             this.label7.Location = new System.Drawing.Point(318, 115);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(144, 57);
+            this.label7.Size = new System.Drawing.Size(184, 57);
             this.label7.TabIndex = 16;
             this.label7.Text = "Yasam";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GlutensizYasam.UI.Properties.Resources.wheat_allergy_amber_icon_15413;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 93);
+            this.pictureBox1.Location = new System.Drawing.Point(38, 92);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(95, 89);
+            this.pictureBox1.Size = new System.Drawing.Size(94, 89);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
-            // frmIletisimEkranı
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.LimeGreen;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(1368, 9);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(89, 71);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 62;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.LimeGreen;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(89, 71);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 63;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // frmIletisimEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1478, 1021);
+            this.ClientSize = new System.Drawing.Size(1478, 1022);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label7);
@@ -203,10 +234,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmIletisimEkranı";
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "frmIletisimEkrani";
             this.Text = "frmIletisimEkranı";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,5 +261,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

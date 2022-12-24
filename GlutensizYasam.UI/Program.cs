@@ -16,7 +16,7 @@ namespace GlutensizYasam.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMDIForm());
+            Application.Run(new frmAcilisEkrani());
         }
     }
 }

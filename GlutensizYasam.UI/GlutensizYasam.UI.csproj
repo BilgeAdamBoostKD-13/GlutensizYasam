@@ -42,7 +42,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -62,29 +64,65 @@
     <Compile Include="frmAcilisEkrani.Designer.cs">
       <DependentUpon>frmAcilisEkrani.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmIletisimEkranı.cs">
+    <Compile Include="frmAdminEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmIletisimEkranı.Designer.cs">
-      <DependentUpon>frmIletisimEkranı.cs</DependentUpon>
+    <Compile Include="frmAdminEkrani.Designer.cs">
+      <DependentUpon>frmAdminEkrani.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMDIForm.cs">
+    <Compile Include="frmAnaEkran.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMDIForm.Designer.cs">
-      <DependentUpon>frmMDIForm.cs</DependentUpon>
+    <Compile Include="frmAnaEkran.Designer.cs">
+      <DependentUpon>frmAnaEkran.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProfilEkranı.cs">
+    <Compile Include="frmBesinlerEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProfilEkranı.Designer.cs">
-      <DependentUpon>frmProfilEkranı.cs</DependentUpon>
+    <Compile Include="frmBesinlerEkrani.Designer.cs">
+      <DependentUpon>frmBesinlerEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiyetListemPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiyetListemPaneli.Designer.cs">
+      <DependentUpon>frmDiyetListemPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGunlukProgramOluşturmaEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGunlukProgramOluşturmaEkrani.Designer.cs">
+      <DependentUpon>frmGunlukProgramOluşturmaEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIletisimEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIletisimEkrani.Designer.cs">
+      <DependentUpon>frmIletisimEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfilEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfilEkrani.Designer.cs">
+      <DependentUpon>frmProfilEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSifremiUnuttumEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSifremiUnuttumEkrani.Designer.cs">
+      <DependentUpon>frmSifremiUnuttumEkrani.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSuEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSuEkrani.Designer.cs">
       <DependentUpon>frmSuEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYemekTarifiOlusturmaEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYemekTarifiOlusturmaEkrani.Designer.cs">
+      <DependentUpon>frmYemekTarifiOlusturmaEkrani.cs</DependentUpon>
     </Compile>
     <Compile Include="frmYeniKayitEkrani.cs">
       <SubType>Form</SubType>
@@ -97,36 +135,54 @@
     <EmbeddedResource Include="frmAcilisEkrani.resx">
       <DependentUpon>frmAcilisEkrani.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmIletisimEkranı.resx">
-      <DependentUpon>frmIletisimEkranı.cs</DependentUpon>
+    <EmbeddedResource Include="frmAdminEkrani.resx">
+      <DependentUpon>frmAdminEkrani.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMDIForm.resx">
-      <DependentUpon>frmMDIForm.cs</DependentUpon>
+    <EmbeddedResource Include="frmAnaEkran.resx">
+      <DependentUpon>frmAnaEkran.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProfilEkranı.resx">
-      <DependentUpon>frmProfilEkranı.cs</DependentUpon>
+    <EmbeddedResource Include="frmBesinlerEkrani.resx">
+      <DependentUpon>frmBesinlerEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDiyetListemPaneli.resx">
+      <DependentUpon>frmDiyetListemPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGunlukProgramOluşturmaEkrani.resx">
+      <DependentUpon>frmGunlukProgramOluşturmaEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIletisimEkrani.resx">
+      <DependentUpon>frmIletisimEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfilEkrani.resx">
+      <DependentUpon>frmProfilEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSifremiUnuttumEkrani.resx">
+      <DependentUpon>frmSifremiUnuttumEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSuEkrani.resx">
       <DependentUpon>frmSuEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYemekTarifiOlusturmaEkrani.resx">
+      <DependentUpon>frmYemekTarifiOlusturmaEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmYeniKayitEkrani.resx">
       <DependentUpon>frmYeniKayitEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -171,6 +227,86 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\su.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GlutensizYasam.BLL\GlutensizYasam.BLL.csproj">
+      <Project>{842FC8F0-6027-431A-BE12-F844063B10A9}</Project>
+      <Name>GlutensizYasam.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlutensizYasam.DAL\GlutensizYasam.DAL.csproj">
+      <Project>{B65ECF55-5F5C-4A5D-AE0A-4BD1D03BE068}</Project>
+      <Name>GlutensizYasam.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlutensizYasam.Model\GlutensizYasam.Model.csproj">
+      <Project>{7BD9D4AB-9CB2-40BF-8508-60EFEAD41365}</Project>
+      <Name>GlutensizYasam.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1613681330_59-p-fon-dlya-prezentatsii-pravilnoe-pitanie-69.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-black-person-symbol-art-computer-icons-user-profile-avatar-profile-heroes-profile-user-interface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-lunch-meal-breakfast-dinner-breakfast-food-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-drinking-water-logo-axalta-coating-systems-urine-test-leaf-service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4984467.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-shopping-list-others-angle-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchen-utensil-logo-rolling-pins-cook-png-favpng-7iwYTPCeD9U0hVRVbup0k4Xhf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-dieting-healthy-diet-food-obesity-health-angle-food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-nutrition-health-dietitian-food-manzana-png-5b4b58c33017f9.750271291531664579197.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contactno..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\165-1650983_housing-financial-options-level-green-icon-png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\165-1650983_housing-financial-options-level-green-icon-png2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-drinking-water-logo-axalta-coating-systems-urine-test-leaf-service1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-water-logo-national-interest-market-montpellier-m-i-n-coriovallum-college-agua-television-blue-angle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3f2ae8fc132bafca49a23144a28dbfcb1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-water-logo-national-interest-market-montpellier-m-i-n-coriovallum-college-agua-television-blue-angle2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\168-1686888_diet-icon-3d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-water-logo-national-interest-market-montpellier-m-i-n-coriovallum-college-agua-television-blue-angle3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-drinking-water-computer-icons-water-treatment-water-supply-network-peggy-s-blue-angle-service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\165-1650983_housing-financial-options-level-green-icon-png3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheat-allergy-amber-icon_154131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1613681330_59-p-fon-dlya-prezentatsii-pravilnoe-pitanie-691.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

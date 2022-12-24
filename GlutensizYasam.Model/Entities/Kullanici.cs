@@ -17,14 +17,69 @@ namespace GlutensizYasam.Model.Entities
             GunlukPlanlar = new HashSet<GunlukPlan>();
 
         }
-        public string EMail { get; set; }
-        public string Isim { get; set; }
-        public string SoyIsim { get; set; }
+        private string email;
+        public string EMail
+        {
+            get
+            {
+                return email;
+            }
+            set
+            {
+                if (value.Contains("@")) email = value;
+                else throw new Exception("Lütfen mail adresinizi doğru giriniz.");
+            }
+        }
+        private string isim;
+        public string Isim // giriş ekranında sadece harf girişi yaptırmamız gerekiyor
+        {
+            get
+            {
+                return isim;
+            }
+            set
+            {
+                if (value.Length >= 2) isim = value;
+                else throw new Exception("Ad en az 2 karakterli olmalıdır.");
+
+            }
+        }
+        private string soyisim;
+        public string SoyIsim // giriş ekranında sadece harf girişi yaptırmamız gerekiyor
+        {
+            get
+            {
+                return soyisim;
+            }
+
+            set
+            {
+                if (value.Length >= 2) soyisim = value;
+                else
+                {
+                    throw new Exception("Soyad en az 2 karakterli olmalıdır.");
+                }
+
+            }
+        }
         public Cinsiyet Cinsiyet { get; set; }
-        public DateTime DogumTarihi { get; set; }        
-        public int Kilo { get; set; }
-        public int Boy { get; set; }
-        public int HedefKilo { get; set; }
+        public DateTime DogumTarihi { get; set; }
+        private double kilo;
+        public double Kilo // giriş ekranında sadece sayı girişi yaptırmamız gerekiyor. 
+        {
+            get
+            {
+                return kilo;
+            }
+            set
+            {                
+                if (value < 0) throw new Exception("Lütfen 0 dan küçük bir sayı girmeyiniz.!");
+                else if (value >= 600) throw new Exception("Çok büyük bir sayı girdiniz.!");
+                else kilo = value;
+            }
+        }
+        public double Boy { get; set; }  // giriş ekranında sadece sayı girişi yaptırmamız gerekiyor. 
+        public int HedefKilo { get; set; }  // giriş ekranında sadece sayı girişi yaptırmamız gerekiyor. 
         public KullaniciTipi KullaniciTipi { get; set; }
         public SporTipi SporBilgisi { get; set; }
 

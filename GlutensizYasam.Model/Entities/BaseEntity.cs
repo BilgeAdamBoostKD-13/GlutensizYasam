@@ -9,5 +9,6 @@ namespace GlutensizYasam.Model.Entities
     public abstract class BaseEntity
     {
         public int ID { get; set; }
+        //public DateTime OlusturulmaTarihi { get; set; }
     }
 }
