@@ -78,6 +78,43 @@ namespace GlutensizYasam.Model.Entities
                 else kilo = value;
             }
         }
+        public double GunlukKaloriIhtiyaci
+        { 
+            get
+            {
+                if (Cinsiyet == Model.Enums.Cinsiyet.Erkek)
+                {
+                    if (SporBilgisi == Model.Enums.SporTipi.SporYok)
+                    {
+                      return (((10 * kilo) + (6.25 * Boy) - (5 * (DateTime.Now.Year - DogumTarihi.Year)) + 5) * 1.2);
+                    }
+                   else if (SporBilgisi == Model.Enums.SporTipi.OrtaSeviyeli)
+                    {
+                        return (((10 * kilo) + (6.25 * Boy) - (5 * (DateTime.Now.Year - DogumTarihi.Year)) + 5) * 1.55);
+                    }
+                    else
+                    {
+                        return (((10 * kilo) + (6.25 * Boy) - (5 * (DateTime.Now.Year - DogumTarihi.Year)) + 5) * 1.72);
+                    }
+                }
+                else
+                {
+                    if (SporBilgisi == Model.Enums.SporTipi.SporYok)
+                    {
+                        return (((10 * kilo) + (6.25 * Boy) - (5 * (DateTime.Now.Year - DogumTarihi.Year)) - 161) * 1.2);
+                    }
+                    else if(SporBilgisi == Model.Enums.SporTipi.OrtaSeviyeli)
+                    {
+                        return (((10 * kilo) + (6.25 * Boy) - (5 * (DateTime.Now.Year - DogumTarihi.Year)) - 161) * 1.55);
+                    }
+                    else
+                    {
+                        return (((10 * kilo) + (6.25 * Boy) - (5 * (DateTime.Now.Year - DogumTarihi.Year)) - 161) * 1.72);
+                    }
+             
+                }
+            }
+        }
         public double Boy { get; set; }  // giriş ekranında sadece sayı girişi yaptırmamız gerekiyor. 
         public int HedefKilo { get; set; }  // giriş ekranında sadece sayı girişi yaptırmamız gerekiyor. 
         public KullaniciTipi KullaniciTipi { get; set; }

@@ -43,6 +43,7 @@ namespace GlutensizYasam.UI
             txtKilo.Text = this.kullanici.Kilo.ToString();
             txtBoy.Text = this.kullanici.Boy.ToString();
             txtHedefKilo.Text = this.kullanici.HedefKilo.ToString();
+            lblKalori.Text = kullanici.GunlukKaloriIhtiyaci.ToString();
             KiloBilgisiDoldur(haftalikKiloKontrolleri);
             Hesapla(); 
 
@@ -97,38 +98,38 @@ namespace GlutensizYasam.UI
             lblBKI.Text = bki.ToString();
             string isimsoyisim = $"{this.kullanici.Isim} {this.kullanici.SoyIsim} ";
             lblKullanıcıIsimSoyisim.Text = isimsoyisim;
-            if (this.kullanici.Cinsiyet == Model.Enums.Cinsiyet.Erkek)
-            {
-                if (this.kullanici.SporBilgisi == Model.Enums.SporTipi.SporYok)
-                {
-                    lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) + 5) * 1.2).ToString();
-                }
-                else if (this.kullanici.SporBilgisi == Model.Enums.SporTipi.OrtaSeviyeli)
-                {
-                    lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) + 5) * 1.55).ToString();
-                }
-                else
-                {
-                    lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) + 5) * 1.72).ToString();
-                }
+            //if (this.kullanici.Cinsiyet == Model.Enums.Cinsiyet.Erkek)
+            //{
+            //    if (this.kullanici.SporBilgisi == Model.Enums.SporTipi.SporYok)
+            //    {
+            //        lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) + 5) * 1.2).ToString();
+            //    }
+            //    else if (this.kullanici.SporBilgisi == Model.Enums.SporTipi.OrtaSeviyeli)
+            //    {
+            //        lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) + 5) * 1.55).ToString();
+            //    }
+            //    else
+            //    {
+            //        lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) + 5) * 1.72).ToString();
+            //    }
 
-            }
-            else if (this.kullanici.Cinsiyet == Model.Enums.Cinsiyet.Kadin)
-            {
-                if (this.kullanici.SporBilgisi == Model.Enums.SporTipi.SporYok)
-                {
-                    lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) - 161) * 1.2).ToString();
-                }
-                else if (this.kullanici.SporBilgisi == Model.Enums.SporTipi.OrtaSeviyeli)
-                {
-                    lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) - 161) * 1.55).ToString();
-                }
-                else
-                {
-                    lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) - 161) * 1.72).ToString();
-                }
+            //}
+            //else if (this.kullanici.Cinsiyet == Model.Enums.Cinsiyet.Kadin)
+            //{
+            //    if (this.kullanici.SporBilgisi == Model.Enums.SporTipi.SporYok)
+            //    {
+            //        lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) - 161) * 1.2).ToString();
+            //    }
+            //    else if (this.kullanici.SporBilgisi == Model.Enums.SporTipi.OrtaSeviyeli)
+            //    {
+            //        lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) - 161) * 1.55).ToString();
+            //    }
+            //    else
+            //    {
+            //        lblKalori.Text = (((10 * this.kullanici.Kilo) + (6.25 * this.kullanici.Boy) - (5 * (DateTime.Now.Year - this.kullanici.DogumTarihi.Year)) - 161) * 1.72).ToString();
+            //    }
 
-            }
+            //}
 
             if (this.kullanici.Cinsiyet == Model.Enums.Cinsiyet.Erkek)
             {

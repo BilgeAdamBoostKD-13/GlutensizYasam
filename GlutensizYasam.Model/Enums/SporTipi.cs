@@ -9,7 +9,6 @@ namespace GlutensizYasam.Model.Enums
     public enum SporTipi
     {
         SporYok,
-        AzSeviyeli,
         OrtaSeviyeli,
         YuksekSeviyeli
     }

@@ -33,20 +33,12 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanelKahvalti = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnGuncelleKahvalti = new System.Windows.Forms.Button();
             this.btnSilKahvalti = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanelAraOgun1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnGuncelleAra1 = new System.Windows.Forms.Button();
             this.btnSilAra1 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanelOgleYemegi = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnGuncelleOgle = new System.Windows.Forms.Button();
             this.btnSilOgle = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanelAksamYemegi = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnGuncelleAksam = new System.Windows.Forms.Button();
             this.btnSilAksam = new System.Windows.Forms.Button();
             this.btnKaydet1 = new System.Windows.Forms.Button();
             this.btnBitir = new System.Windows.Forms.Button();
@@ -57,9 +49,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.listBoxBesinler = new System.Windows.Forms.ListBox();
             this.txtArananBesinOgesi = new System.Windows.Forms.TextBox();
-            this.btnAra = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbGidecekOgun = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lstViewKahvalti = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lstViewOgle = new System.Windows.Forms.ListView();
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lstViewAra = new System.Windows.Forms.ListView();
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lstViewAksam = new System.Windows.Forms.ListView();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -106,39 +108,17 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.flowLayoutPanelKahvalti);
-            this.groupBox1.Controls.Add(this.btnGuncelleKahvalti);
+            this.groupBox1.Controls.Add(this.lstViewKahvalti);
             this.groupBox1.Controls.Add(this.btnSilKahvalti);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(243, 150);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(175, 330);
             this.groupBox1.TabIndex = 51;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "KAHVALTI";
-            // 
-            // flowLayoutPanelKahvalti
-            // 
-            this.flowLayoutPanelKahvalti.Location = new System.Drawing.Point(11, 16);
-            this.flowLayoutPanelKahvalti.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.flowLayoutPanelKahvalti.Name = "flowLayoutPanelKahvalti";
-            this.flowLayoutPanelKahvalti.Size = new System.Drawing.Size(153, 260);
-            this.flowLayoutPanelKahvalti.TabIndex = 0;
-            // 
-            // btnGuncelleKahvalti
-            // 
-            this.btnGuncelleKahvalti.BackColor = System.Drawing.Color.Orange;
-            this.btnGuncelleKahvalti.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGuncelleKahvalti.ForeColor = System.Drawing.Color.White;
-            this.btnGuncelleKahvalti.Location = new System.Drawing.Point(94, 291);
-            this.btnGuncelleKahvalti.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnGuncelleKahvalti.Name = "btnGuncelleKahvalti";
-            this.btnGuncelleKahvalti.Size = new System.Drawing.Size(70, 31);
-            this.btnGuncelleKahvalti.TabIndex = 53;
-            this.btnGuncelleKahvalti.Text = "GÜNCELLE";
-            this.btnGuncelleKahvalti.UseVisualStyleBackColor = false;
             // 
             // btnSilKahvalti
             // 
@@ -146,48 +126,26 @@
             this.btnSilKahvalti.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSilKahvalti.ForeColor = System.Drawing.Color.White;
             this.btnSilKahvalti.Location = new System.Drawing.Point(11, 291);
-            this.btnSilKahvalti.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSilKahvalti.Margin = new System.Windows.Forms.Padding(2);
             this.btnSilKahvalti.Name = "btnSilKahvalti";
-            this.btnSilKahvalti.Size = new System.Drawing.Size(43, 31);
+            this.btnSilKahvalti.Size = new System.Drawing.Size(153, 31);
             this.btnSilKahvalti.TabIndex = 52;
             this.btnSilKahvalti.Text = "SİL";
             this.btnSilKahvalti.UseVisualStyleBackColor = false;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.flowLayoutPanelAraOgun1);
-            this.groupBox3.Controls.Add(this.btnGuncelleAra1);
+            this.groupBox3.Controls.Add(this.lstViewAra);
             this.groupBox3.Controls.Add(this.btnSilAra1);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox3.Location = new System.Drawing.Point(602, 151);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(175, 330);
             this.groupBox3.TabIndex = 58;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "ARA ÖĞÜN";
-            // 
-            // flowLayoutPanelAraOgun1
-            // 
-            this.flowLayoutPanelAraOgun1.Location = new System.Drawing.Point(11, 16);
-            this.flowLayoutPanelAraOgun1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.flowLayoutPanelAraOgun1.Name = "flowLayoutPanelAraOgun1";
-            this.flowLayoutPanelAraOgun1.Size = new System.Drawing.Size(153, 260);
-            this.flowLayoutPanelAraOgun1.TabIndex = 0;
-            // 
-            // btnGuncelleAra1
-            // 
-            this.btnGuncelleAra1.BackColor = System.Drawing.Color.Orange;
-            this.btnGuncelleAra1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGuncelleAra1.ForeColor = System.Drawing.Color.White;
-            this.btnGuncelleAra1.Location = new System.Drawing.Point(101, 291);
-            this.btnGuncelleAra1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnGuncelleAra1.Name = "btnGuncelleAra1";
-            this.btnGuncelleAra1.Size = new System.Drawing.Size(70, 31);
-            this.btnGuncelleAra1.TabIndex = 53;
-            this.btnGuncelleAra1.Text = "GÜNCELLE";
-            this.btnGuncelleAra1.UseVisualStyleBackColor = false;
             // 
             // btnSilAra1
             // 
@@ -195,48 +153,26 @@
             this.btnSilAra1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSilAra1.ForeColor = System.Drawing.Color.White;
             this.btnSilAra1.Location = new System.Drawing.Point(11, 291);
-            this.btnSilAra1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSilAra1.Margin = new System.Windows.Forms.Padding(2);
             this.btnSilAra1.Name = "btnSilAra1";
-            this.btnSilAra1.Size = new System.Drawing.Size(43, 31);
+            this.btnSilAra1.Size = new System.Drawing.Size(153, 31);
             this.btnSilAra1.TabIndex = 52;
             this.btnSilAra1.Text = "SİL";
             this.btnSilAra1.UseVisualStyleBackColor = false;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.flowLayoutPanelOgleYemegi);
-            this.groupBox4.Controls.Add(this.btnGuncelleOgle);
+            this.groupBox4.Controls.Add(this.lstViewOgle);
             this.groupBox4.Controls.Add(this.btnSilOgle);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox4.Location = new System.Drawing.Point(422, 151);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(175, 330);
             this.groupBox4.TabIndex = 58;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "ÖĞLE ÖĞÜNÜ";
-            // 
-            // flowLayoutPanelOgleYemegi
-            // 
-            this.flowLayoutPanelOgleYemegi.Location = new System.Drawing.Point(11, 16);
-            this.flowLayoutPanelOgleYemegi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.flowLayoutPanelOgleYemegi.Name = "flowLayoutPanelOgleYemegi";
-            this.flowLayoutPanelOgleYemegi.Size = new System.Drawing.Size(153, 260);
-            this.flowLayoutPanelOgleYemegi.TabIndex = 0;
-            // 
-            // btnGuncelleOgle
-            // 
-            this.btnGuncelleOgle.BackColor = System.Drawing.Color.Orange;
-            this.btnGuncelleOgle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGuncelleOgle.ForeColor = System.Drawing.Color.White;
-            this.btnGuncelleOgle.Location = new System.Drawing.Point(101, 291);
-            this.btnGuncelleOgle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnGuncelleOgle.Name = "btnGuncelleOgle";
-            this.btnGuncelleOgle.Size = new System.Drawing.Size(70, 31);
-            this.btnGuncelleOgle.TabIndex = 53;
-            this.btnGuncelleOgle.Text = "GÜNCELLE";
-            this.btnGuncelleOgle.UseVisualStyleBackColor = false;
             // 
             // btnSilOgle
             // 
@@ -244,48 +180,27 @@
             this.btnSilOgle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSilOgle.ForeColor = System.Drawing.Color.White;
             this.btnSilOgle.Location = new System.Drawing.Point(11, 291);
-            this.btnSilOgle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSilOgle.Margin = new System.Windows.Forms.Padding(2);
             this.btnSilOgle.Name = "btnSilOgle";
-            this.btnSilOgle.Size = new System.Drawing.Size(43, 31);
+            this.btnSilOgle.Size = new System.Drawing.Size(153, 31);
             this.btnSilOgle.TabIndex = 52;
             this.btnSilOgle.Text = "SİL";
             this.btnSilOgle.UseVisualStyleBackColor = false;
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.flowLayoutPanelAksamYemegi);
-            this.groupBox5.Controls.Add(this.btnGuncelleAksam);
+            this.groupBox5.Controls.Add(this.lstViewAksam);
+            this.groupBox5.Controls.Add(this.listView2);
             this.groupBox5.Controls.Add(this.btnSilAksam);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox5.Location = new System.Drawing.Point(781, 150);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox5.Size = new System.Drawing.Size(175, 330);
             this.groupBox5.TabIndex = 58;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "AKŞAM ÖĞÜNÜ";
-            // 
-            // flowLayoutPanelAksamYemegi
-            // 
-            this.flowLayoutPanelAksamYemegi.Location = new System.Drawing.Point(11, 16);
-            this.flowLayoutPanelAksamYemegi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.flowLayoutPanelAksamYemegi.Name = "flowLayoutPanelAksamYemegi";
-            this.flowLayoutPanelAksamYemegi.Size = new System.Drawing.Size(153, 260);
-            this.flowLayoutPanelAksamYemegi.TabIndex = 0;
-            // 
-            // btnGuncelleAksam
-            // 
-            this.btnGuncelleAksam.BackColor = System.Drawing.Color.Orange;
-            this.btnGuncelleAksam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGuncelleAksam.ForeColor = System.Drawing.Color.White;
-            this.btnGuncelleAksam.Location = new System.Drawing.Point(101, 291);
-            this.btnGuncelleAksam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnGuncelleAksam.Name = "btnGuncelleAksam";
-            this.btnGuncelleAksam.Size = new System.Drawing.Size(70, 31);
-            this.btnGuncelleAksam.TabIndex = 53;
-            this.btnGuncelleAksam.Text = "GÜNCELLE";
-            this.btnGuncelleAksam.UseVisualStyleBackColor = false;
             // 
             // btnSilAksam
             // 
@@ -293,9 +208,9 @@
             this.btnSilAksam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSilAksam.ForeColor = System.Drawing.Color.White;
             this.btnSilAksam.Location = new System.Drawing.Point(11, 291);
-            this.btnSilAksam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSilAksam.Margin = new System.Windows.Forms.Padding(2);
             this.btnSilAksam.Name = "btnSilAksam";
-            this.btnSilAksam.Size = new System.Drawing.Size(43, 31);
+            this.btnSilAksam.Size = new System.Drawing.Size(153, 31);
             this.btnSilAksam.TabIndex = 52;
             this.btnSilAksam.Text = "SİL";
             this.btnSilAksam.UseVisualStyleBackColor = false;
@@ -306,7 +221,7 @@
             this.btnKaydet1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKaydet1.ForeColor = System.Drawing.Color.White;
             this.btnKaydet1.Location = new System.Drawing.Point(243, 484);
-            this.btnKaydet1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnKaydet1.Margin = new System.Windows.Forms.Padding(2);
             this.btnKaydet1.Name = "btnKaydet1";
             this.btnKaydet1.Size = new System.Drawing.Size(714, 37);
             this.btnKaydet1.TabIndex = 58;
@@ -319,7 +234,7 @@
             this.btnBitir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBitir.ForeColor = System.Drawing.Color.White;
             this.btnBitir.Location = new System.Drawing.Point(794, 79);
-            this.btnBitir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBitir.Margin = new System.Windows.Forms.Padding(2);
             this.btnBitir.Name = "btnBitir";
             this.btnBitir.Size = new System.Drawing.Size(159, 37);
             this.btnBitir.TabIndex = 60;
@@ -330,7 +245,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(31, 62);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(63, 58);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -342,7 +257,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.LimeGreen;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(8, 6);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(59, 46);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -355,7 +270,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.LimeGreen;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(903, 6);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(59, 46);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -369,7 +284,7 @@
             this.btnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEkle.ForeColor = System.Drawing.Color.White;
             this.btnEkle.Location = new System.Drawing.Point(7, 379);
-            this.btnEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEkle.Margin = new System.Windows.Forms.Padding(2);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(220, 36);
             this.btnEkle.TabIndex = 68;
@@ -393,7 +308,7 @@
             this.listBoxBesinler.FormattingEnabled = true;
             this.listBoxBesinler.ItemHeight = 20;
             this.listBoxBesinler.Location = new System.Drawing.Point(7, 224);
-            this.listBoxBesinler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxBesinler.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxBesinler.Name = "listBoxBesinler";
             this.listBoxBesinler.Size = new System.Drawing.Size(222, 64);
             this.listBoxBesinler.TabIndex = 67;
@@ -403,31 +318,18 @@
             this.txtArananBesinOgesi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtArananBesinOgesi.Location = new System.Drawing.Point(7, 185);
             this.txtArananBesinOgesi.Name = "txtArananBesinOgesi";
-            this.txtArananBesinOgesi.Size = new System.Drawing.Size(170, 26);
+            this.txtArananBesinOgesi.Size = new System.Drawing.Size(171, 26);
             this.txtArananBesinOgesi.TabIndex = 66;
             // 
-            // btnAra
+            // cmbGidecekOgun
             // 
-            this.btnAra.BackColor = System.Drawing.Color.Orange;
-            this.btnAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAra.ForeColor = System.Drawing.Color.White;
-            this.btnAra.Location = new System.Drawing.Point(182, 182);
-            this.btnAra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnAra.Name = "btnAra";
-            this.btnAra.Size = new System.Drawing.Size(46, 31);
-            this.btnAra.TabIndex = 64;
-            this.btnAra.Text = "ARA";
-            this.btnAra.UseVisualStyleBackColor = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(7, 336);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(222, 28);
-            this.comboBox1.TabIndex = 69;
+            this.cmbGidecekOgun.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbGidecekOgun.FormattingEnabled = true;
+            this.cmbGidecekOgun.Location = new System.Drawing.Point(7, 336);
+            this.cmbGidecekOgun.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbGidecekOgun.Name = "cmbGidecekOgun";
+            this.cmbGidecekOgun.Size = new System.Drawing.Size(222, 28);
+            this.cmbGidecekOgun.TabIndex = 69;
             // 
             // label1
             // 
@@ -439,6 +341,110 @@
             this.label1.TabIndex = 70;
             this.label1.Text = "Eklemek İstediğiniz Öğün";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Orange;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(183, 184);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(43, 27);
+            this.button1.TabIndex = 52;
+            this.button1.Text = "ARA";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lstViewKahvalti
+            // 
+            this.lstViewKahvalti.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1});
+            this.lstViewKahvalti.GridLines = true;
+            this.lstViewKahvalti.HideSelection = false;
+            this.lstViewKahvalti.Location = new System.Drawing.Point(11, 19);
+            this.lstViewKahvalti.Name = "lstViewKahvalti";
+            this.lstViewKahvalti.Size = new System.Drawing.Size(153, 260);
+            this.lstViewKahvalti.TabIndex = 54;
+            this.lstViewKahvalti.UseCompatibleStateImageBehavior = false;
+            this.lstViewKahvalti.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Besin Adı";
+            this.columnHeader1.Width = 200;
+            // 
+            // lstViewOgle
+            // 
+            this.lstViewOgle.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader2});
+            this.lstViewOgle.GridLines = true;
+            this.lstViewOgle.HideSelection = false;
+            this.lstViewOgle.Location = new System.Drawing.Point(11, 19);
+            this.lstViewOgle.Name = "lstViewOgle";
+            this.lstViewOgle.Size = new System.Drawing.Size(153, 260);
+            this.lstViewOgle.TabIndex = 54;
+            this.lstViewOgle.UseCompatibleStateImageBehavior = false;
+            this.lstViewOgle.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Besin Adı";
+            this.columnHeader2.Width = 200;
+            // 
+            // listView2
+            // 
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader3});
+            this.listView2.GridLines = true;
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(-174, 20);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(153, 260);
+            this.listView2.TabIndex = 54;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Besin Adı";
+            this.columnHeader3.Width = 200;
+            // 
+            // lstViewAra
+            // 
+            this.lstViewAra.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader4});
+            this.lstViewAra.GridLines = true;
+            this.lstViewAra.HideSelection = false;
+            this.lstViewAra.Location = new System.Drawing.Point(11, 18);
+            this.lstViewAra.Name = "lstViewAra";
+            this.lstViewAra.Size = new System.Drawing.Size(153, 260);
+            this.lstViewAra.TabIndex = 54;
+            this.lstViewAra.UseCompatibleStateImageBehavior = false;
+            this.lstViewAra.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Besin Adı";
+            this.columnHeader4.Width = 200;
+            // 
+            // lstViewAksam
+            // 
+            this.lstViewAksam.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader5});
+            this.lstViewAksam.GridLines = true;
+            this.lstViewAksam.HideSelection = false;
+            this.lstViewAksam.Location = new System.Drawing.Point(11, 19);
+            this.lstViewAksam.Name = "lstViewAksam";
+            this.lstViewAksam.Size = new System.Drawing.Size(153, 260);
+            this.lstViewAksam.TabIndex = 54;
+            this.lstViewAksam.UseCompatibleStateImageBehavior = false;
+            this.lstViewAksam.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Besin Adı";
+            this.columnHeader5.Width = 200;
+            // 
             // frmGunlukProgramOluşturmaEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -446,12 +452,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(971, 555);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbGidecekOgun);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBoxBesinler);
             this.Controls.Add(this.txtArananBesinOgesi);
-            this.Controls.Add(this.btnAra);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btnBitir);
@@ -465,9 +471,10 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmGunlukProgramOluşturmaEkrani";
             this.Text = "frmHaftalikProgramOluşturmaEkrani";
+            this.Load += new System.EventHandler(this.frmGunlukProgramOluşturmaEkrani_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
@@ -486,20 +493,12 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelKahvalti;
         private System.Windows.Forms.Button btnSilKahvalti;
-        private System.Windows.Forms.Button btnGuncelleKahvalti;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelAraOgun1;
-        private System.Windows.Forms.Button btnGuncelleAra1;
         private System.Windows.Forms.Button btnSilAra1;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelOgleYemegi;
-        private System.Windows.Forms.Button btnGuncelleOgle;
         private System.Windows.Forms.Button btnSilOgle;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelAksamYemegi;
-        private System.Windows.Forms.Button btnGuncelleAksam;
         private System.Windows.Forms.Button btnSilAksam;
         private System.Windows.Forms.Button btnKaydet1;
         private System.Windows.Forms.Button btnBitir;
@@ -510,8 +509,18 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox listBoxBesinler;
         private System.Windows.Forms.TextBox txtArananBesinOgesi;
-        private System.Windows.Forms.Button btnAra;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbGidecekOgun;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListView lstViewKahvalti;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ListView lstViewAra;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ListView lstViewOgle;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ListView lstViewAksam;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }

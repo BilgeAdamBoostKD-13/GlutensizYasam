@@ -41,6 +41,14 @@ namespace GlutensizYasam.DAL.Repositories
             deletedBesin.AktifMi = false;
             return context.SaveChanges() > 0;
         }
+
+        public int BesinBul(string arananBesin)
+        {
+            var id = context.Besinler.Where(a => a.BesinAdi == arananBesin).Select(a => a.ID);
+            int besinid = id.First();
+            return besinid;
+             
+        }
         
     }
 }
