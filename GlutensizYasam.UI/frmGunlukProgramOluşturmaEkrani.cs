@@ -45,10 +45,7 @@ namespace GlutensizYasam.UI
 
         private void btnEkleKahvalti_Click(object sender, EventArgs e)
         {
-            frmBesinOgesiEklemeEkrani frm = new frmBesinOgesiEklemeEkrani();
-            this.Hide();
-            frm.ShowDialog();
-            this.Show();
+            
         }
     }
 }
