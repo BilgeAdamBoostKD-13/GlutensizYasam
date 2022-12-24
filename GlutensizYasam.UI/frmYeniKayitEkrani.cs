@@ -49,6 +49,8 @@ namespace GlutensizYasam.UI
 
         private void btnUyeOl_Click(object sender, EventArgs e)
         {
+             
+
             Kullanici kullanici = new Kullanici();
             try
             {
@@ -111,6 +113,8 @@ namespace GlutensizYasam.UI
                 bool check = kullaniciService.Insert(kullanici);
                 MessageBox.Show(check ? "Kullanıcı eklendi" : "Kullanıcı eklenemedi");
             }
+
+
             
             if (sayac == 2)
             {
@@ -138,6 +142,10 @@ namespace GlutensizYasam.UI
                 MessageBox.Show(hata);
                 hata = null;
             }
+
+            
+
+            
         }
 
 

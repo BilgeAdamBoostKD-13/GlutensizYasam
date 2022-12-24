@@ -1,4 +1,4 @@
-﻿using GlutensizYasam.Model.Entities;
+﻿  using GlutensizYasam.Model.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
