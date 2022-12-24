@@ -17,10 +17,9 @@ namespace GlutensizYasam.BLL.Services
             gunlukBesinKontroluRepository = new GunlukBesinKontroluRepository();
         }
 
-        public bool Insert(GunlukBesinKontrolu gunlukBesinKontrolu)
+        public bool Insert(GunlukBesinKontrolu gbk)
         {
-            return gunlukBesinKontroluRepository.Insert(gunlukBesinKontrolu);
+            return gunlukBesinKontroluRepository.Insert(gbk);
         }
-    
     }
 }

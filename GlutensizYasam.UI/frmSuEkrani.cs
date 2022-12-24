@@ -52,16 +52,17 @@ namespace GlutensizYasam.UI
 
         private void btnSuEkle_Click(object sender, EventArgs e)
         {
-            gbk.Tarih = DateTime.Now;
-            gbk.GunlukIcilenSu = 200;
+            
             int kullaniciID = kullaniciService.KullaniciIdGetir(this.kullanici.EMail);
             var index = db.GunlukPlanlar.Where(a => a.KullaniciId == kullaniciID).Select(a => a.ID);
             int gunlukplanID = index.First();
-            bool check = gbkservice.Insert(gbk);
-            var index2 = db.gunlukBesinKontrolleri.Where(a => a.GunlukPlanID == gunlukplanID).Select(a => a.ID);
-            int gunlukbesinkontroluID = index2.First();
+            //var index2 = db.gunlukBesinKontrolleri.Where(a => a.GunlukPlanID == gunlukplanID).Select(a => a.ID);
+            //int gunlukbesinkontroluID = index2.First();
 
-
+            gbk.GunlukPlanID = gunlukplanID;
+            gbk.Tarih = DateTime.Now;
+            gbk.GunlukIcilenSu = 200;
+            bool check1 = gbkservice.Insert(gbk);
             if (progressBarSu.Value == 2400)
             {
                 MessageBox.Show("TEBRİKLER. BUGUNKÜ SU İHTİYACINIZI KARŞILADINIZ!");
