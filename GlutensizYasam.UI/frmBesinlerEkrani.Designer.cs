@@ -46,8 +46,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.lblYag = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.lblTarifIcerigi = new System.Windows.Forms.Label();
             this.lblGlutenVarYok = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -117,7 +115,7 @@
             // 
             this.txtBesin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtBesin.Location = new System.Drawing.Point(36, 294);
-            this.txtBesin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBesin.Margin = new System.Windows.Forms.Padding(4);
             this.txtBesin.Name = "txtBesin";
             this.txtBesin.Size = new System.Drawing.Size(525, 34);
             this.txtBesin.TabIndex = 38;
@@ -251,29 +249,6 @@
             this.lblYag.TabIndex = 49;
             this.lblYag.Text = "@Yağ";
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.ForeColor = System.Drawing.Color.LimeGreen;
-            this.label14.Location = new System.Drawing.Point(684, 462);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(117, 39);
-            this.label14.TabIndex = 50;
-            this.label14.Text = "TARİF";
-            // 
-            // lblTarifIcerigi
-            // 
-            this.lblTarifIcerigi.AutoSize = true;
-            this.lblTarifIcerigi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTarifIcerigi.Location = new System.Drawing.Point(684, 510);
-            this.lblTarifIcerigi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTarifIcerigi.Name = "lblTarifIcerigi";
-            this.lblTarifIcerigi.Size = new System.Drawing.Size(192, 29);
-            this.lblTarifIcerigi.TabIndex = 51;
-            this.lblTarifIcerigi.Text = "@TARİFİÇERİĞİ";
-            // 
             // lblGlutenVarYok
             // 
             this.lblGlutenVarYok.AutoSize = true;
@@ -343,8 +318,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblGlutenVarYok);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.lblTarifIcerigi);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.lblYag);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -396,8 +369,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblYag;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label lblTarifIcerigi;
         private System.Windows.Forms.Label lblGlutenVarYok;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox2;

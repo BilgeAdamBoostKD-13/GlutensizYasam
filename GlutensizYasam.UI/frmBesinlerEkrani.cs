@@ -72,26 +72,42 @@ namespace GlutensizYasam.UI
                         
                     }
                 }
-                int besinID = besinService.BesinBul(txtBesin.Text);
-                var kalori = db.Besinler.Where(a=>a.ID==besinID).Select(a=>a.Kalori);
-                lblKalori.Text = kalori.ToString();
+                string aranan = listBoxBesinler.Items[0].ToString();
+                var bulunan=db.Besinler.Where(a=>a.BesinAdi==aranan).Select(a=>a.Protein).ToList();
+                string protein = bulunan.First().ToString();
+                lblProtein.Text = protein;
+
+                var bulunan1 = db.Besinler.Where(a => a.BesinAdi == aranan).Select(a => a.Yag).ToList();
+                string yag = bulunan1.First().ToString();
+                lblYag.Text = yag;
+
+                var bulunan2 = db.Besinler.Where(a => a.BesinAdi == aranan).Select(a => a.Karbonhidrat).ToList();
+                string kh = bulunan2.First().ToString();
+                lblKarbonhidrat.Text=kh;
+
+
+                var bulunan3 = db.Besinler.Where(a => a.BesinAdi == aranan).Select(a => a.Kalori).ToList();
+                lblKalori.Text = bulunan3.First().ToString();
+
+                var bulunan4 = db.Besinler.Where(a => a.BesinAdi == aranan).Select(a => a.AktifMi).ToList();
+                if (bulunan4.First() == true)
+                {
+                    lblGlutenVarYok.Text = "VAR";
+                }
+                else
+                {
+                    lblGlutenVarYok.Text = "YOK";
+                }
+
+                
+
             }
             catch (Exception ex)
             {
 
                 MessageBox.Show(ex.Message);
             }
-
-            //
-            //var protein = db.Besinler.Select(b => b.Protein);
-            //var karbonhidrat = db.Besinler.Select(b => b.Karbonhidrat);
-            //var yag = db.Besinler.Select(b => b.Yag);
-
-            //lblKalori.Text = kalori.ToString();
-            //lblProtein.Text = protein.ToString();
-            //lblKarbonhidrat.Text = karbonhidrat.ToString();
-            //lblYag.Text = yag.ToString();
-            //var aktif =db.Besinler.Select(b => b.AktifMi);
+           
         }
     }
 }
