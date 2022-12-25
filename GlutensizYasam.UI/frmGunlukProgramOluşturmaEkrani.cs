@@ -2,6 +2,7 @@
 using GlutensizYasam.DAL;
 using GlutensizYasam.DAL.Repositories;
 using GlutensizYasam.Model.Entities;
+using GlutensizYasam.Model.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -67,43 +68,72 @@ namespace GlutensizYasam.UI
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
+            if (listBoxBesinler.SelectedItem != null)
+            {
+                if (cmbGidecekOgun.Text == "Kahvaltı Öğünü")
+                {
+                    ListViewItem lvi = ListViewDoldur();
+                    lstViewKahvalti.Items.Add(lvi);
+                    GonderDataBase(Model.Enums.Ogun.Kahvalti);
+                }
+                else if (cmbGidecekOgun.Text == "Öğle Öğünü")
+                {
+                    ListViewItem lvi = ListViewDoldur();
+                    lstViewOgle.Items.Add(lvi);
+                    GonderDataBase(Model.Enums.Ogun.OgleOgunu);
+                }
+                else if (cmbGidecekOgun.Text == "Ara Öğün")
+                {
+                    ListViewItem lvi = ListViewDoldur();
+                    lstViewAra.Items.Add(lvi);
+                    GonderDataBase(Model.Enums.Ogun.AraOgunu);
+                }
+                else if (cmbGidecekOgun.Text == "Akşam Öğünü")
+                {
+                    ListViewItem lvi = ListViewDoldur();
+                    lstViewAksam.Items.Add(lvi);
+                    GonderDataBase(Model.Enums.Ogun.AkşamOgunu);
+
+                }
+            }
+
+            void GonderDataBase(Ogun ogun)
+            {
+                
+                var index = db.Besinler.Where(a => a.BesinAdi == listBoxBesinler.SelectedItem.ToString()).Select(a => a.ID).ToList();
+                int besinId = index.First();
+                Besin besin = new Besin();
+                GunlukPlan gp = new GunlukPlan()
+                {
+                    Tarih = DateTime.Now,
+                    Ogun = ogun,
+                    KullaniciId = this.kullanici.ID,
+                    Besinler = new List<Besin>()
+                {
+                    new Besin{ID = besinId,BesinAdi = listBoxBesinler.SelectedItem.ToString()}
+                }
+                };
+                foreach (Besin item in gp.Besinler)
+                {
+                    DbEntityEntry<Besin> entry = db.Entry(item);
+                    db.Besinler.Attach(item);
+                }
+                db.GunlukPlanlar.Add(gp); db.SaveChanges();
+            }
             //if (besin.AktifMi)// AKTİF Mİ EKLENEBİLİR Mİ ? 
-           // {
-                //DialogResult result = MessageBox.Show("Seçilen besin gluten içermektedir. Eklemek istediğinize emin misiniz ?","UYARI!!!",MessageBoxButtons.YesNo);
+            // {
+            //DialogResult result = MessageBox.Show("Seçilen besin gluten içermektedir. Eklemek istediğinize emin misiniz ?","UYARI!!!",MessageBoxButtons.YesNo);
 
-                //if (result == DialogResult.Yes)
-                //{
-                    if (listBoxBesinler.SelectedItem != null)
-                    {
-                        if (cmbGidecekOgun.Text == "Kahvaltı Öğünü")
-                        {
-                            ListViewItem lvi = ListViewDoldur();
-                            lstViewKahvalti.Items.Add(lvi);
+            //if (result == DialogResult.Yes)
+            //{
 
-                        }
-                        else if (cmbGidecekOgun.Text == "Öğle Öğünü")
-                        {
-                            ListViewItem lvi = ListViewDoldur();
-                            lstViewOgle.Items.Add(lvi);
 
-                        }
-                        else if (cmbGidecekOgun.Text == "Ara Öğün")
-                        {
-                            ListViewItem lvi = ListViewDoldur();
-                            lstViewAra.Items.Add(lvi);
-
-                        }
-                        else if (cmbGidecekOgun.Text == "Akşam Öğünü")
-                        {
-                            ListViewItem lvi = ListViewDoldur();
-                            lstViewAksam.Items.Add(lvi);
-
-                        }
-                    }
-                //}
-           //}
             
-            
+
+            //}
+            //}
+
+
         }
 
         private ListViewItem ListViewDoldur()
@@ -186,27 +216,10 @@ namespace GlutensizYasam.UI
 
         private void btnKaydet1_Click(object sender, EventArgs e)
         {
-            //db.Database.Delete();
-            var index = db.Besinler.Where(a => a.BesinAdi == listBoxBesinler.SelectedItem.ToString()).Select(a => a.ID).ToList();
-            int besinId = index.First();
-            Besin besin = new Besin();
-            GunlukPlan gp = new GunlukPlan()
-            {
-                Tarih = DateTime.Now,
-                Ogun = Model.Enums.Ogun.Kahvalti,
-                KullaniciId = this.kullanici.ID,
-                Besinler = new List<Besin>()
-                {
-                    new Besin{ID = besinId,BesinAdi = listBoxBesinler.SelectedItem.ToString()}
-                }
-            };
-            foreach (Besin item in gp.Besinler)
-            {
+            
 
-                DbEntityEntry<Besin> entry = db.Entry(item);
-                db.Besinler.Attach(item);
-            }
-            db.GunlukPlanlar.Add(gp); db.SaveChanges();
+
+            
 
         }
     }
