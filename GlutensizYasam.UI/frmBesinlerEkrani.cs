@@ -104,5 +104,13 @@ namespace GlutensizYasam.UI
             }
             
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            frmAnaEkran frm = new frmAnaEkran(kullanici);
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
     }
 }
