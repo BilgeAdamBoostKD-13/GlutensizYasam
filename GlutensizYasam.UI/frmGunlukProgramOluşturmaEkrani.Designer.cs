@@ -35,22 +35,17 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lstViewKahvalti = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnSilKahvalti = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lstViewAra = new System.Windows.Forms.ListView();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnSilAra1 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.lstViewOgle = new System.Windows.Forms.ListView();
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnSilOgle = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.lstViewAksam = new System.Windows.Forms.ListView();
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listView2 = new System.Windows.Forms.ListView();
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnSilAksam = new System.Windows.Forms.Button();
-            this.btnKaydet1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -114,7 +109,6 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lstViewKahvalti);
-            this.groupBox1.Controls.Add(this.btnSilKahvalti);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(243, 150);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -143,24 +137,9 @@
             this.columnHeader1.Text = "Besin Adı";
             this.columnHeader1.Width = 200;
             // 
-            // btnSilKahvalti
-            // 
-            this.btnSilKahvalti.BackColor = System.Drawing.Color.Orange;
-            this.btnSilKahvalti.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSilKahvalti.ForeColor = System.Drawing.Color.White;
-            this.btnSilKahvalti.Location = new System.Drawing.Point(11, 291);
-            this.btnSilKahvalti.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSilKahvalti.Name = "btnSilKahvalti";
-            this.btnSilKahvalti.Size = new System.Drawing.Size(153, 31);
-            this.btnSilKahvalti.TabIndex = 52;
-            this.btnSilKahvalti.Text = "SİL";
-            this.btnSilKahvalti.UseVisualStyleBackColor = false;
-            this.btnSilKahvalti.Click += new System.EventHandler(this.btnSilKahvalti_Click);
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.lstViewAra);
-            this.groupBox3.Controls.Add(this.btnSilAra1);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox3.Location = new System.Drawing.Point(602, 151);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
@@ -189,24 +168,9 @@
             this.columnHeader4.Text = "Besin Adı";
             this.columnHeader4.Width = 200;
             // 
-            // btnSilAra1
-            // 
-            this.btnSilAra1.BackColor = System.Drawing.Color.Orange;
-            this.btnSilAra1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSilAra1.ForeColor = System.Drawing.Color.White;
-            this.btnSilAra1.Location = new System.Drawing.Point(11, 291);
-            this.btnSilAra1.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSilAra1.Name = "btnSilAra1";
-            this.btnSilAra1.Size = new System.Drawing.Size(153, 31);
-            this.btnSilAra1.TabIndex = 52;
-            this.btnSilAra1.Text = "SİL";
-            this.btnSilAra1.UseVisualStyleBackColor = false;
-            this.btnSilAra1.Click += new System.EventHandler(this.btnSilAra1_Click);
-            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.lstViewOgle);
-            this.groupBox4.Controls.Add(this.btnSilOgle);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox4.Location = new System.Drawing.Point(422, 151);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
@@ -235,25 +199,10 @@
             this.columnHeader2.Text = "Besin Adı";
             this.columnHeader2.Width = 200;
             // 
-            // btnSilOgle
-            // 
-            this.btnSilOgle.BackColor = System.Drawing.Color.Orange;
-            this.btnSilOgle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSilOgle.ForeColor = System.Drawing.Color.White;
-            this.btnSilOgle.Location = new System.Drawing.Point(11, 291);
-            this.btnSilOgle.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSilOgle.Name = "btnSilOgle";
-            this.btnSilOgle.Size = new System.Drawing.Size(153, 31);
-            this.btnSilOgle.TabIndex = 52;
-            this.btnSilOgle.Text = "SİL";
-            this.btnSilOgle.UseVisualStyleBackColor = false;
-            this.btnSilOgle.Click += new System.EventHandler(this.btnSilOgle_Click);
-            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.lstViewAksam);
             this.groupBox5.Controls.Add(this.listView2);
-            this.groupBox5.Controls.Add(this.btnSilAksam);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox5.Location = new System.Drawing.Point(781, 150);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
@@ -299,34 +248,6 @@
             // 
             this.columnHeader3.Text = "Besin Adı";
             this.columnHeader3.Width = 200;
-            // 
-            // btnSilAksam
-            // 
-            this.btnSilAksam.BackColor = System.Drawing.Color.Orange;
-            this.btnSilAksam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSilAksam.ForeColor = System.Drawing.Color.White;
-            this.btnSilAksam.Location = new System.Drawing.Point(11, 291);
-            this.btnSilAksam.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSilAksam.Name = "btnSilAksam";
-            this.btnSilAksam.Size = new System.Drawing.Size(153, 31);
-            this.btnSilAksam.TabIndex = 52;
-            this.btnSilAksam.Text = "SİL";
-            this.btnSilAksam.UseVisualStyleBackColor = false;
-            this.btnSilAksam.Click += new System.EventHandler(this.btnSilAksam_Click);
-            // 
-            // btnKaydet1
-            // 
-            this.btnKaydet1.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnKaydet1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKaydet1.ForeColor = System.Drawing.Color.White;
-            this.btnKaydet1.Location = new System.Drawing.Point(243, 484);
-            this.btnKaydet1.Margin = new System.Windows.Forms.Padding(2);
-            this.btnKaydet1.Name = "btnKaydet1";
-            this.btnKaydet1.Size = new System.Drawing.Size(714, 37);
-            this.btnKaydet1.TabIndex = 58;
-            this.btnKaydet1.Text = "KAYDET";
-            this.btnKaydet1.UseVisualStyleBackColor = false;
-            this.btnKaydet1.Click += new System.EventHandler(this.btnKaydet1_Click);
             // 
             // pictureBox1
             // 
@@ -523,7 +444,6 @@
             this.Controls.Add(this.txtArananBesinOgesi);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.btnKaydet1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -555,14 +475,9 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnSilKahvalti;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button btnSilAra1;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button btnSilOgle;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button btnSilAksam;
-        private System.Windows.Forms.Button btnKaydet1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
