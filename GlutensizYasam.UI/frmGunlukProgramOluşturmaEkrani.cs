@@ -21,6 +21,8 @@ namespace GlutensizYasam.UI
         GunlukPlan gunlukPlan;
         Besin besin;
         BesinService besinService;
+        GunlukPlanService gunlukPlanService;
+
         
         public frmGunlukProgramOluşturmaEkrani()
         {
@@ -34,6 +36,7 @@ namespace GlutensizYasam.UI
             besin = new Besin();
             gunlukPlan = new GunlukPlan();
             besinService = new BesinService();
+            gunlukPlanService = new GunlukPlanService();
         }
 
         public frmGunlukProgramOluşturmaEkrani(Besin besin)
@@ -62,33 +65,43 @@ namespace GlutensizYasam.UI
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
-            if (listBoxBesinler.SelectedItem != null )
-            {
-                if (cmbGidecekOgun.Text == "Kahvaltı Öğünü")
-                {
-                    ListViewItem lvi = ListViewDoldur();
-                    lstViewKahvalti.Items.Add(lvi);
+            //if (besin.AktifMi)// AKTİF Mİ EKLENEBİLİR Mİ ? 
+           // {
+                //DialogResult result = MessageBox.Show("Seçilen besin gluten içermektedir. Eklemek istediğinize emin misiniz ?","UYARI!!!",MessageBoxButtons.YesNo);
 
-                }
-                else if (cmbGidecekOgun.Text == "Öğle Öğünü")
-                {
-                    ListViewItem lvi = ListViewDoldur();
-                    lstViewOgle.Items.Add(lvi);
+                //if (result == DialogResult.Yes)
+                //{
+                    if (listBoxBesinler.SelectedItem != null)
+                    {
+                        if (cmbGidecekOgun.Text == "Kahvaltı Öğünü")
+                        {
+                            ListViewItem lvi = ListViewDoldur();
+                            lstViewKahvalti.Items.Add(lvi);
 
-                }
-                else if (cmbGidecekOgun.Text == "Ara Öğün")
-                {
-                    ListViewItem lvi = ListViewDoldur();
-                    lstViewAra.Items.Add(lvi);
+                        }
+                        else if (cmbGidecekOgun.Text == "Öğle Öğünü")
+                        {
+                            ListViewItem lvi = ListViewDoldur();
+                            lstViewOgle.Items.Add(lvi);
 
-                }
-                else if (cmbGidecekOgun.Text == "Akşam Öğünü")
-                {
-                    ListViewItem lvi = ListViewDoldur();
-                    lstViewAksam.Items.Add(lvi);
+                        }
+                        else if (cmbGidecekOgun.Text == "Ara Öğün")
+                        {
+                            ListViewItem lvi = ListViewDoldur();
+                            lstViewAra.Items.Add(lvi);
 
-                }
-            }
+                        }
+                        else if (cmbGidecekOgun.Text == "Akşam Öğünü")
+                        {
+                            ListViewItem lvi = ListViewDoldur();
+                            lstViewAksam.Items.Add(lvi);
+
+                        }
+                    }
+                //}
+           //}
+           
+            
         }
 
         private ListViewItem ListViewDoldur()
@@ -106,6 +119,7 @@ namespace GlutensizYasam.UI
             cmbGidecekOgun.Items.Add("Ara Öğün");
             cmbGidecekOgun.Items.Add("Akşam Öğünü");
 
+            lblGunlukKalori.Text = kullanici.GunlukKaloriIhtiyaci.ToString();
             /*List<Besin> besin = db.Besinler.Where(a => a.I).Select(a => a.BesinAdi).ToList();
              *
             var employees = db.Employees.Select(a => a.FirstName);
@@ -152,6 +166,31 @@ namespace GlutensizYasam.UI
 
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnSilKahvalti_Click(object sender, EventArgs e)
+        {
+            lstViewKahvalti.Items.Clear();
+        }
+
+        private void btnSilOgle_Click(object sender, EventArgs e)
+        {
+            lstViewOgle.Items.Clear();
+        }
+
+        private void btnSilAra1_Click(object sender, EventArgs e)
+        {
+            lstViewAra.Items.Clear();
+        }
+
+        private void btnSilAksam_Click(object sender, EventArgs e)
+        {
+            lstViewAksam.Items.Clear();
+        }
+
+        private void btnKaydet1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

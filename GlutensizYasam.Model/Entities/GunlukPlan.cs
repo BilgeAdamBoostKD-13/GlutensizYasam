@@ -21,7 +21,7 @@ namespace GlutensizYasam.Model.Entities
         public string AraOgun { get; set; }
         public string AksamYemegi { get; set; }
         public int KullaniciId { get; set; }
-
+        
         
         public virtual ICollection<Besin>Besinler { get; set; }
         public virtual ICollection<Tarif> Tarifler { get; set; }

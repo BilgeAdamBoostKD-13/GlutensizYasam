@@ -33,15 +33,24 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lstViewKahvalti = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnSilKahvalti = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lstViewAra = new System.Windows.Forms.ListView();
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnSilAra1 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.lstViewOgle = new System.Windows.Forms.ListView();
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnSilOgle = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.lstViewAksam = new System.Windows.Forms.ListView();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnSilAksam = new System.Windows.Forms.Button();
             this.btnKaydet1 = new System.Windows.Forms.Button();
-            this.btnBitir = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -52,16 +61,12 @@
             this.cmbGidecekOgun = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.lstViewKahvalti = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lstViewOgle = new System.Windows.Forms.ListView();
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lstViewAra = new System.Windows.Forms.ListView();
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lstViewAksam = new System.Windows.Forms.ListView();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblGunlukKalori = new System.Windows.Forms.Label();
+            this.lblAlinanKalori = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblKalanKalori = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -120,6 +125,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "KAHVALTI";
             // 
+            // lstViewKahvalti
+            // 
+            this.lstViewKahvalti.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1});
+            this.lstViewKahvalti.GridLines = true;
+            this.lstViewKahvalti.HideSelection = false;
+            this.lstViewKahvalti.Location = new System.Drawing.Point(11, 19);
+            this.lstViewKahvalti.Name = "lstViewKahvalti";
+            this.lstViewKahvalti.Size = new System.Drawing.Size(153, 260);
+            this.lstViewKahvalti.TabIndex = 54;
+            this.lstViewKahvalti.UseCompatibleStateImageBehavior = false;
+            this.lstViewKahvalti.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Besin Adı";
+            this.columnHeader1.Width = 200;
+            // 
             // btnSilKahvalti
             // 
             this.btnSilKahvalti.BackColor = System.Drawing.Color.Orange;
@@ -132,6 +155,7 @@
             this.btnSilKahvalti.TabIndex = 52;
             this.btnSilKahvalti.Text = "SİL";
             this.btnSilKahvalti.UseVisualStyleBackColor = false;
+            this.btnSilKahvalti.Click += new System.EventHandler(this.btnSilKahvalti_Click);
             // 
             // groupBox3
             // 
@@ -147,6 +171,24 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "ARA ÖĞÜN";
             // 
+            // lstViewAra
+            // 
+            this.lstViewAra.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader4});
+            this.lstViewAra.GridLines = true;
+            this.lstViewAra.HideSelection = false;
+            this.lstViewAra.Location = new System.Drawing.Point(11, 18);
+            this.lstViewAra.Name = "lstViewAra";
+            this.lstViewAra.Size = new System.Drawing.Size(153, 260);
+            this.lstViewAra.TabIndex = 54;
+            this.lstViewAra.UseCompatibleStateImageBehavior = false;
+            this.lstViewAra.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Besin Adı";
+            this.columnHeader4.Width = 200;
+            // 
             // btnSilAra1
             // 
             this.btnSilAra1.BackColor = System.Drawing.Color.Orange;
@@ -159,6 +201,7 @@
             this.btnSilAra1.TabIndex = 52;
             this.btnSilAra1.Text = "SİL";
             this.btnSilAra1.UseVisualStyleBackColor = false;
+            this.btnSilAra1.Click += new System.EventHandler(this.btnSilAra1_Click);
             // 
             // groupBox4
             // 
@@ -174,6 +217,24 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "ÖĞLE ÖĞÜNÜ";
             // 
+            // lstViewOgle
+            // 
+            this.lstViewOgle.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader2});
+            this.lstViewOgle.GridLines = true;
+            this.lstViewOgle.HideSelection = false;
+            this.lstViewOgle.Location = new System.Drawing.Point(11, 19);
+            this.lstViewOgle.Name = "lstViewOgle";
+            this.lstViewOgle.Size = new System.Drawing.Size(153, 260);
+            this.lstViewOgle.TabIndex = 54;
+            this.lstViewOgle.UseCompatibleStateImageBehavior = false;
+            this.lstViewOgle.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Besin Adı";
+            this.columnHeader2.Width = 200;
+            // 
             // btnSilOgle
             // 
             this.btnSilOgle.BackColor = System.Drawing.Color.Orange;
@@ -186,6 +247,7 @@
             this.btnSilOgle.TabIndex = 52;
             this.btnSilOgle.Text = "SİL";
             this.btnSilOgle.UseVisualStyleBackColor = false;
+            this.btnSilOgle.Click += new System.EventHandler(this.btnSilOgle_Click);
             // 
             // groupBox5
             // 
@@ -202,6 +264,42 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "AKŞAM ÖĞÜNÜ";
             // 
+            // lstViewAksam
+            // 
+            this.lstViewAksam.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader5});
+            this.lstViewAksam.GridLines = true;
+            this.lstViewAksam.HideSelection = false;
+            this.lstViewAksam.Location = new System.Drawing.Point(11, 19);
+            this.lstViewAksam.Name = "lstViewAksam";
+            this.lstViewAksam.Size = new System.Drawing.Size(153, 260);
+            this.lstViewAksam.TabIndex = 54;
+            this.lstViewAksam.UseCompatibleStateImageBehavior = false;
+            this.lstViewAksam.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Besin Adı";
+            this.columnHeader5.Width = 200;
+            // 
+            // listView2
+            // 
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader3});
+            this.listView2.GridLines = true;
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(-174, 20);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(153, 260);
+            this.listView2.TabIndex = 54;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Besin Adı";
+            this.columnHeader3.Width = 200;
+            // 
             // btnSilAksam
             // 
             this.btnSilAksam.BackColor = System.Drawing.Color.Orange;
@@ -214,6 +312,7 @@
             this.btnSilAksam.TabIndex = 52;
             this.btnSilAksam.Text = "SİL";
             this.btnSilAksam.UseVisualStyleBackColor = false;
+            this.btnSilAksam.Click += new System.EventHandler(this.btnSilAksam_Click);
             // 
             // btnKaydet1
             // 
@@ -227,19 +326,7 @@
             this.btnKaydet1.TabIndex = 58;
             this.btnKaydet1.Text = "KAYDET";
             this.btnKaydet1.UseVisualStyleBackColor = false;
-            // 
-            // btnBitir
-            // 
-            this.btnBitir.BackColor = System.Drawing.Color.Orange;
-            this.btnBitir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnBitir.ForeColor = System.Drawing.Color.White;
-            this.btnBitir.Location = new System.Drawing.Point(794, 79);
-            this.btnBitir.Margin = new System.Windows.Forms.Padding(2);
-            this.btnBitir.Name = "btnBitir";
-            this.btnBitir.Size = new System.Drawing.Size(159, 37);
-            this.btnBitir.TabIndex = 60;
-            this.btnBitir.Text = "BİTİR";
-            this.btnBitir.UseVisualStyleBackColor = false;
+            this.btnKaydet1.Click += new System.EventHandler(this.btnKaydet1_Click);
             // 
             // pictureBox1
             // 
@@ -355,95 +442,65 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // lstViewKahvalti
+            // lblGunlukKalori
             // 
-            this.lstViewKahvalti.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1});
-            this.lstViewKahvalti.GridLines = true;
-            this.lstViewKahvalti.HideSelection = false;
-            this.lstViewKahvalti.Location = new System.Drawing.Point(11, 19);
-            this.lstViewKahvalti.Name = "lstViewKahvalti";
-            this.lstViewKahvalti.Size = new System.Drawing.Size(153, 260);
-            this.lstViewKahvalti.TabIndex = 54;
-            this.lstViewKahvalti.UseCompatibleStateImageBehavior = false;
-            this.lstViewKahvalti.View = System.Windows.Forms.View.Details;
+            this.lblGunlukKalori.AutoSize = true;
+            this.lblGunlukKalori.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblGunlukKalori.Location = new System.Drawing.Point(179, 431);
+            this.lblGunlukKalori.Name = "lblGunlukKalori";
+            this.lblGunlukKalori.Size = new System.Drawing.Size(23, 20);
+            this.lblGunlukKalori.TabIndex = 71;
+            this.lblGunlukKalori.Text = "xx";
             // 
-            // columnHeader1
+            // lblAlinanKalori
             // 
-            this.columnHeader1.Text = "Besin Adı";
-            this.columnHeader1.Width = 200;
+            this.lblAlinanKalori.AutoSize = true;
+            this.lblAlinanKalori.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAlinanKalori.Location = new System.Drawing.Point(179, 461);
+            this.lblAlinanKalori.Name = "lblAlinanKalori";
+            this.lblAlinanKalori.Size = new System.Drawing.Size(23, 20);
+            this.lblAlinanKalori.TabIndex = 71;
+            this.lblAlinanKalori.Text = "xx";
             // 
-            // lstViewOgle
+            // label6
             // 
-            this.lstViewOgle.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader2});
-            this.lstViewOgle.GridLines = true;
-            this.lstViewOgle.HideSelection = false;
-            this.lstViewOgle.Location = new System.Drawing.Point(11, 19);
-            this.lstViewOgle.Name = "lstViewOgle";
-            this.lstViewOgle.Size = new System.Drawing.Size(153, 260);
-            this.lstViewOgle.TabIndex = 54;
-            this.lstViewOgle.UseCompatibleStateImageBehavior = false;
-            this.lstViewOgle.View = System.Windows.Forms.View.Details;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(13, 434);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(140, 17);
+            this.label6.TabIndex = 71;
+            this.label6.Text = "Günlük Kalori İhtiyacı";
             // 
-            // columnHeader2
+            // label7
             // 
-            this.columnHeader2.Text = "Besin Adı";
-            this.columnHeader2.Width = 200;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(66, 464);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(87, 17);
+            this.label7.TabIndex = 71;
+            this.label7.Text = "Alınan Kalori";
             // 
-            // listView2
+            // lblKalanKalori
             // 
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader3});
-            this.listView2.GridLines = true;
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(-174, 20);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(153, 260);
-            this.listView2.TabIndex = 54;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
+            this.lblKalanKalori.AutoSize = true;
+            this.lblKalanKalori.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKalanKalori.Location = new System.Drawing.Point(179, 493);
+            this.lblKalanKalori.Name = "lblKalanKalori";
+            this.lblKalanKalori.Size = new System.Drawing.Size(23, 20);
+            this.lblKalanKalori.TabIndex = 71;
+            this.lblKalanKalori.Text = "xx";
             // 
-            // columnHeader3
+            // label9
             // 
-            this.columnHeader3.Text = "Besin Adı";
-            this.columnHeader3.Width = 200;
-            // 
-            // lstViewAra
-            // 
-            this.lstViewAra.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader4});
-            this.lstViewAra.GridLines = true;
-            this.lstViewAra.HideSelection = false;
-            this.lstViewAra.Location = new System.Drawing.Point(11, 18);
-            this.lstViewAra.Name = "lstViewAra";
-            this.lstViewAra.Size = new System.Drawing.Size(153, 260);
-            this.lstViewAra.TabIndex = 54;
-            this.lstViewAra.UseCompatibleStateImageBehavior = false;
-            this.lstViewAra.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Besin Adı";
-            this.columnHeader4.Width = 200;
-            // 
-            // lstViewAksam
-            // 
-            this.lstViewAksam.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader5});
-            this.lstViewAksam.GridLines = true;
-            this.lstViewAksam.HideSelection = false;
-            this.lstViewAksam.Location = new System.Drawing.Point(11, 19);
-            this.lstViewAksam.Name = "lstViewAksam";
-            this.lstViewAksam.Size = new System.Drawing.Size(153, 260);
-            this.lstViewAksam.TabIndex = 54;
-            this.lstViewAksam.UseCompatibleStateImageBehavior = false;
-            this.lstViewAksam.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Besin Adı";
-            this.columnHeader5.Width = 200;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(22, 493);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(131, 17);
+            this.label9.TabIndex = 71;
+            this.label9.Text = "Kalan Kalori İhtiyacı";
             // 
             // frmGunlukProgramOluşturmaEkrani
             // 
@@ -451,6 +508,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(971, 555);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblKalanKalori);
+            this.Controls.Add(this.lblAlinanKalori);
+            this.Controls.Add(this.lblGunlukKalori);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbGidecekOgun);
             this.Controls.Add(this.button1);
@@ -460,7 +523,6 @@
             this.Controls.Add(this.txtArananBesinOgesi);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.btnBitir);
             this.Controls.Add(this.btnKaydet1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -501,7 +563,6 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button btnSilAksam;
         private System.Windows.Forms.Button btnKaydet1;
-        private System.Windows.Forms.Button btnBitir;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
@@ -522,5 +583,11 @@
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.Label lblGunlukKalori;
+        private System.Windows.Forms.Label lblAlinanKalori;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblKalanKalori;
+        private System.Windows.Forms.Label label9;
     }
 }
