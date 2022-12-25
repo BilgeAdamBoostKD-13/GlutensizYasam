@@ -100,7 +100,7 @@ namespace GlutensizYasam.UI
                     }
                 //}
            //}
-           
+            
             
         }
 
