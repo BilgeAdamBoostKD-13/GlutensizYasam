@@ -12,7 +12,7 @@ namespace GlutensizYasam.Model.Entities
         public Besin()
         {
             Tarifler = new HashSet<Tarif>();
-            GunlukPlanlar = new HashSet<GunlukPlan>();
+            BesinGunlukPlanlar = new HashSet<BesinGunlukPlan>();
         }
         public string BesinAdi { get; set; }
        
@@ -23,7 +23,7 @@ namespace GlutensizYasam.Model.Entities
         public double Yag { get; set; } //formda sadece sayı girişi olacak
         public bool AktifMi { get; set; }
         public virtual ICollection<Tarif>Tarifler { get; set; }
-        public virtual ICollection<GunlukPlan>GunlukPlanlar { get; set; }
+        public virtual ICollection<BesinGunlukPlan> BesinGunlukPlanlar { get; set; }
 
 
         

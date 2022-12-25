@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity_Configurations\BesinConfiguration.cs" />
+    <Compile Include="Entity_Configurations\BesinGunlukPlanConfiguration.cs" />
     <Compile Include="Entity_Configurations\GunlukBesinKontroluConfiguration.cs" />
     <Compile Include="Entity_Configurations\GunlukPlanConfiguration.cs" />
     <Compile Include="Entity_Configurations\HaftalıkKiloKontroluConfiguration.cs" />

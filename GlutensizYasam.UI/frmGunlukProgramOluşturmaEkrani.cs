@@ -100,25 +100,25 @@ namespace GlutensizYasam.UI
             void GonderDataBase(Ogun ogun)
             {
                 
-                var index = db.Besinler.Where(a => a.BesinAdi == listBoxBesinler.SelectedItem.ToString()).Select(a => a.ID).ToList();
-                int besinId = index.First();
-                Besin besin = new Besin();
-                GunlukPlan gp = new GunlukPlan()
-                {
-                    Tarih = DateTime.Now,
-                    Ogun = ogun,
-                    KullaniciId = this.kullanici.ID,
-                    Besinler = new List<Besin>()
-                {
-                    new Besin{ID = besinId,BesinAdi = listBoxBesinler.SelectedItem.ToString()}
-                }
-                };
-                foreach (Besin item in gp.Besinler)
-                {
-                    DbEntityEntry<Besin> entry = db.Entry(item);
-                    db.Besinler.Attach(item);
-                }
-                db.GunlukPlanlar.Add(gp); db.SaveChanges();
+                //var index = db.Besinler.Where(a => a.BesinAdi == listBoxBesinler.SelectedItem.ToString()).Select(a => a.ID).ToList();
+                //int besinId = index.First();
+                //Besin besin = new Besin();
+                //GunlukPlan gp = new GunlukPlan()
+                //{
+                //    Tarih = DateTime.Now,
+                //    Ogun = ogun,
+                //    KullaniciId = this.kullanici.ID,
+                //    Besinler = new List<Besin>()
+                //{
+                //    new Besin{ID = besinId,BesinAdi = listBoxBesinler.SelectedItem.ToString()}
+                //}
+                //};
+                //foreach (Besin item in gp.Besinler)
+                //{
+                //    DbEntityEntry<Besin> entry = db.Entry(item);
+                //    db.Besinler.Attach(item);
+                //}
+                //db.GunlukPlanlar.Add(gp); db.SaveChanges();
             }
             //if (besin.AktifMi)// AKTİF Mİ EKLENEBİLİR Mİ ? 
             // {

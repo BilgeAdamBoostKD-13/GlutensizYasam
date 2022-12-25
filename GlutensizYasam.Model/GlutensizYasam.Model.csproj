@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\BesinGunlukPlan.cs" />
     <Compile Include="Entities\GunlukBesinKontrolu.cs" />
     <Compile Include="Entities\GunlukPlan.cs" />
     <Compile Include="Entities\HaftalikKiloKontrolu.cs" />
