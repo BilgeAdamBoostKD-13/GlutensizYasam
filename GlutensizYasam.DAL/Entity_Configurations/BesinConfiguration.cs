@@ -21,6 +21,7 @@ namespace GlutensizYasam.DAL.Entity_Configurations
             HasMany(a=>a.Tarifler).WithMany(b=>b.Besinler);
             HasMany(a => a.GunlukPlanlar).WithMany(b => b.Besinler);
 
+
         }
     }
 }

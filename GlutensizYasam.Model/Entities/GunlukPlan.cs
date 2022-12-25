@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GlutensizYasam.Model.Enums;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
@@ -16,13 +17,8 @@ namespace GlutensizYasam.Model.Entities
             GunlukBesinKontrolu = new HashSet<GunlukBesinKontrolu>();
         }
         public DateTime Tarih { get; set; }
-        public string Kahvalti { get; set; }
-        public string OgleYemegi { get; set; }
-        public string AraOgun { get; set; }
-        public string AksamYemegi { get; set; }
+        public Ogun Ogun { get; set; }
         public int KullaniciId { get; set; }
-        
-        
         public virtual ICollection<Besin>Besinler { get; set; }
         public virtual ICollection<Tarif> Tarifler { get; set; }
         public virtual Kullanici Kullanici { get; set; }
@@ -30,3 +26,4 @@ namespace GlutensizYasam.Model.Entities
 
     }
 }
+ 

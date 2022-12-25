@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -128,23 +130,20 @@ namespace GlutensizYasam.UI
             //    lstBxEmployee.Items.Add(item); 
             //}
             */
-
-
             var besinadi = db.Besinler.Select(a => a.BesinAdi);
 
             foreach (var item in besinadi)
             {
                 listBoxBesinler.Items.Add(item);
             }
-
-            
-
         }
-
-
-
         private void button1_Click(object sender, EventArgs e)
         {
+            //employeeRepository = new EmployeeRepository();
+            //List<Employee> employees = employeeRepository.GetEmployees();
+            //lstBxEmployee.DataSource = employees;
+            //lstBxEmployee.DisplayMember = "FirstName";
+            //lstBxEmployee.ValueMember = "EmployeeID";
             try
             {
                 listBoxBesinler.Items.Clear();
@@ -155,11 +154,8 @@ namespace GlutensizYasam.UI
                     if (item == txtArananBesinOgesi.Text)
                     {
                         listBoxBesinler.Items.Add(item);
-                    }
-                   
+                    } 
                 }
-
-
             }
             catch (Exception ex)
             {
@@ -190,7 +186,28 @@ namespace GlutensizYasam.UI
 
         private void btnKaydet1_Click(object sender, EventArgs e)
         {
-            
+            //db.Database.Delete();
+            var index = db.Besinler.Where(a => a.BesinAdi == listBoxBesinler.SelectedItem.ToString()).Select(a => a.ID).ToList();
+            int besinId = index.First();
+            Besin besin = new Besin();
+            GunlukPlan gp = new GunlukPlan()
+            {
+                Tarih = DateTime.Now,
+                Ogun = Model.Enums.Ogun.Kahvalti,
+                KullaniciId = this.kullanici.ID,
+                Besinler = new List<Besin>()
+                {
+                    new Besin{ID = besinId,BesinAdi = listBoxBesinler.SelectedItem.ToString()}
+                }
+            };
+            foreach (Besin item in gp.Besinler)
+            {
+
+                DbEntityEntry<Besin> entry = db.Entry(item);
+                db.Besinler.Attach(item);
+            }
+            db.GunlukPlanlar.Add(gp); db.SaveChanges();
+
         }
     }
 }

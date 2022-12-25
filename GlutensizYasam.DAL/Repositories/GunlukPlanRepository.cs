@@ -31,15 +31,15 @@ namespace GlutensizYasam.DAL.Repositories
             return context.SaveChanges() > 0;
         }
 
-        public bool Update(GunlukPlan gunlukPlan)
-        {
-            GunlukPlan updateGunlukPlan = GetByGunlukPlanID(gunlukPlan.ID);
-            updateGunlukPlan.Tarih = gunlukPlan.Tarih;
-            updateGunlukPlan.Kahvalti = gunlukPlan.Kahvalti;
-            updateGunlukPlan.OgleYemegi = gunlukPlan.OgleYemegi;
-            updateGunlukPlan.AraOgun = gunlukPlan.AraOgun;
-            updateGunlukPlan.AksamYemegi = gunlukPlan.AksamYemegi;
-            return context.SaveChanges() > 0;
-        }
+        //public bool Update(GunlukPlan gunlukPlan)
+        //{
+        //    GunlukPlan updateGunlukPlan = GetByGunlukPlanID(gunlukPlan.ID);
+        //    updateGunlukPlan.Tarih = gunlukPlan.Tarih;
+        //    updateGunlukPlan.Kahvalti = gunlukPlan.Kahvalti;
+        //    updateGunlukPlan.OgleYemegi = gunlukPlan.OgleYemegi;
+        //    updateGunlukPlan.AraOgun = gunlukPlan.AraOgun;
+        //    updateGunlukPlan.AksamYemegi = gunlukPlan.AksamYemegi;
+        //    return context.SaveChanges() > 0;
+        //}
     }
 }
