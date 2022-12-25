@@ -163,6 +163,14 @@ namespace GlutensizYasam.UI
                 listViewHaftalikKiloDegisimTablosu.Items.Add(lvi);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmAcilisEkrani frm = new frmAcilisEkrani();
+            this.Hide();
+            frm.ShowDialog();
+            this.Close();
+        }
     }
 
     

@@ -107,7 +107,7 @@
             this.label13.Location = new System.Drawing.Point(32, 420);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(82, 20);
+            this.label13.Size = new System.Drawing.Size(102, 25);
             this.label13.TabIndex = 32;
             this.label13.Text = "Hedef Kilo";
             // 
@@ -118,7 +118,7 @@
             this.label11.Location = new System.Drawing.Point(32, 506);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(116, 20);
+            this.label11.Size = new System.Drawing.Size(145, 25);
             this.label11.TabIndex = 31;
             this.label11.Text = "Fiziksel Aktivite";
             // 
@@ -129,7 +129,7 @@
             this.label10.Location = new System.Drawing.Point(32, 329);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(36, 20);
+            this.label10.Size = new System.Drawing.Size(46, 25);
             this.label10.TabIndex = 30;
             this.label10.Text = "Boy";
             // 
@@ -140,7 +140,7 @@
             this.label8.Location = new System.Drawing.Point(32, 246);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(34, 20);
+            this.label8.Size = new System.Drawing.Size(45, 25);
             this.label8.TabIndex = 29;
             this.label8.Text = "Kilo";
             // 
@@ -151,7 +151,7 @@
             this.label4.Location = new System.Drawing.Point(31, 166);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 25);
+            this.label4.Size = new System.Drawing.Size(126, 29);
             this.label4.TabIndex = 26;
             this.label4.Text = "Hoşgeldin";
             // 
@@ -162,7 +162,7 @@
             this.rbYuksekSeviye.Location = new System.Drawing.Point(315, 548);
             this.rbYuksekSeviye.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbYuksekSeviye.Name = "rbYuksekSeviye";
-            this.rbYuksekSeviye.Size = new System.Drawing.Size(118, 22);
+            this.rbYuksekSeviye.Size = new System.Drawing.Size(148, 28);
             this.rbYuksekSeviye.TabIndex = 45;
             this.rbYuksekSeviye.TabStop = true;
             this.rbYuksekSeviye.Text = "YüksekSeviye";
@@ -175,7 +175,7 @@
             this.rbOrtaSeviye.Location = new System.Drawing.Point(148, 548);
             this.rbOrtaSeviye.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbOrtaSeviye.Name = "rbOrtaSeviye";
-            this.rbOrtaSeviye.Size = new System.Drawing.Size(102, 22);
+            this.rbOrtaSeviye.Size = new System.Drawing.Size(127, 28);
             this.rbOrtaSeviye.TabIndex = 44;
             this.rbOrtaSeviye.TabStop = true;
             this.rbOrtaSeviye.Text = "Orta Seviye";
@@ -188,7 +188,7 @@
             this.rbYok.Location = new System.Drawing.Point(36, 548);
             this.rbYok.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbYok.Name = "rbYok";
-            this.rbYok.Size = new System.Drawing.Size(52, 22);
+            this.rbYok.Size = new System.Drawing.Size(63, 28);
             this.rbYok.TabIndex = 43;
             this.rbYok.TabStop = true;
             this.rbYok.Text = "Yok";
@@ -200,7 +200,7 @@
             this.txtBoy.Location = new System.Drawing.Point(36, 370);
             this.txtBoy.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoy.Name = "txtBoy";
-            this.txtBoy.Size = new System.Drawing.Size(436, 24);
+            this.txtBoy.Size = new System.Drawing.Size(436, 28);
             this.txtBoy.TabIndex = 38;
             // 
             // txtHedefKilo
@@ -209,7 +209,7 @@
             this.txtHedefKilo.Location = new System.Drawing.Point(36, 460);
             this.txtHedefKilo.Margin = new System.Windows.Forms.Padding(4);
             this.txtHedefKilo.Name = "txtHedefKilo";
-            this.txtHedefKilo.Size = new System.Drawing.Size(436, 24);
+            this.txtHedefKilo.Size = new System.Drawing.Size(436, 28);
             this.txtHedefKilo.TabIndex = 39;
             // 
             // txtKilo
@@ -218,7 +218,7 @@
             this.txtKilo.Location = new System.Drawing.Point(36, 289);
             this.txtKilo.Margin = new System.Windows.Forms.Padding(4);
             this.txtKilo.Name = "txtKilo";
-            this.txtKilo.Size = new System.Drawing.Size(436, 24);
+            this.txtKilo.Size = new System.Drawing.Size(436, 28);
             this.txtKilo.TabIndex = 37;
             // 
             // btnBilgileriGuncelle
@@ -242,7 +242,7 @@
             this.lblKullanıcıIsimSoyisim.Location = new System.Drawing.Point(167, 166);
             this.lblKullanıcıIsimSoyisim.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKullanıcıIsimSoyisim.Name = "lblKullanıcıIsimSoyisim";
-            this.lblKullanıcıIsimSoyisim.Size = new System.Drawing.Size(135, 25);
+            this.lblKullanıcıIsimSoyisim.Size = new System.Drawing.Size(177, 29);
             this.lblKullanıcıIsimSoyisim.TabIndex = 47;
             this.lblKullanıcıIsimSoyisim.Text = "@kullanıcıisim";
             // 
@@ -253,7 +253,7 @@
             this.label1.Location = new System.Drawing.Point(653, 108);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 20);
+            this.label1.Size = new System.Drawing.Size(225, 25);
             this.label1.TabIndex = 48;
             this.label1.Text = "Beden Kitle İndeksi(BKİ)";
             // 
@@ -264,7 +264,7 @@
             this.label2.Location = new System.Drawing.Point(653, 191);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(232, 20);
+            this.label2.Size = new System.Drawing.Size(288, 25);
             this.label2.TabIndex = 49;
             this.label2.Text = "Günlük Alınması Gereken Kalori";
             // 
@@ -276,7 +276,7 @@
             this.lblBKI.Location = new System.Drawing.Point(652, 132);
             this.lblBKI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBKI.Name = "lblBKI";
-            this.lblBKI.Size = new System.Drawing.Size(64, 25);
+            this.lblBKI.Size = new System.Drawing.Size(78, 29);
             this.lblBKI.TabIndex = 50;
             this.lblBKI.Text = "@BKİ";
             // 
@@ -288,7 +288,7 @@
             this.lblKalori.Location = new System.Drawing.Point(652, 214);
             this.lblKalori.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKalori.Name = "lblKalori";
-            this.lblKalori.Size = new System.Drawing.Size(82, 25);
+            this.lblKalori.Size = new System.Drawing.Size(103, 29);
             this.lblKalori.TabIndex = 51;
             this.lblKalori.Text = "@Kalori";
             // 
@@ -300,7 +300,7 @@
             this.lblIdealKilo.Location = new System.Drawing.Point(652, 289);
             this.lblIdealKilo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIdealKilo.Name = "lblIdealKilo";
-            this.lblIdealKilo.Size = new System.Drawing.Size(106, 25);
+            this.lblIdealKilo.Size = new System.Drawing.Size(135, 29);
             this.lblIdealKilo.TabIndex = 53;
             this.lblIdealKilo.Text = "@idealKilo";
             // 
@@ -311,7 +311,7 @@
             this.label7.Location = new System.Drawing.Point(653, 266);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 20);
+            this.label7.Size = new System.Drawing.Size(92, 25);
             this.label7.TabIndex = 52;
             this.label7.Text = "İdeal Kilo";
             // 
@@ -322,7 +322,7 @@
             this.label6.Location = new System.Drawing.Point(653, 342);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(213, 20);
+            this.label6.Size = new System.Drawing.Size(265, 25);
             this.label6.TabIndex = 55;
             this.label6.Text = "Haftalık Kilo Değişim Tablosu";
             // 
@@ -333,7 +333,7 @@
             this.label9.Location = new System.Drawing.Point(972, 342);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(168, 20);
+            this.label9.Size = new System.Drawing.Size(210, 25);
             this.label9.TabIndex = 57;
             this.label9.Text = "Günlük Alınan Kaloriler";
             // 
@@ -384,6 +384,7 @@
             this.button1.TabIndex = 58;
             this.button1.Text = "Oturumu Kapat";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox4
             // 
