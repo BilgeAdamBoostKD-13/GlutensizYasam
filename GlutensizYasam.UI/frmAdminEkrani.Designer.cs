@@ -39,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
@@ -80,7 +81,8 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader9,
-            this.columnHeader3});
+            this.columnHeader3,
+            this.columnHeader4});
             this.lvKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lvKullanici.FullRowSelect = true;
             this.lvKullanici.GridLines = true;
@@ -97,17 +99,17 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Ad";
-            this.columnHeader1.Width = 200;
+            this.columnHeader1.Width = 250;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Soyad";
-            this.columnHeader2.Width = 200;
+            this.columnHeader2.Width = 250;
             // 
             // columnHeader9
             // 
             this.columnHeader9.Text = "E-Mail";
-            this.columnHeader9.Width = 350;
+            this.columnHeader9.Width = 300;
             // 
             // label1
             // 
@@ -135,8 +137,13 @@
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Şikayetler";
-            this.columnHeader3.Width = 600;
+            this.columnHeader3.Text = "Doğum Tarihi";
+            this.columnHeader3.Width = 250;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Kullanıcı Tipi";
+            this.columnHeader4.Width = 250;
             // 
             // frmAdminEkrani
             // 
@@ -174,5 +181,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }

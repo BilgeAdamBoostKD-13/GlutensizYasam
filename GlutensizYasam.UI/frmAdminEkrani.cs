@@ -40,6 +40,8 @@ namespace GlutensizYasam.UI
                 a.Isim,
                 a.SoyIsim,
                 a.EMail,
+                a.DogumTarihi,
+                a.KullaniciTipi,
 
             }).ToList();
             foreach (var item in kullanicilar)
@@ -48,7 +50,8 @@ namespace GlutensizYasam.UI
                 lvi.Text = item.Isim.ToString();
                 lvi.SubItems.Add(item.SoyIsim.ToString());
                 lvi.SubItems.Add(item.EMail.ToString());
-                lvi.SubItems.Add(item.SoyIsim.ToString());
+                lvi.SubItems.Add(item.DogumTarihi.ToString());
+                lvi.SubItems.Add(item.KullaniciTipi.ToString());
                 lvi.Tag = item;
 
                 lvKullanici.Items.Add(lvi);
