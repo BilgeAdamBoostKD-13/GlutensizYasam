@@ -91,7 +91,7 @@
             // progressBarSu
             // 
             this.progressBarSu.Location = new System.Drawing.Point(25, 313);
-            this.progressBarSu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.progressBarSu.Margin = new System.Windows.Forms.Padding(2);
             this.progressBarSu.Maximum = 2400;
             this.progressBarSu.Name = "progressBarSu";
             this.progressBarSu.Size = new System.Drawing.Size(680, 44);
@@ -103,11 +103,11 @@
             this.lblSu.AutoSize = true;
             this.lblSu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblSu.ForeColor = System.Drawing.Color.Blue;
-            this.lblSu.Location = new System.Drawing.Point(185, 150);
+            this.lblSu.Location = new System.Drawing.Point(184, 151);
             this.lblSu.Name = "lblSu";
-            this.lblSu.Size = new System.Drawing.Size(57, 25);
+            this.lblSu.Size = new System.Drawing.Size(89, 25);
             this.lblSu.TabIndex = 52;
-            this.lblSu.Text = "@Su";
+            this.lblSu.Text = "2400 ML";
             // 
             // label1
             // 
@@ -137,7 +137,7 @@
             this.listViewGunlukSuTuketimi.GridLines = true;
             this.listViewGunlukSuTuketimi.HideSelection = false;
             this.listViewGunlukSuTuketimi.Location = new System.Drawing.Point(739, 82);
-            this.listViewGunlukSuTuketimi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listViewGunlukSuTuketimi.Margin = new System.Windows.Forms.Padding(2);
             this.listViewGunlukSuTuketimi.Name = "listViewGunlukSuTuketimi";
             this.listViewGunlukSuTuketimi.Size = new System.Drawing.Size(239, 280);
             this.listViewGunlukSuTuketimi.TabIndex = 56;
@@ -160,7 +160,7 @@
             this.btnSuEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSuEkle.ForeColor = System.Drawing.Color.White;
             this.btnSuEkle.Location = new System.Drawing.Point(172, 188);
-            this.btnSuEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSuEkle.Margin = new System.Windows.Forms.Padding(2);
             this.btnSuEkle.Name = "btnSuEkle";
             this.btnSuEkle.Size = new System.Drawing.Size(533, 57);
             this.btnSuEkle.TabIndex = 0;
@@ -172,7 +172,7 @@
             // 
             this.pictureBox3.Image = global::GlutensizYasam.UI.Properties.Resources.su;
             this.pictureBox3.Location = new System.Drawing.Point(25, 122);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(143, 188);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -183,7 +183,7 @@
             // 
             this.pictureBox2.Image = global::GlutensizYasam.UI.Properties.Resources._3f2ae8fc132bafca49a23144a28dbfcb;
             this.pictureBox2.Location = new System.Drawing.Point(1, 381);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(985, 361);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -194,7 +194,7 @@
             // 
             this.pictureBox1.Image = global::GlutensizYasam.UI.Properties.Resources.wheat_allergy_amber_icon_15413;
             this.pictureBox1.Location = new System.Drawing.Point(25, 60);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(63, 58);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -206,7 +206,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.LimeGreen;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(8, 6);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(59, 46);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -219,7 +219,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.LimeGreen;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(917, 6);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(59, 46);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -239,7 +239,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "GÜNÜ BİTİR";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btnSuEkle_Click);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmSuEkrani
             // 
@@ -263,9 +263,10 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmSuEkrani";
             this.Text = "frmSuEkrani";
+            this.Load += new System.EventHandler(this.frmSuEkrani_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

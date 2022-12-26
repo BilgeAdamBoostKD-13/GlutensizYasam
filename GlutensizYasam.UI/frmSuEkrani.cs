@@ -63,10 +63,41 @@ namespace GlutensizYasam.UI
             gbk.Tarih = DateTime.Now;
             gbk.GunlukIcilenSu = 200;
             bool check1 = gbkservice.Insert(gbk);
+            int icilenSu = db.gunlukBesinKontrolleri.Where(a => a.Tarih.Year == DateTime.Now.Year && a.Tarih.Month == DateTime.Now.Month && a.Tarih.Day == DateTime.Now.Day).Select(a => a.GunlukIcilenSu).Sum();
+            progressBarSu.Value = icilenSu;
+
             if (progressBarSu.Value == 2400)
             {
                 MessageBox.Show("TEBRİKLER. BUGUNKÜ SU İHTİYACINIZI KARŞILADINIZ!");
+                btnSuEkle.Enabled = false;
             }
+        }
+
+        private void frmSuEkrani_Load(object sender, EventArgs e)
+        {
+            int icilenSu = db.gunlukBesinKontrolleri.Where(a => a.Tarih.Year == DateTime.Now.Year && a.Tarih.Month == DateTime.Now.Month && a.Tarih.Day == DateTime.Now.Day).Select(a => a.GunlukIcilenSu).Sum();
+            progressBarSu.Value = icilenSu;
+            if (progressBarSu.Value == 2400)
+            {
+                MessageBox.Show("TEBRİKLER. BUGUNKÜ SU İHTİYACINIZI KARŞILADINIZ!");
+                btnSuEkle.Enabled = false;
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var liste = db.gunlukBesinKontrolleri.Where(a => a.Tarih.Year == DateTime.Now.Year && a.Tarih.Month == DateTime.Now.Month && a.Tarih.Day == DateTime.Now.Day).Select(a => a.GunlukIcilenSu).Sum();
+
+            //var liste = db.gunlukBesinKontrolleri.Where()
+
+                ListViewItem lvi = new ListViewItem();
+                lvi.Text = DateTime.Now.ToString();
+                lvi.SubItems.Add(liste.ToString());
+                lvi.Tag = liste;
+
+                listViewGunlukSuTuketimi.Items.Add(lvi);
+            
         }
     }
 }
