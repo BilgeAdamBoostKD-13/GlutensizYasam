@@ -38,6 +38,7 @@
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
@@ -78,7 +79,8 @@
             this.lvKullanici.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
-            this.columnHeader9});
+            this.columnHeader9,
+            this.columnHeader3});
             this.lvKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lvKullanici.FullRowSelect = true;
             this.lvKullanici.GridLines = true;
@@ -95,23 +97,23 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Ad";
-            this.columnHeader1.Width = 150;
+            this.columnHeader1.Width = 200;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Soyad";
-            this.columnHeader2.Width = 150;
+            this.columnHeader2.Width = 200;
             // 
             // columnHeader9
             // 
-            this.columnHeader9.Text = "Kullanıcı Adı";
-            this.columnHeader9.Width = 250;
+            this.columnHeader9.Text = "E-Mail";
+            this.columnHeader9.Width = 350;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(203, 122);
+            this.label1.Location = new System.Drawing.Point(586, 122);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(276, 30);
@@ -131,6 +133,11 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Şikayetler";
+            this.columnHeader3.Width = 600;
+            // 
             // frmAdminEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -147,6 +154,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmAdminEkrani";
             this.Text = "frmAdminEkrani";
+            this.Load += new System.EventHandler(this.frmAdminEkrani_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
@@ -165,5 +173,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }

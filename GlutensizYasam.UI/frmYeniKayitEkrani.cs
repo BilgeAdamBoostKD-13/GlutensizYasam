@@ -112,6 +112,10 @@ namespace GlutensizYasam.UI
             {
                 bool check = kullaniciService.Insert(kullanici);
                 MessageBox.Show(check ? "Kullanıcı eklendi" : "Kullanıcı eklenemedi");
+                frmAcilisEkrani frm=new frmAcilisEkrani();
+                this.Hide();
+                frm.ShowDialog();
+                this.Close();
             }
 
 
