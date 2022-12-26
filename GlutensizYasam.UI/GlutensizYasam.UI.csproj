@@ -118,11 +118,11 @@
     <Compile Include="frmSuEkrani.Designer.cs">
       <DependentUpon>frmSuEkrani.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmYemekTarifiOlusturmaEkrani.cs">
+    <Compile Include="frmYemekTarifiEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmYemekTarifiOlusturmaEkrani.Designer.cs">
-      <DependentUpon>frmYemekTarifiOlusturmaEkrani.cs</DependentUpon>
+    <Compile Include="frmYemekTarifiEkrani.Designer.cs">
+      <DependentUpon>frmYemekTarifiEkrani.cs</DependentUpon>
     </Compile>
     <Compile Include="frmYeniKayitEkrani.cs">
       <SubType>Form</SubType>
@@ -163,8 +163,8 @@
     <EmbeddedResource Include="frmSuEkrani.resx">
       <DependentUpon>frmSuEkrani.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmYemekTarifiOlusturmaEkrani.resx">
-      <DependentUpon>frmYemekTarifiOlusturmaEkrani.cs</DependentUpon>
+    <EmbeddedResource Include="frmYemekTarifiEkrani.resx">
+      <DependentUpon>frmYemekTarifiEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmYeniKayitEkrani.resx">
       <DependentUpon>frmYeniKayitEkrani.cs</DependentUpon>

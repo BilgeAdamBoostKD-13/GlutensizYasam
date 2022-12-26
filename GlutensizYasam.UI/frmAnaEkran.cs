@@ -72,7 +72,7 @@ namespace GlutensizYasam.UI
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            frmYemekTarifiOlusturmaEkrani frm = new frmYemekTarifiOlusturmaEkrani(this.kullanici);
+            frmYemekTarifiEkrani frm = new frmYemekTarifiEkrani(this.kullanici);
             this.Hide();
             frm.ShowDialog();
             this.Show();
