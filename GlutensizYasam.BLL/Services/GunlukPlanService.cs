@@ -20,5 +20,7 @@ namespace GlutensizYasam.DAL.Repositories
         {
             return gunlukPlanRepository.Insert(gunlukPlan);
         }
+
+
     }
 }

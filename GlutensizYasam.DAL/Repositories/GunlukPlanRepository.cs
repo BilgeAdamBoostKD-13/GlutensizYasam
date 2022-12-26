@@ -31,6 +31,8 @@ namespace GlutensizYasam.DAL.Repositories
             return context.SaveChanges() > 0;
         }
 
+
+
         //public bool Update(GunlukPlan gunlukPlan)
         //{
         //    GunlukPlan updateGunlukPlan = GetByGunlukPlanID(gunlukPlan.ID);
