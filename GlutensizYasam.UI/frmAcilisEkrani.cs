@@ -35,7 +35,7 @@ namespace GlutensizYasam.UI
                 Kullanici kullanici = kullaniciService.GirisKontrolu(userName, password);
                 if (kullanici != null && kullanici.KullaniciTipi == Model.Enums.KullaniciTipi.Admin)
                 {
-                    frmAdminEkrani frm = new frmAdminEkrani();
+                    frmAdminEkrani frm = new frmAdminEkrani(kullanici);
                     this.Hide();
                     frm.ShowDialog();                   
                         
