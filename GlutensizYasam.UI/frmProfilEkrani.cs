@@ -45,6 +45,7 @@ namespace GlutensizYasam.UI
             txtHedefKilo.Text = this.kullanici.HedefKilo.ToString();
             lblKalori.Text = kullanici.GunlukKaloriIhtiyaci.ToString();
             KiloBilgisiDoldur(haftalikKiloKontrolleri);
+            KaloriBilgisiDoldur();
             Hesapla(); 
 
 
@@ -161,6 +162,20 @@ namespace GlutensizYasam.UI
                 lvi.Tag = item;
 
                 listViewHaftalikKiloDegisimTablosu.Items.Add(lvi);
+            }
+        }
+        void KaloriBilgisiDoldur()
+
+        {
+            List<GunlukBesinKontrolu> liste = context.gunlukBesinKontrolleri.ToList();
+            foreach (var item in liste)
+            {
+                ListViewItem lvi = new ListViewItem();
+                lvi.Text = item.Tarih.ToString();
+                lvi.SubItems.Add(item.GunlukAlinanKalori.ToString());
+                lvi.Tag = item;
+
+                listViewGunlukAlinanKalori.Items.Add(lvi);
             }
         }
 
