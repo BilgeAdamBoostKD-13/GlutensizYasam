@@ -75,12 +75,15 @@ namespace GlutensizYasam.UI
 
         private void frmSuEkrani_Load(object sender, EventArgs e)
         {
-            int icilenSu = db.gunlukBesinKontrolleri.Where(a => a.Tarih.Year == DateTime.Now.Year && a.Tarih.Month == DateTime.Now.Month && a.Tarih.Day == DateTime.Now.Day).Select(a => a.GunlukIcilenSu).Sum();
-            progressBarSu.Value = icilenSu;
-            if (progressBarSu.Value == 2400)
+            if (progressBarSu.Value != 0)
             {
-                MessageBox.Show("TEBRİKLER. BUGUNKÜ SU İHTİYACINIZI KARŞILADINIZ!");
-                btnSuEkle.Enabled = false;
+                int icilenSu = db.gunlukBesinKontrolleri.Where(a => a.Tarih.Year == DateTime.Now.Year && a.Tarih.Month == DateTime.Now.Month && a.Tarih.Day == DateTime.Now.Day).Select(a => a.GunlukIcilenSu).Sum();
+                progressBarSu.Value = icilenSu;
+                if (progressBarSu.Value == 2400)
+                {
+                    MessageBox.Show("TEBRİKLER. BUGUNKÜ SU İHTİYACINIZI KARŞILADINIZ!");
+                    btnSuEkle.Enabled = false;
+                } 
             }
 
         }
