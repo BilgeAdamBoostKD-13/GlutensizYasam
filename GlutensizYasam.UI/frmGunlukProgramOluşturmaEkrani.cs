@@ -101,10 +101,10 @@ namespace GlutensizYasam.UI
                 var index = db.Besinler.Where(a => a.BesinAdi == listBoxBesinler.SelectedItem.ToString()).Select(a => a.Kalori).ToList();
                 double _kalori = index.First();
                 alinan += _kalori;
-                if ((Convert.ToInt32(lblGunlukKalori.Text) > alinan))
+                if (kullanici.GunlukKaloriIhtiyaci > alinan)
                 {
                     lblAlinanKalori.Text = alinan.ToString();
-                    lblKalanKalori.Text = (Convert.ToInt32(lblGunlukKalori.Text) - alinan).ToString();
+                    lblKalanKalori.Text = (kullanici.GunlukKaloriIhtiyaci - alinan).ToString();
                 }
                 else
                 {
