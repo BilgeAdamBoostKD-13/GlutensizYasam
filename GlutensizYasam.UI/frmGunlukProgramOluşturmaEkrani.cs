@@ -26,8 +26,9 @@ namespace GlutensizYasam.UI
         BesinService besinService;
         BesinGunlukPlan besinGunlukPlan;
         GunlukPlanService gunlukPlanService;
+        double alinan = 0;
 
-        
+
         public frmGunlukProgramOluşturmaEkrani()
         {
             InitializeComponent();
@@ -97,12 +98,26 @@ namespace GlutensizYasam.UI
                     GonderDataBase(Model.Enums.Ogun.AkşamOgunu);
 
                 }
+                var index = db.Besinler.Where(a => a.BesinAdi == listBoxBesinler.SelectedItem.ToString()).Select(a => a.Kalori).ToList();
+                double _kalori = index.First();
+                alinan += _kalori;
+                if ((Convert.ToInt32(lblGunlukKalori.Text) > alinan))
+                {
+                    lblAlinanKalori.Text = alinan.ToString();
+                    lblKalanKalori.Text = (Convert.ToInt32(lblGunlukKalori.Text) - alinan).ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Günlük Kalor ihtiyacınızı doldurdunuz");
+                    btnEkle.Enabled = false;
+                }
+                
+                
             }
 
 
             void GonderDataBase(Ogun ogun)
             {
-                
                 var index = db.Besinler.Where(a => a.BesinAdi == listBoxBesinler.SelectedItem.ToString()).Select(a => a.ID).ToList();
                 int _besinId = index.First();
                 Besin besin = new Besin();
@@ -157,6 +172,9 @@ namespace GlutensizYasam.UI
             cmbGidecekOgun.Items.Add("Akşam Öğünü");
 
             lblGunlukKalori.Text = kullanici.GunlukKaloriIhtiyaci.ToString();
+
+            
+
             /*List<Besin> besin = db.Besinler.Where(a => a.I).Select(a => a.BesinAdi).ToList();
              *
             var employees = db.Employees.Select(a => a.FirstName);
