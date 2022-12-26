@@ -98,9 +98,9 @@
             this.groupBox1.Controls.Add(this.flowLayoutPanelKahvalti);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(68, 143);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(203, 338);
             this.groupBox1.TabIndex = 52;
             this.groupBox1.TabStop = false;
@@ -109,7 +109,7 @@
             // flowLayoutPanelKahvalti
             // 
             this.flowLayoutPanelKahvalti.Location = new System.Drawing.Point(4, 22);
-            this.flowLayoutPanelKahvalti.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanelKahvalti.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanelKahvalti.Name = "flowLayoutPanelKahvalti";
             this.flowLayoutPanelKahvalti.Size = new System.Drawing.Size(191, 309);
             this.flowLayoutPanelKahvalti.TabIndex = 0;
@@ -119,9 +119,9 @@
             this.groupBox4.Controls.Add(this.flowLayoutPanelOgleYemegi);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox4.Location = new System.Drawing.Point(276, 143);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(183, 338);
             this.groupBox4.TabIndex = 59;
             this.groupBox4.TabStop = false;
@@ -130,7 +130,7 @@
             // flowLayoutPanelOgleYemegi
             // 
             this.flowLayoutPanelOgleYemegi.Location = new System.Drawing.Point(10, 22);
-            this.flowLayoutPanelOgleYemegi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanelOgleYemegi.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanelOgleYemegi.Name = "flowLayoutPanelOgleYemegi";
             this.flowLayoutPanelOgleYemegi.Size = new System.Drawing.Size(168, 309);
             this.flowLayoutPanelOgleYemegi.TabIndex = 0;
@@ -140,9 +140,9 @@
             this.groupBox3.Controls.Add(this.flowLayoutPanelAraOgun1);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox3.Location = new System.Drawing.Point(464, 143);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(192, 338);
             this.groupBox3.TabIndex = 60;
             this.groupBox3.TabStop = false;
@@ -151,7 +151,7 @@
             // flowLayoutPanelAraOgun1
             // 
             this.flowLayoutPanelAraOgun1.Location = new System.Drawing.Point(11, 22);
-            this.flowLayoutPanelAraOgun1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanelAraOgun1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanelAraOgun1.Name = "flowLayoutPanelAraOgun1";
             this.flowLayoutPanelAraOgun1.Size = new System.Drawing.Size(176, 309);
             this.flowLayoutPanelAraOgun1.TabIndex = 0;
@@ -161,9 +161,9 @@
             this.groupBox5.Controls.Add(this.flowLayoutPanelAksamYemegi);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox5.Location = new System.Drawing.Point(660, 143);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox5.Size = new System.Drawing.Size(205, 338);
             this.groupBox5.TabIndex = 61;
             this.groupBox5.TabStop = false;
@@ -172,7 +172,7 @@
             // flowLayoutPanelAksamYemegi
             // 
             this.flowLayoutPanelAksamYemegi.Location = new System.Drawing.Point(10, 22);
-            this.flowLayoutPanelAksamYemegi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanelAksamYemegi.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanelAksamYemegi.Name = "flowLayoutPanelAksamYemegi";
             this.flowLayoutPanelAksamYemegi.Size = new System.Drawing.Size(190, 309);
             this.flowLayoutPanelAksamYemegi.TabIndex = 0;
@@ -183,18 +183,19 @@
             this.btnKaydet1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKaydet1.ForeColor = System.Drawing.Color.White;
             this.btnKaydet1.Location = new System.Drawing.Point(804, 549);
-            this.btnKaydet1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnKaydet1.Margin = new System.Windows.Forms.Padding(2);
             this.btnKaydet1.Name = "btnKaydet1";
             this.btnKaydet1.Size = new System.Drawing.Size(134, 37);
             this.btnKaydet1.TabIndex = 68;
             this.btnKaydet1.Text = "Kaydet";
             this.btnKaydet1.UseVisualStyleBackColor = false;
+            this.btnKaydet1.Click += new System.EventHandler(this.btnKaydet1_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GlutensizYasam.UI.Properties.Resources.wheat_allergy_amber_icon_15413;
             this.pictureBox1.Location = new System.Drawing.Point(8, 54);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(63, 58);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -206,7 +207,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.LimeGreen;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(889, 6);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(59, 46);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -219,7 +220,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.LimeGreen;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(8, 6);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(59, 46);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -302,7 +303,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmDiyetListemPaneli";
             this.Text = "frmDiyetListemPaneli";
             this.Load += new System.EventHandler(this.frmDiyetListemPaneli_Load);

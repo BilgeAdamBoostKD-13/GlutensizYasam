@@ -17,6 +17,8 @@ namespace GlutensizYasam.UI
         GlutensizYasamDbContext db;
         Kullanici kullanici;
         BesinGunlukPlan besinGunlukPlan;
+        double _kalori = 0;
+        bool checkGlutenliMi;
         public frmDiyetListemPaneli()
         {
             InitializeComponent();
@@ -45,44 +47,94 @@ namespace GlutensizYasam.UI
 
         private void frmDiyetListemPaneli_Load(object sender, EventArgs e)
         {
+            List<int> GunlukPlanIDListKahvalti = new List<int>();
+            List<int> GunlukPlanIdListOgle = new List<int>();
+            List<int> GunlukPlanIdListAra = new List<int>();
+            List<int> GunlukPlanIdListAksam = new List<int>();
 
 
+            List<GunlukPlan> gunlukplan = db.GunlukPlanlar.ToList();
 
-
-
-            //var besinadi = (from g in db.GunlukPlanlar
-            //                join gb in db.besinGunlukPlanlar on g.ID equals gb.GunlukPlanId
-            //                join b in db.Besinler on gb.BesinId equals b.ID
-            //                where g.Ogun == Model.Enums.Ogun.Kahvalti
-            //                Select new { besinadi })
-
-
-            //var besinadi = db.Besinler.Where(a => a. == Model.Enums.Ogun.Kahvalti).ToList().Select(b => new {b.})
-
-
-            //var index = db.GunlukPlanlar.Where(a => a.Ogun == Model.Enums.Ogun.Kahvalti).Select(a => a.ID).ToList();
-
-
-            //var index2 = db.besinGunlukPlanlar.Where(a=>a.GunlukPlanId == index).Select(a=> a.BesinId).ToList();
-            //int besinid = index2.First();
-
-            //var besinadi = db.Besinler.Where(a => a.ID == besinid).Select(a => a.BesinAdi).ToList();
-
-            //foreach (var item in besinadi)
-            //{
-            //    flowLayoutPanelKahvalti.Controls.Add(new CheckBox() { Text = item ,Tag = item });
-            //}
-
-
-
-
-
-
-            /*foreach (var item in ekstralar)
+            foreach (var item in gunlukplan)
             {
-                flowLayoutPanel1.Controls.Add(new CheckBox() { Text = item.Ad, Tag = item });
+                if (item.Tarih.Year == DateTime.Now.Year && item.Tarih.Month == DateTime.Now.Month && item.Tarih.Day == DateTime.Now.Day)
+                {
+                    if (item.Ogun == 0)
+                    {
+                        GunlukPlanIDListKahvalti.Add(item.ID);
+                    }
+                    else if (Convert.ToInt32(item.Ogun) == 1)
+                    {
+                        GunlukPlanIdListOgle.Add(item.ID);
+                    }
+                    else if (Convert.ToInt32(item.Ogun) == 2)
+                    {
+                        GunlukPlanIdListAra.Add(item.ID);
+                    }
+                    else if (Convert.ToInt32(item.Ogun) == 3)
+                    {
+                        GunlukPlanIdListAksam.Add(item.ID);
+                    }
+                }
             }
-            */
+
+            BesinGetir(GunlukPlanIDListKahvalti, flowLayoutPanelKahvalti);
+            BesinGetir(GunlukPlanIdListOgle, flowLayoutPanelOgleYemegi);
+            BesinGetir(GunlukPlanIdListAra, flowLayoutPanelAraOgun1);
+            BesinGetir(GunlukPlanIdListAksam, flowLayoutPanelAksamYemegi);
+        }
+        void BesinGetir(List<int> ıd, FlowLayoutPanel panel)
+        {
+            List<int> BesinIdList = new List<int>();
+            List<BesinGunlukPlan> besinGunlukPlans = db.besinGunlukPlanlar.ToList();
+            foreach (var item in besinGunlukPlans)
+            {
+                foreach (var item2 in ıd)
+                {
+                    if (item.GunlukPlanId == item2)
+                    {
+                        BesinIdList.Add(item.BesinId);
+                    }
+                }
+            }
+            foreach (var item in BesinIdList)
+            {
+                var besin = db.Besinler.Where(a => a.ID == item).Select(b => b.BesinAdi).ToList();
+                ListViewItem lvi = new ListViewItem();
+                lvi.Text = besin.First();
+                panel.Controls.Add(new CheckBox() { Text = besin.First(), Tag = item });
+            }
+        }
+
+
+        private void btnKaydet1_Click(object sender, EventArgs e)
+        {
+            KaloriTopla(flowLayoutPanelKahvalti);
+            KaloriTopla(flowLayoutPanelOgleYemegi);
+            KaloriTopla(flowLayoutPanelAraOgun1);
+            KaloriTopla(flowLayoutPanelAksamYemegi);
+        }
+
+        void KaloriTopla(FlowLayoutPanel panel)
+        {
+            foreach (CheckBox item in panel.Controls)
+            {
+                if (item.Checked)
+                {
+                    var index = db.Besinler.Where(a => a.BesinAdi == item.Text).Select(b => b.Kalori).ToList();
+                    _kalori += index.First();
+                    lblTotalKalori.Text = _kalori.ToString();
+
+                    var index2 = db.Besinler.Where(a => a.BesinAdi == item.Text).Select(b => b.AktifMi).ToList();
+                    bool glutenVarMi = index2.First();
+                    if (glutenVarMi == true)
+                    {
+                        lblEvetHayir.Text = "Evet";
+                    }
+                }
+            }
+
         }
     }
+
 }
