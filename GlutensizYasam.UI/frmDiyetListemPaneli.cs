@@ -1,5 +1,6 @@
 ﻿using GlutensizYasam.DAL;
 using GlutensizYasam.Model.Entities;
+using GlutensizYasam.Model.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,8 +18,8 @@ namespace GlutensizYasam.UI
         GlutensizYasamDbContext db;
         Kullanici kullanici;
         BesinGunlukPlan besinGunlukPlan;
+        GunlukBesinKontrolu gunlukBesinKontrolu;
         double _kalori = 0;
-        bool checkGlutenliMi;
         public frmDiyetListemPaneli()
         {
             InitializeComponent();
@@ -30,6 +31,7 @@ namespace GlutensizYasam.UI
             this.kullanici = kullanici;
             db = new GlutensizYasamDbContext();
             besinGunlukPlan = new BesinGunlukPlan();
+            gunlukBesinKontrolu = new GunlukBesinKontrolu();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -113,6 +115,16 @@ namespace GlutensizYasam.UI
             KaloriTopla(flowLayoutPanelOgleYemegi);
             KaloriTopla(flowLayoutPanelAraOgun1);
             KaloriTopla(flowLayoutPanelAksamYemegi);
+            var index = db.GunlukPlanlar.Select(a => a.ID).ToList();
+            GunlukBesinKontrolu gbk = new GunlukBesinKontrolu()
+            {
+                GunlukAlinanKalori = (int)_kalori,
+                GunlukPlanID = index.Last()
+                
+            };
+            db.gunlukBesinKontrolleri.Add(gbk); 
+            db.SaveChanges();
+
         }
 
         void KaloriTopla(FlowLayoutPanel panel)
