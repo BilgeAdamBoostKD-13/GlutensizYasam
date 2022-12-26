@@ -18,8 +18,8 @@ namespace GlutensizYasam.DAL.Entity_Configurations
             Property(a => a.Protein).IsRequired();
             Property(a => a.Karbonhidrat).IsRequired();
             Property(a => a.Yag).IsRequired();
-            HasMany(a=>a.Tarifler).WithMany(b=>b.Besinler);
-            HasMany(a => a.GunlukPlanlar).WithMany(b => b.Besinler);
+            Property(a => a.Kalori).IsRequired();
+
 
         }
     }

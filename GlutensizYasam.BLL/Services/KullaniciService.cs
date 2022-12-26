@@ -12,13 +12,12 @@ namespace GlutensizYasam.BLL.Services
 {
     public class KullaniciService
     {
-       // GlutensizYasamDbContext db;
         KullaniciRepository kullaniciRepository;
 
         public KullaniciService()
         {
             kullaniciRepository = new KullaniciRepository();
-           // db = new GlutensizYasamDbContext();
+
         }
 
         public bool Insert (Kullanici kullanici) // kullanıcı kaydetme 
@@ -70,6 +69,10 @@ namespace GlutensizYasam.BLL.Services
             return Id;
         }
 
+        public bool Update(Kullanici kullanici)
+        {
+            return kullaniciRepository.Update(kullanici);
+        }
 
     }
 }

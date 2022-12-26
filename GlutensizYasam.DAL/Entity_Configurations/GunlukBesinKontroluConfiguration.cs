@@ -15,7 +15,7 @@ namespace GlutensizYasam.DAL.Entity_Configurations
         {
             Property(a=>a.ID).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(a => a.Tarih).HasColumnType("datetime2");
-            HasMany(a => a.GunlukPlanlar).WithMany(b => b.GunlukBesinKontrolleri);
+
 
         }
     }

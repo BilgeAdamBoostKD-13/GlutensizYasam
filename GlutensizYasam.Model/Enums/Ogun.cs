@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace GlutensizYasam.Model.Enums
 {
-    public enum SporTipi
+    public enum Ogun
     {
-        SporYok,
-        OrtaSeviyeli,
-        YuksekSeviyeli
+        Kahvalti,
+        OgleOgunu,
+        AraOgunu,
+        AkşamOgunu
     }
 }

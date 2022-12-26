@@ -1,4 +1,5 @@
 ﻿using GlutensizYasam.DAL.Repositories;
+using GlutensizYasam.Model.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,10 @@ namespace GlutensizYasam.BLL.Services
         {
             gunlukBesinKontroluRepository = new GunlukBesinKontroluRepository();
         }
-    
+
+        public bool Insert(GunlukBesinKontrolu gbk)
+        {
+            return gunlukBesinKontroluRepository.Insert(gbk);
+        }
     }
 }

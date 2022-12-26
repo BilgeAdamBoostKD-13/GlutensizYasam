@@ -14,5 +14,11 @@ namespace GlutensizYasam.BLL.Services
         {
             besinRepository = new BesinRepository();
         }
+
+        public int BesinBul(string arananKelime)
+        {
+            
+            return besinRepository.BesinBul(arananKelime);
+        }
     }
 }

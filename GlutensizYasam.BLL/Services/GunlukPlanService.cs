@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GlutensizYasam.Model.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,5 +15,12 @@ namespace GlutensizYasam.DAL.Repositories
         {
             gunlukPlanRepository = new GunlukPlanRepository();
         }
+
+        public bool Insert(GunlukPlan gunlukPlan)
+        {
+            return gunlukPlanRepository.Insert(gunlukPlan);
+        }
+
+
     }
 }

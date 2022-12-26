@@ -1,4 +1,5 @@
-﻿using GlutensizYasam.Model.Entities;
+﻿using GlutensizYasam.DAL;
+using GlutensizYasam.Model.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace GlutensizYasam.UI
     public partial class frmAnaEkran : Form
     {
         Kullanici kullanici;
+        GlutensizYasamDbContext dbContext;
         public frmAnaEkran()
         {
             InitializeComponent();
@@ -23,11 +25,12 @@ namespace GlutensizYasam.UI
         {
             InitializeComponent();
             this.kullanici = kullanici;
+            dbContext = new GlutensizYasamDbContext();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            frmProfilEkrani frm = new frmProfilEkrani(this.kullanici);
+            frmProfilEkrani frm = new frmProfilEkrani(this.kullanici,dbContext);
             this.Hide();
             frm.ShowDialog();
             this.Show();
@@ -69,7 +72,7 @@ namespace GlutensizYasam.UI
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            frmYemekTarifiOlusturmaEkrani frm = new frmYemekTarifiOlusturmaEkrani(this.kullanici);
+            frmYemekTarifiEkrani frm = new frmYemekTarifiEkrani(this.kullanici);
             this.Hide();
             frm.ShowDialog();
             this.Show();

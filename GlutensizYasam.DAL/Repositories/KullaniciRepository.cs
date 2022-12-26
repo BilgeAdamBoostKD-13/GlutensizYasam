@@ -43,7 +43,7 @@ namespace GlutensizYasam.DAL.Repositories
 
         public Kullanici GetKullaniciId(int kullaniciID)
         {
-            return context.Kullanicilar.Find(kullaniciID);
+            return context.Kullanicilar.Where(a => a.ID == kullaniciID).FirstOrDefault();
         }
 
         public bool EmailKontrolEt(string email)
@@ -66,6 +66,14 @@ namespace GlutensizYasam.DAL.Repositories
             var index = context.Kullanicilar.Where(x => x.EMail == mail).Select(a => a.ID).ToList();
             int id = index.First();
             return id;
+        }
+
+        public bool Update(Kullanici kullanici)
+        {
+            Kullanici updateKullanici = GetKullaniciId(kullanici.ID);
+            updateKullanici.Boy = kullanici.Boy;
+            updateKullanici.HedefKilo = kullanici.HedefKilo;
+            return context.SaveChanges() > 0;
         }
     }
 

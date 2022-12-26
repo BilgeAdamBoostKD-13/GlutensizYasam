@@ -15,12 +15,7 @@ namespace GlutensizYasam.BLL.Services
         {
             parolaRepository = new ParolaRepository();
         }
-        void CheckParolaId(int ParolaID)
-        {
-            if (ParolaID <= 0) throw new Exception("Parametre değeri uygun değil");
-        }
 
-        
         public bool Insert(Parola parola)
         {
             //parola.OlusturulmaTarihi = DateTime.Now;

@@ -25,5 +25,7 @@ namespace GlutensizYasam.DAL.Repositories
             context.gunlukBesinKontrolleri.Add(gunlukBesinKontrolu);
             return context.SaveChanges() > 0;
         }
+
+
     }
 }

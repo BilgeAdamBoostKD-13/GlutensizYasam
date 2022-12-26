@@ -20,6 +20,7 @@ namespace GlutensizYasam.DAL
 
         public DbSet<Besin> Besinler { get; set; }
         public DbSet<GunlukBesinKontrolu> gunlukBesinKontrolleri { get; set; }
+        public DbSet<BesinGunlukPlan> besinGunlukPlanlar { get; set; }
         public DbSet<GunlukPlan> GunlukPlanlar { get; set; }
         public DbSet<HaftalikKiloKontrolu> HaftalikKiloKontrolleri { get; set; }
         public DbSet<Kullanici> Kullanicilar { get; set; }
@@ -35,6 +36,7 @@ namespace GlutensizYasam.DAL
             modelBuilder.Configurations.Add(new KullaniciConfiguration());
             modelBuilder.Configurations.Add(new ParolaConfiguration());
             modelBuilder.Configurations.Add(new TarifConfiguration());
+            modelBuilder.Configurations.Add(new BesinGunlukPlanConfiguration());
         }
     }
 }

@@ -10,13 +10,12 @@ namespace GlutensizYasam.Model.Entities
     {
         public GunlukBesinKontrolu()
         {
-            GunlukPlanlar = new HashSet<GunlukPlan>();
         }
         public DateTime Tarih { get; set; }
         public int GunlukAlinanKalori { get; set; }
         public int GunlukIcilenSu { get; set; }
-        public virtual ICollection<GunlukPlan> GunlukPlanlar { get; set; }
-
+        public int GunlukPlanID { get; set; }
+        public virtual GunlukPlan GunlukPlan { get; set; }
 
     }
 }
