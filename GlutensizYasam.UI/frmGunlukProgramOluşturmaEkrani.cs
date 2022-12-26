@@ -64,10 +64,6 @@ namespace GlutensizYasam.UI
             this.Show();
         }
 
-        private void btnEkleKahvalti_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
@@ -111,49 +107,7 @@ namespace GlutensizYasam.UI
                     MessageBox.Show("Günlük Kalor ihtiyacınızı doldurdunuz");
                     btnEkle.Enabled = false;
                 }
-                
-                
             }
-
-
-            void GonderDataBase(Ogun ogun)
-            {
-                var index = db.Besinler.Where(a => a.BesinAdi == listBoxBesinler.SelectedItem.ToString()).Select(a => a.ID).ToList();
-                int _besinId = index.First();
-                Besin besin = new Besin();
-                GunlukPlan gp = new GunlukPlan()
-                {
-                    Tarih = DateTime.Now,
-                    Ogun = ogun,
-                    KullaniciId = this.kullanici.ID,
-                };
-                db.GunlukPlanlar.Add(gp); db.SaveChanges();
-
-                var index2 = db.GunlukPlanlar.Select(a => a.ID).ToList();
-                int _gunlukPlanId = index2.Last();
-
-                BesinGunlukPlan bgp = new BesinGunlukPlan()
-                {
-                    BesinId = _besinId,
-                    GunlukPlanId = _gunlukPlanId,
-                };
-
-                db.besinGunlukPlanlar.Add(bgp); db.SaveChanges();
-            }
-            //if (besin.AktifMi)// AKTİF Mİ EKLENEBİLİR Mİ ? 
-            // {
-            //DialogResult result = MessageBox.Show("Seçilen besin gluten içermektedir. Eklemek istediğinize emin misiniz ?","UYARI!!!",MessageBoxButtons.YesNo);
-
-            //if (result == DialogResult.Yes)
-            //{
-
-
-            
-
-            //}
-            //}
-
-
         }
 
         private ListViewItem ListViewDoldur()
@@ -173,30 +127,55 @@ namespace GlutensizYasam.UI
 
             lblGunlukKalori.Text = kullanici.GunlukKaloriIhtiyaci.ToString();
 
-            
-
-            /*List<Besin> besin = db.Besinler.Where(a => a.I).Select(a => a.BesinAdi).ToList();
-             *
-            var employees = db.Employees.Select(a => a.FirstName);
-            //foreach (var item in employees)
-            //{
-            //    lstBxEmployee.Items.Add(item); 
-            //}
-            */
             var besinadi = db.Besinler.Select(a => a.BesinAdi);
 
             foreach (var item in besinadi)
             {
                 listBoxBesinler.Items.Add(item);
             }
+            List<int> GunlukPlanIDListKahvalti = new List<int>();
+            List<int> GunlukPlanIdListOgle = new List<int>();
+            List<int> GunlukPlanIdListAra = new List<int>();
+            List<int> GunlukPlanIdListAksam = new List<int>();
+            
+
+            List<GunlukPlan> gunlukplan = db.GunlukPlanlar.ToList();
+            
+            foreach (var item in gunlukplan)
+            {
+                if (item.Tarih.Year == DateTime.Now.Year && item.Tarih.Month == DateTime.Now.Month && item.Tarih.Day == DateTime.Now.Day)
+                {
+                    if (item.Ogun == 0)
+                    {
+                        GunlukPlanIDListKahvalti.Add(item.ID);
+                    }
+                    else if (Convert.ToInt32(item.Ogun) == 1)
+                    {
+                        GunlukPlanIdListOgle.Add(item.ID);
+                    }
+                    else if (Convert.ToInt32(item.Ogun) == 2)
+                    {
+                        GunlukPlanIdListAra.Add(item.ID);
+                    }
+                    else if (Convert.ToInt32(item.Ogun) == 3 )
+                    {
+                        GunlukPlanIdListAksam.Add(item.ID);
+                    }
+                }
+            }
+
+            BesinGetir(GunlukPlanIDListKahvalti, lstViewKahvalti);
+            BesinGetir(GunlukPlanIdListOgle, lstViewOgle);
+            BesinGetir(GunlukPlanIdListAra, lstViewAra);
+            BesinGetir(GunlukPlanIdListAksam, lstViewAksam);
+            
+
+
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            //employeeRepository = new EmployeeRepository();
-            //List<Employee> employees = employeeRepository.GetEmployees();
-            //lstBxEmployee.DataSource = employees;
-            //lstBxEmployee.DisplayMember = "FirstName";
-            //lstBxEmployee.ValueMember = "EmployeeID";
+
             try
             {
                 listBoxBesinler.Items.Clear();
@@ -216,33 +195,61 @@ namespace GlutensizYasam.UI
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void btnSilKahvalti_Click(object sender, EventArgs e)
+        void GonderDataBase(Ogun ogun)
         {
-            lstViewKahvalti.Items.Clear();
+            var index = db.Besinler.Where(a => a.BesinAdi == listBoxBesinler.SelectedItem.ToString()).Select(a => a.ID).ToList();
+            int _besinId = index.First();
+            Besin besin = new Besin();
+            GunlukPlan gp = new GunlukPlan()
+            {
+                Tarih = DateTime.Now,
+                Ogun = ogun,
+                KullaniciId = this.kullanici.ID,
+            };
+            db.GunlukPlanlar.Add(gp); db.SaveChanges();
+
+            var index2 = db.GunlukPlanlar.Select(a => a.ID).ToList();
+            int _gunlukPlanId = index2.Last();
+
+            BesinGunlukPlan bgp = new BesinGunlukPlan()
+            {
+                BesinId = _besinId,
+                GunlukPlanId = _gunlukPlanId,
+            };
+
+            db.besinGunlukPlanlar.Add(bgp); db.SaveChanges();
         }
-
-        private void btnSilOgle_Click(object sender, EventArgs e)
+        void BesinGetir(List<int> ıd,ListView lstview)
         {
-            lstViewOgle.Items.Clear();
-        }
-
-        private void btnSilAra1_Click(object sender, EventArgs e)
-        {
-            lstViewAra.Items.Clear();
-        }
-
-        private void btnSilAksam_Click(object sender, EventArgs e)
-        {
-            lstViewAksam.Items.Clear();
-        }
-
-        private void btnKaydet1_Click(object sender, EventArgs e)
-        {
+            List<int> BesinIdList = new List<int>();
+            List<BesinGunlukPlan> besinGunlukPlans = db.besinGunlukPlanlar.ToList();
+            foreach (var item in besinGunlukPlans)
+            {
+                foreach (var item2 in ıd)
+                {
+                    if (item.GunlukPlanId == item2)
+                    {
+                        BesinIdList.Add(item.BesinId);
+                    }
+                }
+            }
+            foreach (var item in BesinIdList)
+            {
+                var besin = db.Besinler.Where(a => a.ID == item).Select(b => b.BesinAdi).ToList();
+                ListViewItem lvi = new ListViewItem();
+                lvi.Text = besin.First();
+                lstview.Items.Add(lvi);
+                var index = db.Besinler.Where(a => a.ID == item).Select(b => b.Kalori).ToList();
+                double kalori = index.First();
+                alinan += kalori;
+                if (kullanici.GunlukKaloriIhtiyaci > alinan)
+                {
+                    lblAlinanKalori.Text = alinan.ToString();
+                    lblKalanKalori.Text = (kullanici.GunlukKaloriIhtiyaci - alinan).ToString();
+                }
             
+            }
 
-
-            
 
         }
     }
